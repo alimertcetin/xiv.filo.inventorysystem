@@ -14,6 +14,7 @@
     "Inventory"
   ],
   "author": "Ali Mert Çetin (https://github.com/alimertcetin)",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
