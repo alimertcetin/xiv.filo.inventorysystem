@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace XIV_Packages.InventorySystem.ScriptableObjects
+      <title>Namespace XIV.Packages.InventorySystem
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace XIV_Packages.InventorySystem.ScriptableObjects
+      <meta name="title" content="Namespace XIV.Packages.InventorySystem
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -81,63 +81,74 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="XIV_Packages.InventorySystem.ScriptableObjects">
+        <article data-uid="XIV.Packages.InventorySystem">
 
-  <h1 id="XIV_Packages_InventorySystem_ScriptableObjects" data-uid="XIV_Packages.InventorySystem.ScriptableObjects" class="text-break">Namespace XIV_Packages.InventorySystem.ScriptableObjects
+  <h1 id="XIV_Packages_InventorySystem" data-uid="XIV.Packages.InventorySystem" class="text-break">Namespace XIV.Packages.InventorySystem
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
 
+    <h3 id="namespaces">
+Namespaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.Extensions.html">XIV.Packages.InventorySystem.Extensions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.ScriptableObjects.html">XIV.Packages.InventorySystem.ScriptableObjects</a></dt>
+      <dd></dd>
+    </dl>
     <h3 id="classes">
 Classes
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.html">InventorySO</a></dt>
-      <dd><p>This class is useful for easily modify <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a> in Editor.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html">ItemDatabaseSO</a></dt>
-      <dd><p>Stores a collection of <a class="xref" href="XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.html">ItemSO</a> and
-provides a way of mapping <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a> to <a class="xref" href="XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.html">ItemSO</a>.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.html">ItemSO</a></dt>
-      <dd><p>An abstract class to connect primitive items to Unity.
-Any non-serializable object can be stored in this class.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="XIV_Packages.InventorySystem.ScriptableObjects.ItemSO-1.html">ItemSO&lt;T&gt;</a></dt>
-      <dd><p>An abstract class to connect primitive items to Unity.
-Any non-serializable object can be stored in this class.</p>
-<example>
-<pre><code class="lang-csharp">Define a class that contains required values for your item.
-public class SwordItem : ItemBase
-{
-    public int damage;
-    public float swingSpeed;
-}
-Create another class to allow creating SwordItem in the Editor.
-[CreateAssetMenu(menuName = "Items/" + nameof(SwordItemSO))]
-public class SwordItemSO : ItemSO&lt;SwordItem&gt;
-{
-}</code></pre>
-</example>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.html">MenuPaths</a></dt>
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.Inventory.html">Inventory</a></dt>
       <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.InventoryHelper.html">InventoryHelper</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+      <dd><p>An abstract class to represent items in the game.</p>
+</dd>
     </dl>
     <h3 id="structs">
 Structs
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.html">ItemSOData</a></dt>
-      <dd><p>Stores the quantity and the associated itemSO</p>
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.InventoryChange.html">InventoryChange</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.InventoryItem.html">InventoryItem</a></dt>
+      <dd><p>Used in <a class="xref" href="XIV.Packages.InventorySystem.Inventory.html">Inventory</a> to store <a class="xref" href="XIV.Packages.InventorySystem.ItemBase.html">ItemBase</a>.
+Contains inventory related data.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.InventoryItemChange.html">InventoryItemChange</a></dt>
+      <dd><p>Stores the changes about the <a class="xref" href="XIV.Packages.InventorySystem.ItemBase.html">ItemBase</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a></dt>
+      <dd><p>Provides a safe way to read values of <a class="xref" href="XIV.Packages.InventorySystem.InventoryItem.html">InventoryItem</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.TempArray-1.html">TempArray&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.IInventoryListener.html">IInventoryListener</a></dt>
+      <dd><p>Provides a mechanism for receiving <a class="xref" href="XIV.Packages.InventorySystem.InventoryChange.html">InventoryChange</a> information.</p>
 </dd>
     </dl>
 

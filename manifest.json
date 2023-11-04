@@ -4,200 +4,200 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Extensions.InventoryExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.Extensions.InventoryExtensions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Extensions.InventoryItemExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.Extensions.InventoryItemExtensions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.Extensions.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Extensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.Extensions.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.Extensions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.IInventoryListener.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.IInventoryListener.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.IInventoryListener.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.IInventoryListener.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.Inventory.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Inventory.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.Inventory.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.Inventory.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.InventoryChange.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.InventoryChange.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.InventoryChange.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.InventoryChange.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.InventoryHelper.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.InventoryHelper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.InventoryHelper.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.InventoryHelper.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.InventoryItem.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.InventoryItem.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.InventoryItem.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.InventoryItem.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.InventoryItemChange.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.InventoryItemChange.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.InventoryItemChange.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.InventoryItemChange.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.ItemBase.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.ItemBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.ItemBase.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.ItemBase.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.ReadOnlyInventoryItem.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.ReadOnlyInventoryItem.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.InventorySO.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.InventorySO.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO-1.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSO-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO-1.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSO-1.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSO.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSO.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSOData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSOData.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.TempArray-1.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.TempArray-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.TempArray-1.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.TempArray-1.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/XIV_Packages.InventorySystem.yml",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.yml",
       "output": {
         ".html": {
-          "relative_path": "api/XIV_Packages.InventorySystem.html"
+          "relative_path": "api/XIV.Packages.InventorySystem.html"
         }
       },
       "version": ""

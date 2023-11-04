@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace XIV_Packages.InventorySystem.Extensions
+      <title>Namespace XIV.Packages.InventorySystem.ScriptableObjects
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace XIV_Packages.InventorySystem.Extensions
+      <meta name="title" content="Namespace XIV.Packages.InventorySystem.ScriptableObjects
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -81,9 +81,9 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="XIV_Packages.InventorySystem.Extensions">
+        <article data-uid="XIV.Packages.InventorySystem.ScriptableObjects">
 
-  <h1 id="XIV_Packages_InventorySystem_Extensions" data-uid="XIV_Packages.InventorySystem.Extensions" class="text-break">Namespace XIV_Packages.InventorySystem.Extensions
+  <h1 id="XIV_Packages_InventorySystem_ScriptableObjects" data-uid="XIV.Packages.InventorySystem.ScriptableObjects" class="text-break">Namespace XIV.Packages.InventorySystem.ScriptableObjects
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -93,13 +93,51 @@
 Classes
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html">InventoryExtensions</a></dt>
-      <dd><p>Contains extension methods for <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a>.</p>
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.ScriptableObjects.InventorySO.html">InventorySO</a></dt>
+      <dd><p>This class is useful for easily modify <a class="xref" href="XIV.Packages.InventorySystem.Inventory.html">Inventory</a> in Editor.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.html">InventoryItemExtensions</a></dt>
-      <dd><p>Contains extension methods for <a class="xref" href="XIV_Packages.InventorySystem.InventoryItem.html">InventoryItem</a> and <a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a>.</p>
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html">ItemDatabaseSO</a></dt>
+      <dd><p>Stores a collection of <a class="xref" href="XIV.Packages.InventorySystem.ScriptableObjects.ItemSO.html">ItemSO</a> and
+provides a way of mapping <a class="xref" href="XIV.Packages.InventorySystem.ItemBase.html">ItemBase</a> to <a class="xref" href="XIV.Packages.InventorySystem.ScriptableObjects.ItemSO.html">ItemSO</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.ScriptableObjects.ItemSO.html">ItemSO</a></dt>
+      <dd><p>An abstract class to connect primitive items to Unity.
+Any non-serializable object can be stored in this class.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.ScriptableObjects.ItemSO-1.html">ItemSO&lt;T&gt;</a></dt>
+      <dd><p>An abstract class to connect primitive items to Unity.
+Any non-serializable object can be stored in this class.</p>
+<example>
+<pre><code class="lang-csharp">Define a class that contains required values for your item.
+public class SwordItem : ItemBase
+{
+    public int damage;
+    public float swingSpeed;
+}
+Create another class to allow creating SwordItem in the Editor.
+[CreateAssetMenu(menuName = "Items/" + nameof(SwordItemSO))]
+public class SwordItemSO : ItemSO&lt;SwordItem&gt;
+{
+}</code></pre>
+</example>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.html">MenuPaths</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.ScriptableObjects.ItemSOData.html">ItemSOData</a></dt>
+      <dd><p>Stores the quantity and the associated itemSO</p>
 </dd>
     </dl>
 
