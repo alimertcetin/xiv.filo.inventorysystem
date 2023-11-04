@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.0.4...v1.0.5) (2023-11-04)
+
+
+### Bug Fixes
+
+* **.gitignore:** Allow .meta files ([abaf886](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/abaf886d196c7e4c4a68986ed325062d94aef7da))
+
 ## [1.0.4](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.0.3...v1.0.4) (2023-11-04)
 
 
