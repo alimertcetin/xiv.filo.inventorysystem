@@ -1,5 +1,5 @@
 {
-  "name": "xiv.filo.inventorysystem",
+  "name": "@alimertcetin/xiv.filo.inventorysystem",
   "version": "1.0.1",
   "displayName": "XIV Inventory System",
   "description": "Inventory System that can be used in Unity projects.",
@@ -14,7 +14,6 @@
     "Inventory"
   ],
   "author": "Ali Mert Çetin (https://github.com/alimertcetin)",
-  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
