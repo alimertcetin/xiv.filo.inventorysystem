@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace XIV_Packages.InventorySystem
+namespace XIV.Packages.InventorySystem
 {
     /// <summary>
     /// Used in <see cref="Inventory"/> to store <see cref="ItemBase"/>.

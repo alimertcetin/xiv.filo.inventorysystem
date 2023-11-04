@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace XIV_Packages.InventorySystem
+namespace XIV.Packages.InventorySystem
 {
     public class Inventory
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace XIV_Packages.InventorySystem.ScriptableObjects
+namespace XIV.Packages.InventorySystem.ScriptableObjects
 {
     /// <summary>
     /// An abstract class to connect primitive items to Unity.

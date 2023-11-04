@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace XIV_Packages.InventorySystem
+namespace XIV.Packages.InventorySystem
 {
     /// <summary>
     /// Provides a safe way to read values of <see cref="InventoryItem"/>.

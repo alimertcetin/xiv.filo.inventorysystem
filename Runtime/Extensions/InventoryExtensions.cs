@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Buffers;
 
-namespace XIV_Packages.InventorySystem.Extensions
+namespace XIV.Packages.InventorySystem.Extensions
 {
     /// <summary>
     /// Contains extension methods for <see cref="Inventory"/>.

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace XIV_Packages.InventorySystem.ScriptableObjects
+namespace XIV.Packages.InventorySystem.ScriptableObjects
 {
     /// <summary>
     /// Stores the quantity and the associated itemSO

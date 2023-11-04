@@ -1,4 +1,4 @@
-﻿namespace XIV_Packages.InventorySystem.ScriptableObjects
+﻿namespace XIV.Packages.InventorySystem.ScriptableObjects
 {
     public static class MenuPaths
     {

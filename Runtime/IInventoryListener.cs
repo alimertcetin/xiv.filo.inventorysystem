@@ -1,4 +1,4 @@
-﻿namespace XIV_Packages.InventorySystem
+﻿namespace XIV.Packages.InventorySystem
 {
     /// <summary>
     /// Provides a mechanism for receiving <see cref="InventoryChange"/> information.

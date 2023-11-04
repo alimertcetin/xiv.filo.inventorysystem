@@ -1,4 +1,4 @@
-﻿namespace XIV_Packages.InventorySystem
+﻿namespace XIV.Packages.InventorySystem
 {
     /// <summary>
     /// Stores the changes about the <see cref="ItemBase"/>

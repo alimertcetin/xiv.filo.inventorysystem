@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace XIV_Packages.InventorySystem
+namespace XIV.Packages.InventorySystem
 {
     /// <summary>
     /// An abstract class to represent items in the game.

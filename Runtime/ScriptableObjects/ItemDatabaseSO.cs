@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEditor;
 #endif
 
-namespace XIV_Packages.InventorySystem.ScriptableObjects
+namespace XIV.Packages.InventorySystem.ScriptableObjects
 {
     /// <summary>
     /// Stores a collection of <see cref="ItemSO"/> and
@@ -61,7 +61,7 @@ namespace XIV_Packages.InventorySystem.ScriptableObjects
 #if UNITY_EDITOR
     
     [CustomEditor(typeof(ItemDatabaseSO))]
-    public class ItemDatabaseSOEditor : UnityEditor.Editor
+    class ItemDatabaseSOEditor : UnityEditor.Editor
     {
         const string BTN_LOAD_STRING = "Load All Items";
         const string PATH = "Assets";
@@ -90,8 +90,7 @@ namespace XIV_Packages.InventorySystem.ScriptableObjects
 
         static BindingFlags GetFlags()
         {
-            return BindingFlags.Instance |
-            BindingFlags.NonPublic;
+            return BindingFlags.Instance | BindingFlags.NonPublic;
         }
         
         static List<TAsset> LoadAssetsOfType<TAsset>(string folderPath, 
