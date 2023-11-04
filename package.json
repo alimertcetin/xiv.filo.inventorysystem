@@ -13,6 +13,9 @@
     "Unity",
     "Inventory"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Ali Mert Çetin (https://github.com/alimertcetin)",
   "main": "index.js",
   "scripts": {
