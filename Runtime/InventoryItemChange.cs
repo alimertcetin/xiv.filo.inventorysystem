@@ -27,6 +27,7 @@
         /// Determines if this item is discarded or not.
         /// This is true only if slots in inventory removed and there is no place to put this item.
         /// </summary>
+        /// <seealso cref="Inventory.RemoveSlot"/>
         public readonly bool isDiscarded;
         
         public InventoryItemChange(ReadOnlyInventoryItem before, ReadOnlyInventoryItem after, bool isDiscarded)
