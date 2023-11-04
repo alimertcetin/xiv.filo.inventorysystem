@@ -1,6 +1,6 @@
 {
   "name": "xiv.filo.inventorysystem",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "displayName": "XIV Inventory System",
   "description": "Inventory System that can be used in Unity projects.",
   "unity": "",
