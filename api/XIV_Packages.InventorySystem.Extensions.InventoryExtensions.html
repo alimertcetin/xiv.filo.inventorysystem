@@ -1,0 +1,1756 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class InventoryExtensions
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class InventoryExtensions
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/alimertcetin/xiv.filo.inventorysystem/new/main/apiSpec/new?filename=XIV_Packages_InventorySystem_Extensions_InventoryExtensions.md&amp;value=---%0Auid%3A%20XIV_Packages.InventorySystem.Extensions.InventoryExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions">
+
+
+
+  <h1 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions" class="text-break">
+    Class InventoryExtensions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XIV_Packages.html">XIV_Packages</a>.<a class="xref" href="XIV_Packages.InventorySystem.html">InventorySystem</a>.<a class="xref" href="XIV_Packages.InventorySystem.Extensions.html">Extensions</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Contains extension methods for <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class InventoryExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">InventoryExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterAdd_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterAdd_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Int32_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32)">
+  CalculateRemainingAfterAdd(Inventory, ItemBase, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the quantity that will remain after <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Add_XIV_Packages_InventorySystem_ItemBase_System_Int32_">Add(ItemBase, int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalculateRemainingAfterAdd(this Inventory inventory, ItemBase item, int quantity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterAdd_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterAdd__1_XIV_Packages_InventorySystem_Inventory_System_Int32_System_Int32_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd``1(XIV_Packages.InventorySystem.Inventory,System.Int32,System.Int32)">
+  CalculateRemainingAfterAdd&lt;T&gt;(Inventory, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the quantity that will remain after <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Add_XIV_Packages_InventorySystem_ItemBase_System_Int32_">Add(ItemBase, int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalculateRemainingAfterAdd&lt;T&gt;(this Inventory inventory, int stackableAmount, int quantity) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>stackableAmount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterRemove_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterRemove_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Int32_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32)">
+  CalculateRemainingAfterRemove(Inventory, ItemBase, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the quantity that will remain after <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Remove_XIV_Packages_InventorySystem_ItemBase_System_Int32_">Remove(ItemBase, int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalculateRemainingAfterRemove(this Inventory inventory, ItemBase item, int quantity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterRemove_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterRemove__1_XIV_Packages_InventorySystem_Inventory_System_Int32_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove``1(XIV_Packages.InventorySystem.Inventory,System.Int32)">
+  CalculateRemainingAfterRemove&lt;T&gt;(Inventory, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the quantity that will remain after <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Remove_XIV_Packages_InventorySystem_ItemBase_System_Int32_">Remove(ItemBase, int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalculateRemainingAfterRemove&lt;T&gt;(this Inventory inventory, int quantity) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanAddItem_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanAddItem_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Int32_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32)">
+  CanAddItem(Inventory, ItemBase, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if we can add all giving <code class="paramref">quantity</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanAddItem(this Inventory inventory, ItemBase item, int quantity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanAddItem_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanAddItem__1_XIV_Packages_InventorySystem_Inventory_System_Int32_System_Int32_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem``1(XIV_Packages.InventorySystem.Inventory,System.Int32,System.Int32)">
+  CanAddItem&lt;T&gt;(Inventory, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if we can add all giving <code class="paramref">quantity</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanAddItem&lt;T&gt;(this Inventory inventory, int stackableAmount, int quantity) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>stackableAmount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanRemoveItem_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanRemoveItem_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Int32_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32)">
+  CanRemoveItem(Inventory, ItemBase, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if <code class="paramref">item</code> can be removed from <code class="paramref">inventory</code> completely</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanRemoveItem(this Inventory inventory, ItemBase item, int quantity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanRemoveItem_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanRemoveItem__1_XIV_Packages_InventorySystem_Inventory_System_Int32_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem``1(XIV_Packages.InventorySystem.Inventory,System.Int32)">
+  CanRemoveItem&lt;T&gt;(Inventory, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if <code class="typeparamref">T</code> can be removed from <code class="paramref">inventory</code> completely</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanRemoveItem&lt;T&gt;(this Inventory inventory, int quantity) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_FirstOrDefault_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_FirstOrDefault_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)">
+  FirstOrDefault(Inventory, ItemBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyInventoryItem FirstOrDefault(this Inventory inventory, ItemBase item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_FirstOrDefault_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_FirstOrDefault__1_XIV_Packages_InventorySystem_Inventory_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault``1(XIV_Packages.InventorySystem.Inventory)">
+  FirstOrDefault&lt;T&gt;(Inventory)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyInventoryItem FirstOrDefault&lt;T&gt;(this Inventory inventory) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetCountOf_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetCountOf_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)">
+  GetCountOf(Inventory, ItemBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns how many slots are occupied by the type of <code class="paramref">item</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetCountOf(this Inventory inventory, ItemBase item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetCountOf_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetCountOf_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Predicate_XIV_Packages_InventorySystem_ItemBase__" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Predicate{XIV_Packages.InventorySystem.ItemBase})">
+  GetCountOf(Inventory, ItemBase, Predicate&lt;ItemBase&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the amount of items that matches with <code class="paramref">match</code>
+and also makes sure they are the same type as <code class="paramref">item</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetCountOf(this Inventory inventory, ItemBase item, Predicate&lt;ItemBase&gt; match)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetCountOf_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetCountOf__1_XIV_Packages_InventorySystem_Inventory_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf``1(XIV_Packages.InventorySystem.Inventory)">
+  GetCountOf&lt;T&gt;(Inventory)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns how many slots are occupied by type <code class="typeparamref">T</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetCountOf&lt;T&gt;(this Inventory inventory) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetCountOf_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetCountOf__1_XIV_Packages_InventorySystem_Inventory_System_Predicate___0__" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf``1(XIV_Packages.InventorySystem.Inventory,System.Predicate{``0})">
+  GetCountOf&lt;T&gt;(Inventory, Predicate&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the amount of items that matches with <code class="paramref">match</code>
+and also makes sure they are of type <code class="typeparamref">T</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetCountOf&lt;T&gt;(this Inventory inventory, Predicate&lt;T&gt; match) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetEmptyIndices_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptyIndices*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetEmptyIndices_XIV_Packages_InventorySystem_Inventory_System_Int32___" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptyIndices(XIV_Packages.InventorySystem.Inventory,System.Int32[])">
+  GetEmptyIndices(Inventory, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetEmptyIndices(this Inventory inventory, int[] indicesBuffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>indicesBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetEmptySlotCount_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptySlotCount*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetEmptySlotCount_XIV_Packages_InventorySystem_Inventory_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptySlotCount(XIV_Packages.InventorySystem.Inventory)">
+  GetEmptySlotCount(Inventory)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetEmptySlotCount(this Inventory inventory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf_XIV_Packages_InventorySystem_Inventory_System_Type_System_Int32___" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory,System.Type,System.Int32[])">
+  GetIndicesOf(Inventory, Type, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetIndicesOf(this Inventory inventory, Type itemType, int[] indicesBuffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>itemType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>indicesBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Int32___" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32[])">
+  GetIndicesOf(Inventory, ItemBase, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetIndicesOf(this Inventory inventory, ItemBase item, int[] indicesBuffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+    <dt><code>indicesBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Int32___System_Predicate_XIV_Packages_InventorySystem_ItemBase__" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32[],System.Predicate{XIV_Packages.InventorySystem.ItemBase})">
+  GetIndicesOf(Inventory, ItemBase, int[], Predicate&lt;ItemBase&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L420"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetIndicesOf(this Inventory inventory, ItemBase item, int[] indicesBuffer, Predicate&lt;ItemBase&gt; match)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+    <dt><code>indicesBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf__1_XIV_Packages_InventorySystem_Inventory_System_Int32___" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf``1(XIV_Packages.InventorySystem.Inventory,System.Int32[])">
+  GetIndicesOf&lt;T&gt;(Inventory, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fills the <code class="paramref">indicesBuffer</code> with the corresponding indices of <code class="typeparamref">T</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetIndicesOf&lt;T&gt;(this Inventory inventory, int[] indicesBuffer) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>indicesBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf__1_XIV_Packages_InventorySystem_Inventory_System_Int32___System_Predicate___0__" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf``1(XIV_Packages.InventorySystem.Inventory,System.Int32[],System.Predicate{``0})">
+  GetIndicesOf&lt;T&gt;(Inventory, int[], Predicate&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fills the <code class="paramref">indicesBuffer</code> with the corresponding indices of <code class="typeparamref">T</code>
+and matches with <code class="paramref">match</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetIndicesOf&lt;T&gt;(this Inventory inventory, int[] indicesBuffer, Predicate&lt;T&gt; match) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>indicesBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMaxQuantity_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMaxQuantity_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)">
+  GetItemHasMaxQuantity(Inventory, ItemBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the item that has maximum quantity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyInventoryItem GetItemHasMaxQuantity(this Inventory inventory, ItemBase item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMaxQuantity_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMaxQuantity__1_XIV_Packages_InventorySystem_Inventory_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity``1(XIV_Packages.InventorySystem.Inventory)">
+  GetItemHasMaxQuantity&lt;T&gt;(Inventory)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the item that has maximum quantity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyInventoryItem GetItemHasMaxQuantity&lt;T&gt;(this Inventory inventory) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMinQuantity_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMinQuantity_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)">
+  GetItemHasMinQuantity(Inventory, ItemBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the item that has minimum quantity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyInventoryItem GetItemHasMinQuantity(this Inventory inventory, ItemBase item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMinQuantity_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMinQuantity__1_XIV_Packages_InventorySystem_Inventory_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity``1(XIV_Packages.InventorySystem.Inventory)">
+  GetItemHasMinQuantity&lt;T&gt;(Inventory)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the item that has minimum quantity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyInventoryItem GetItemHasMinQuantity&lt;T&gt;(this Inventory inventory) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfType_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfType_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)">
+  GetItemsOfType(Inventory, ItemBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a> array
+while making sure all <a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Item">Item</a> is type of <code class="typeparamref">T</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyInventoryItem[] GetItemsOfType(this Inventory inventory, ItemBase item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfType_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfType_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Predicate_XIV_Packages_InventorySystem_ItemBase__" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Predicate{XIV_Packages.InventorySystem.ItemBase})">
+  GetItemsOfType(Inventory, ItemBase, Predicate&lt;ItemBase&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyInventoryItem[] GetItemsOfType(this Inventory inventory, ItemBase item, Predicate&lt;ItemBase&gt; match)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfTypeNonAlloc_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfTypeNonAlloc_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_XIV_Packages_InventorySystem_ReadOnlyInventoryItem___" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,XIV_Packages.InventorySystem.ReadOnlyInventoryItem[])">
+  GetItemsOfTypeNonAlloc(Inventory, ItemBase, ReadOnlyInventoryItem[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetItemsOfTypeNonAlloc(this Inventory inventory, ItemBase item, ReadOnlyInventoryItem[] inventoryItemBuffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+    <dt><code>inventoryItemBuffer</code> <a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfTypeNonAlloc_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfTypeNonAlloc_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_XIV_Packages_InventorySystem_ReadOnlyInventoryItem___System_Predicate_XIV_Packages_InventorySystem_ItemBase__" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,XIV_Packages.InventorySystem.ReadOnlyInventoryItem[],System.Predicate{XIV_Packages.InventorySystem.ItemBase})">
+  GetItemsOfTypeNonAlloc(Inventory, ItemBase, ReadOnlyInventoryItem[], Predicate&lt;ItemBase&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetItemsOfTypeNonAlloc(this Inventory inventory, ItemBase item, ReadOnlyInventoryItem[] inventoryItemBuffer, Predicate&lt;ItemBase&gt; match)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+    <dt><code>inventoryItemBuffer</code> <a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a>[]</dt>
+    <dd></dd>
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfTypeNonAlloc_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfTypeNonAlloc__1_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ReadOnlyInventoryItem___" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc``1(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ReadOnlyInventoryItem[])">
+  GetItemsOfTypeNonAlloc&lt;T&gt;(Inventory, ReadOnlyInventoryItem[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fills the <code class="paramref">inventoryItemBuffer</code> and returns the filled count
+while making sure all <a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Item">Item</a> is type of <code class="typeparamref">T</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetItemsOfTypeNonAlloc&lt;T&gt;(this Inventory inventory, ReadOnlyInventoryItem[] inventoryItemBuffer) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>inventoryItemBuffer</code> <a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfTypeNonAlloc_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfTypeNonAlloc__1_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ReadOnlyInventoryItem___System_Predicate___0__" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc``1(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ReadOnlyInventoryItem[],System.Predicate{``0})">
+  GetItemsOfTypeNonAlloc&lt;T&gt;(Inventory, ReadOnlyInventoryItem[], Predicate&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fills the <code class="paramref">inventoryItemBuffer</code> and returns the filled count
+while making sure all <a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Item">Item</a> is type of <code class="typeparamref">T</code>
+and they all match with <code class="paramref">match</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetItemsOfTypeNonAlloc&lt;T&gt;(this Inventory inventory, ReadOnlyInventoryItem[] inventoryItemBuffer, Predicate&lt;T&gt; match) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>inventoryItemBuffer</code> <a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a>[]</dt>
+    <dd></dd>
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfType_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfType__1_XIV_Packages_InventorySystem_Inventory_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType``1(XIV_Packages.InventorySystem.Inventory)">
+  GetItemsOfType&lt;T&gt;(Inventory)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a> array
+while making sure all <a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Item">Item</a> is type of <code class="typeparamref">T</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyInventoryItem[] GetItemsOfType&lt;T&gt;(this Inventory inventory) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfType_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfType__1_XIV_Packages_InventorySystem_Inventory_System_Predicate___0__" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType``1(XIV_Packages.InventorySystem.Inventory,System.Predicate{``0})">
+  GetItemsOfType&lt;T&gt;(Inventory, Predicate&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a> array
+while making sure all <a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Item">Item</a> is type of <code class="typeparamref">T</code>
+and they all match with <code class="paramref">match</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyInventoryItem[] GetItemsOfType&lt;T&gt;(this Inventory inventory, Predicate&lt;T&gt; match) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetOccupiedIndices_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedIndices*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetOccupiedIndices_XIV_Packages_InventorySystem_Inventory_System_Int32___" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedIndices(XIV_Packages.InventorySystem.Inventory,System.Int32[])">
+  GetOccupiedIndices(Inventory, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetOccupiedIndices(this Inventory inventory, int[] indicesBuffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>indicesBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetOccupiedSlotCount_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedSlotCount*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetOccupiedSlotCount_XIV_Packages_InventorySystem_Inventory_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedSlotCount(XIV_Packages.InventorySystem.Inventory)">
+  GetOccupiedSlotCount(Inventory)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetOccupiedSlotCount(this Inventory inventory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetQuantityOf_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetQuantityOf_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)">
+  GetQuantityOf(Inventory, ItemBase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetQuantityOf(this Inventory inventory, ItemBase item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="XIV_Packages.InventorySystem.ItemBase.html">ItemBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetQuantityOf_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetQuantityOf__1_XIV_Packages_InventorySystem_Inventory_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf``1(XIV_Packages.InventorySystem.Inventory)">
+  GetQuantityOf&lt;T&gt;(Inventory)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the total quantity of type <code class="typeparamref">T</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetQuantityOf&lt;T&gt;(this Inventory inventory) where T : ItemBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_Move_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.Move*"></a>
+
+  <h3 id="XIV_Packages_InventorySystem_Extensions_InventoryExtensions_Move_XIV_Packages_InventorySystem_Inventory_System_Int32_System_Int32_" data-uid="XIV_Packages.InventorySystem.Extensions.InventoryExtensions.Move(XIV_Packages.InventorySystem.Inventory,System.Int32,System.Int32)">
+  Move(Inventory, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves the <code class="paramref">index1</code> over <code class="paramref">index2</code>.
+Merges as much as possible if items are same.
+Swaps them if they are different.
+<a class="xref" href="XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Merge_System_Int32_System_Int32_">Merge(int, int)</a>
+<a class="xref" href="XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Swap_System_Int32_System_Int32_">Swap(int, int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Move(this Inventory inventory, int index1, int index2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventory</code> <a class="xref" href="XIV_Packages.InventorySystem.Inventory.html">Inventory</a></dt>
+    <dd></dd>
+    <dt><code>index1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>index2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Extensions/InventoryExtensions.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

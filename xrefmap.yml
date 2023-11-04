@@ -1,3 +1,1356 @@
 ### YamlMime:XRefMap
 sorted: true
-references: []
+references:
+- uid: XIV_Packages.InventorySystem
+  name: XIV_Packages.InventorySystem
+  href: api/XIV_Packages.InventorySystem.html
+  commentId: N:XIV_Packages.InventorySystem
+  fullName: XIV_Packages.InventorySystem
+  nameWithType: XIV_Packages.InventorySystem
+- uid: XIV_Packages.InventorySystem.Extensions
+  name: XIV_Packages.InventorySystem.Extensions
+  href: api/XIV_Packages.InventorySystem.Extensions.html
+  commentId: N:XIV_Packages.InventorySystem.Extensions
+  fullName: XIV_Packages.InventorySystem.Extensions
+  nameWithType: XIV_Packages.InventorySystem.Extensions
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions
+  name: InventoryExtensions
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html
+  commentId: T:XIV_Packages.InventorySystem.Extensions.InventoryExtensions
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions
+  nameWithType: InventoryExtensions
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32)
+  name: CalculateRemainingAfterAdd(Inventory, ItemBase, int)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterAdd_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32)
+  name.vb: CalculateRemainingAfterAdd(Inventory, ItemBase, Integer)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, int)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, Integer)
+  nameWithType: InventoryExtensions.CalculateRemainingAfterAdd(Inventory, ItemBase, int)
+  nameWithType.vb: InventoryExtensions.CalculateRemainingAfterAdd(Inventory, ItemBase, Integer)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd*
+  name: CalculateRemainingAfterAdd
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterAdd_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd
+  nameWithType: InventoryExtensions.CalculateRemainingAfterAdd
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd``1(XIV_Packages.InventorySystem.Inventory,System.Int32,System.Int32)
+  name: CalculateRemainingAfterAdd<T>(Inventory, int, int)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterAdd__1_XIV_Packages_InventorySystem_Inventory_System_Int32_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd``1(XIV_Packages.InventorySystem.Inventory,System.Int32,System.Int32)
+  name.vb: CalculateRemainingAfterAdd(Of T)(Inventory, Integer, Integer)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd<T>(XIV_Packages.InventorySystem.Inventory, int, int)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterAdd(Of T)(XIV_Packages.InventorySystem.Inventory, Integer, Integer)
+  nameWithType: InventoryExtensions.CalculateRemainingAfterAdd<T>(Inventory, int, int)
+  nameWithType.vb: InventoryExtensions.CalculateRemainingAfterAdd(Of T)(Inventory, Integer, Integer)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32)
+  name: CalculateRemainingAfterRemove(Inventory, ItemBase, int)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterRemove_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32)
+  name.vb: CalculateRemainingAfterRemove(Inventory, ItemBase, Integer)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, int)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, Integer)
+  nameWithType: InventoryExtensions.CalculateRemainingAfterRemove(Inventory, ItemBase, int)
+  nameWithType.vb: InventoryExtensions.CalculateRemainingAfterRemove(Inventory, ItemBase, Integer)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove*
+  name: CalculateRemainingAfterRemove
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterRemove_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove
+  nameWithType: InventoryExtensions.CalculateRemainingAfterRemove
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove``1(XIV_Packages.InventorySystem.Inventory,System.Int32)
+  name: CalculateRemainingAfterRemove<T>(Inventory, int)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CalculateRemainingAfterRemove__1_XIV_Packages_InventorySystem_Inventory_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove``1(XIV_Packages.InventorySystem.Inventory,System.Int32)
+  name.vb: CalculateRemainingAfterRemove(Of T)(Inventory, Integer)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove<T>(XIV_Packages.InventorySystem.Inventory, int)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CalculateRemainingAfterRemove(Of T)(XIV_Packages.InventorySystem.Inventory, Integer)
+  nameWithType: InventoryExtensions.CalculateRemainingAfterRemove<T>(Inventory, int)
+  nameWithType.vb: InventoryExtensions.CalculateRemainingAfterRemove(Of T)(Inventory, Integer)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32)
+  name: CanAddItem(Inventory, ItemBase, int)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanAddItem_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32)
+  name.vb: CanAddItem(Inventory, ItemBase, Integer)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, int)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, Integer)
+  nameWithType: InventoryExtensions.CanAddItem(Inventory, ItemBase, int)
+  nameWithType.vb: InventoryExtensions.CanAddItem(Inventory, ItemBase, Integer)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem*
+  name: CanAddItem
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanAddItem_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem
+  nameWithType: InventoryExtensions.CanAddItem
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem``1(XIV_Packages.InventorySystem.Inventory,System.Int32,System.Int32)
+  name: CanAddItem<T>(Inventory, int, int)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanAddItem__1_XIV_Packages_InventorySystem_Inventory_System_Int32_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem``1(XIV_Packages.InventorySystem.Inventory,System.Int32,System.Int32)
+  name.vb: CanAddItem(Of T)(Inventory, Integer, Integer)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem<T>(XIV_Packages.InventorySystem.Inventory, int, int)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanAddItem(Of T)(XIV_Packages.InventorySystem.Inventory, Integer, Integer)
+  nameWithType: InventoryExtensions.CanAddItem<T>(Inventory, int, int)
+  nameWithType.vb: InventoryExtensions.CanAddItem(Of T)(Inventory, Integer, Integer)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32)
+  name: CanRemoveItem(Inventory, ItemBase, int)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanRemoveItem_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32)
+  name.vb: CanRemoveItem(Inventory, ItemBase, Integer)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, int)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, Integer)
+  nameWithType: InventoryExtensions.CanRemoveItem(Inventory, ItemBase, int)
+  nameWithType.vb: InventoryExtensions.CanRemoveItem(Inventory, ItemBase, Integer)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem*
+  name: CanRemoveItem
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanRemoveItem_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem
+  nameWithType: InventoryExtensions.CanRemoveItem
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem``1(XIV_Packages.InventorySystem.Inventory,System.Int32)
+  name: CanRemoveItem<T>(Inventory, int)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_CanRemoveItem__1_XIV_Packages_InventorySystem_Inventory_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem``1(XIV_Packages.InventorySystem.Inventory,System.Int32)
+  name.vb: CanRemoveItem(Of T)(Inventory, Integer)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem<T>(XIV_Packages.InventorySystem.Inventory, int)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.CanRemoveItem(Of T)(XIV_Packages.InventorySystem.Inventory, Integer)
+  nameWithType: InventoryExtensions.CanRemoveItem<T>(Inventory, int)
+  nameWithType.vb: InventoryExtensions.CanRemoveItem(Of T)(Inventory, Integer)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)
+  name: FirstOrDefault(Inventory, ItemBase)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_FirstOrDefault_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase)
+  nameWithType: InventoryExtensions.FirstOrDefault(Inventory, ItemBase)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault*
+  name: FirstOrDefault
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_FirstOrDefault_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault
+  nameWithType: InventoryExtensions.FirstOrDefault
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault``1(XIV_Packages.InventorySystem.Inventory)
+  name: FirstOrDefault<T>(Inventory)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_FirstOrDefault__1_XIV_Packages_InventorySystem_Inventory_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault``1(XIV_Packages.InventorySystem.Inventory)
+  name.vb: FirstOrDefault(Of T)(Inventory)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault<T>(XIV_Packages.InventorySystem.Inventory)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.FirstOrDefault(Of T)(XIV_Packages.InventorySystem.Inventory)
+  nameWithType: InventoryExtensions.FirstOrDefault<T>(Inventory)
+  nameWithType.vb: InventoryExtensions.FirstOrDefault(Of T)(Inventory)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)
+  name: GetCountOf(Inventory, ItemBase)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetCountOf_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase)
+  nameWithType: InventoryExtensions.GetCountOf(Inventory, ItemBase)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Predicate{XIV_Packages.InventorySystem.ItemBase})
+  name: GetCountOf(Inventory, ItemBase, Predicate<ItemBase>)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetCountOf_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Predicate_XIV_Packages_InventorySystem_ItemBase__
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Predicate{XIV_Packages.InventorySystem.ItemBase})
+  name.vb: GetCountOf(Inventory, ItemBase, Predicate(Of ItemBase))
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, System.Predicate<XIV_Packages.InventorySystem.ItemBase>)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, System.Predicate(Of XIV_Packages.InventorySystem.ItemBase))
+  nameWithType: InventoryExtensions.GetCountOf(Inventory, ItemBase, Predicate<ItemBase>)
+  nameWithType.vb: InventoryExtensions.GetCountOf(Inventory, ItemBase, Predicate(Of ItemBase))
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf*
+  name: GetCountOf
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetCountOf_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf
+  nameWithType: InventoryExtensions.GetCountOf
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf``1(XIV_Packages.InventorySystem.Inventory)
+  name: GetCountOf<T>(Inventory)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetCountOf__1_XIV_Packages_InventorySystem_Inventory_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf``1(XIV_Packages.InventorySystem.Inventory)
+  name.vb: GetCountOf(Of T)(Inventory)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf<T>(XIV_Packages.InventorySystem.Inventory)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf(Of T)(XIV_Packages.InventorySystem.Inventory)
+  nameWithType: InventoryExtensions.GetCountOf<T>(Inventory)
+  nameWithType.vb: InventoryExtensions.GetCountOf(Of T)(Inventory)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf``1(XIV_Packages.InventorySystem.Inventory,System.Predicate{``0})
+  name: GetCountOf<T>(Inventory, Predicate<T>)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetCountOf__1_XIV_Packages_InventorySystem_Inventory_System_Predicate___0__
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf``1(XIV_Packages.InventorySystem.Inventory,System.Predicate{``0})
+  name.vb: GetCountOf(Of T)(Inventory, Predicate(Of T))
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf<T>(XIV_Packages.InventorySystem.Inventory, System.Predicate<T>)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetCountOf(Of T)(XIV_Packages.InventorySystem.Inventory, System.Predicate(Of T))
+  nameWithType: InventoryExtensions.GetCountOf<T>(Inventory, Predicate<T>)
+  nameWithType.vb: InventoryExtensions.GetCountOf(Of T)(Inventory, Predicate(Of T))
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptyIndices(XIV_Packages.InventorySystem.Inventory,System.Int32[])
+  name: GetEmptyIndices(Inventory, int[])
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetEmptyIndices_XIV_Packages_InventorySystem_Inventory_System_Int32___
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptyIndices(XIV_Packages.InventorySystem.Inventory,System.Int32[])
+  name.vb: GetEmptyIndices(Inventory, Integer())
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptyIndices(XIV_Packages.InventorySystem.Inventory, int[])
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptyIndices(XIV_Packages.InventorySystem.Inventory, Integer())
+  nameWithType: InventoryExtensions.GetEmptyIndices(Inventory, int[])
+  nameWithType.vb: InventoryExtensions.GetEmptyIndices(Inventory, Integer())
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptyIndices*
+  name: GetEmptyIndices
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetEmptyIndices_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptyIndices
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptyIndices
+  nameWithType: InventoryExtensions.GetEmptyIndices
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptySlotCount(XIV_Packages.InventorySystem.Inventory)
+  name: GetEmptySlotCount(Inventory)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetEmptySlotCount_XIV_Packages_InventorySystem_Inventory_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptySlotCount(XIV_Packages.InventorySystem.Inventory)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptySlotCount(XIV_Packages.InventorySystem.Inventory)
+  nameWithType: InventoryExtensions.GetEmptySlotCount(Inventory)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptySlotCount*
+  name: GetEmptySlotCount
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetEmptySlotCount_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptySlotCount
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetEmptySlotCount
+  nameWithType: InventoryExtensions.GetEmptySlotCount
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory,System.Type,System.Int32[])
+  name: GetIndicesOf(Inventory, Type, int[])
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf_XIV_Packages_InventorySystem_Inventory_System_Type_System_Int32___
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory,System.Type,System.Int32[])
+  name.vb: GetIndicesOf(Inventory, Type, Integer())
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory, System.Type, int[])
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory, System.Type, Integer())
+  nameWithType: InventoryExtensions.GetIndicesOf(Inventory, Type, int[])
+  nameWithType.vb: InventoryExtensions.GetIndicesOf(Inventory, Type, Integer())
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32[])
+  name: GetIndicesOf(Inventory, ItemBase, int[])
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Int32___
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32[])
+  name.vb: GetIndicesOf(Inventory, ItemBase, Integer())
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, int[])
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, Integer())
+  nameWithType: InventoryExtensions.GetIndicesOf(Inventory, ItemBase, int[])
+  nameWithType.vb: InventoryExtensions.GetIndicesOf(Inventory, ItemBase, Integer())
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32[],System.Predicate{XIV_Packages.InventorySystem.ItemBase})
+  name: GetIndicesOf(Inventory, ItemBase, int[], Predicate<ItemBase>)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Int32___System_Predicate_XIV_Packages_InventorySystem_ItemBase__
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Int32[],System.Predicate{XIV_Packages.InventorySystem.ItemBase})
+  name.vb: GetIndicesOf(Inventory, ItemBase, Integer(), Predicate(Of ItemBase))
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, int[], System.Predicate<XIV_Packages.InventorySystem.ItemBase>)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, Integer(), System.Predicate(Of XIV_Packages.InventorySystem.ItemBase))
+  nameWithType: InventoryExtensions.GetIndicesOf(Inventory, ItemBase, int[], Predicate<ItemBase>)
+  nameWithType.vb: InventoryExtensions.GetIndicesOf(Inventory, ItemBase, Integer(), Predicate(Of ItemBase))
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf*
+  name: GetIndicesOf
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf
+  nameWithType: InventoryExtensions.GetIndicesOf
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf``1(XIV_Packages.InventorySystem.Inventory,System.Int32[])
+  name: GetIndicesOf<T>(Inventory, int[])
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf__1_XIV_Packages_InventorySystem_Inventory_System_Int32___
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf``1(XIV_Packages.InventorySystem.Inventory,System.Int32[])
+  name.vb: GetIndicesOf(Of T)(Inventory, Integer())
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf<T>(XIV_Packages.InventorySystem.Inventory, int[])
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(Of T)(XIV_Packages.InventorySystem.Inventory, Integer())
+  nameWithType: InventoryExtensions.GetIndicesOf<T>(Inventory, int[])
+  nameWithType.vb: InventoryExtensions.GetIndicesOf(Of T)(Inventory, Integer())
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf``1(XIV_Packages.InventorySystem.Inventory,System.Int32[],System.Predicate{``0})
+  name: GetIndicesOf<T>(Inventory, int[], Predicate<T>)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetIndicesOf__1_XIV_Packages_InventorySystem_Inventory_System_Int32___System_Predicate___0__
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf``1(XIV_Packages.InventorySystem.Inventory,System.Int32[],System.Predicate{``0})
+  name.vb: GetIndicesOf(Of T)(Inventory, Integer(), Predicate(Of T))
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf<T>(XIV_Packages.InventorySystem.Inventory, int[], System.Predicate<T>)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetIndicesOf(Of T)(XIV_Packages.InventorySystem.Inventory, Integer(), System.Predicate(Of T))
+  nameWithType: InventoryExtensions.GetIndicesOf<T>(Inventory, int[], Predicate<T>)
+  nameWithType.vb: InventoryExtensions.GetIndicesOf(Of T)(Inventory, Integer(), Predicate(Of T))
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)
+  name: GetItemHasMaxQuantity(Inventory, ItemBase)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMaxQuantity_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase)
+  nameWithType: InventoryExtensions.GetItemHasMaxQuantity(Inventory, ItemBase)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity*
+  name: GetItemHasMaxQuantity
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMaxQuantity_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity
+  nameWithType: InventoryExtensions.GetItemHasMaxQuantity
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity``1(XIV_Packages.InventorySystem.Inventory)
+  name: GetItemHasMaxQuantity<T>(Inventory)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMaxQuantity__1_XIV_Packages_InventorySystem_Inventory_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity``1(XIV_Packages.InventorySystem.Inventory)
+  name.vb: GetItemHasMaxQuantity(Of T)(Inventory)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity<T>(XIV_Packages.InventorySystem.Inventory)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMaxQuantity(Of T)(XIV_Packages.InventorySystem.Inventory)
+  nameWithType: InventoryExtensions.GetItemHasMaxQuantity<T>(Inventory)
+  nameWithType.vb: InventoryExtensions.GetItemHasMaxQuantity(Of T)(Inventory)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)
+  name: GetItemHasMinQuantity(Inventory, ItemBase)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMinQuantity_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase)
+  nameWithType: InventoryExtensions.GetItemHasMinQuantity(Inventory, ItemBase)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity*
+  name: GetItemHasMinQuantity
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMinQuantity_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity
+  nameWithType: InventoryExtensions.GetItemHasMinQuantity
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity``1(XIV_Packages.InventorySystem.Inventory)
+  name: GetItemHasMinQuantity<T>(Inventory)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemHasMinQuantity__1_XIV_Packages_InventorySystem_Inventory_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity``1(XIV_Packages.InventorySystem.Inventory)
+  name.vb: GetItemHasMinQuantity(Of T)(Inventory)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity<T>(XIV_Packages.InventorySystem.Inventory)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemHasMinQuantity(Of T)(XIV_Packages.InventorySystem.Inventory)
+  nameWithType: InventoryExtensions.GetItemHasMinQuantity<T>(Inventory)
+  nameWithType.vb: InventoryExtensions.GetItemHasMinQuantity(Of T)(Inventory)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)
+  name: GetItemsOfType(Inventory, ItemBase)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfType_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase)
+  nameWithType: InventoryExtensions.GetItemsOfType(Inventory, ItemBase)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Predicate{XIV_Packages.InventorySystem.ItemBase})
+  name: GetItemsOfType(Inventory, ItemBase, Predicate<ItemBase>)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfType_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_System_Predicate_XIV_Packages_InventorySystem_ItemBase__
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,System.Predicate{XIV_Packages.InventorySystem.ItemBase})
+  name.vb: GetItemsOfType(Inventory, ItemBase, Predicate(Of ItemBase))
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, System.Predicate<XIV_Packages.InventorySystem.ItemBase>)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, System.Predicate(Of XIV_Packages.InventorySystem.ItemBase))
+  nameWithType: InventoryExtensions.GetItemsOfType(Inventory, ItemBase, Predicate<ItemBase>)
+  nameWithType.vb: InventoryExtensions.GetItemsOfType(Inventory, ItemBase, Predicate(Of ItemBase))
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType*
+  name: GetItemsOfType
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfType_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType
+  nameWithType: InventoryExtensions.GetItemsOfType
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,XIV_Packages.InventorySystem.ReadOnlyInventoryItem[])
+  name: GetItemsOfTypeNonAlloc(Inventory, ItemBase, ReadOnlyInventoryItem[])
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfTypeNonAlloc_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_XIV_Packages_InventorySystem_ReadOnlyInventoryItem___
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,XIV_Packages.InventorySystem.ReadOnlyInventoryItem[])
+  name.vb: GetItemsOfTypeNonAlloc(Inventory, ItemBase, ReadOnlyInventoryItem())
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, XIV_Packages.InventorySystem.ReadOnlyInventoryItem[])
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, XIV_Packages.InventorySystem.ReadOnlyInventoryItem())
+  nameWithType: InventoryExtensions.GetItemsOfTypeNonAlloc(Inventory, ItemBase, ReadOnlyInventoryItem[])
+  nameWithType.vb: InventoryExtensions.GetItemsOfTypeNonAlloc(Inventory, ItemBase, ReadOnlyInventoryItem())
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,XIV_Packages.InventorySystem.ReadOnlyInventoryItem[],System.Predicate{XIV_Packages.InventorySystem.ItemBase})
+  name: GetItemsOfTypeNonAlloc(Inventory, ItemBase, ReadOnlyInventoryItem[], Predicate<ItemBase>)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfTypeNonAlloc_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_XIV_Packages_InventorySystem_ReadOnlyInventoryItem___System_Predicate_XIV_Packages_InventorySystem_ItemBase__
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase,XIV_Packages.InventorySystem.ReadOnlyInventoryItem[],System.Predicate{XIV_Packages.InventorySystem.ItemBase})
+  name.vb: GetItemsOfTypeNonAlloc(Inventory, ItemBase, ReadOnlyInventoryItem(), Predicate(Of ItemBase))
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, XIV_Packages.InventorySystem.ReadOnlyInventoryItem[], System.Predicate<XIV_Packages.InventorySystem.ItemBase>)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase, XIV_Packages.InventorySystem.ReadOnlyInventoryItem(), System.Predicate(Of XIV_Packages.InventorySystem.ItemBase))
+  nameWithType: InventoryExtensions.GetItemsOfTypeNonAlloc(Inventory, ItemBase, ReadOnlyInventoryItem[], Predicate<ItemBase>)
+  nameWithType.vb: InventoryExtensions.GetItemsOfTypeNonAlloc(Inventory, ItemBase, ReadOnlyInventoryItem(), Predicate(Of ItemBase))
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc*
+  name: GetItemsOfTypeNonAlloc
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfTypeNonAlloc_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc
+  nameWithType: InventoryExtensions.GetItemsOfTypeNonAlloc
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc``1(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ReadOnlyInventoryItem[])
+  name: GetItemsOfTypeNonAlloc<T>(Inventory, ReadOnlyInventoryItem[])
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfTypeNonAlloc__1_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ReadOnlyInventoryItem___
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc``1(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ReadOnlyInventoryItem[])
+  name.vb: GetItemsOfTypeNonAlloc(Of T)(Inventory, ReadOnlyInventoryItem())
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc<T>(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ReadOnlyInventoryItem[])
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc(Of T)(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ReadOnlyInventoryItem())
+  nameWithType: InventoryExtensions.GetItemsOfTypeNonAlloc<T>(Inventory, ReadOnlyInventoryItem[])
+  nameWithType.vb: InventoryExtensions.GetItemsOfTypeNonAlloc(Of T)(Inventory, ReadOnlyInventoryItem())
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc``1(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ReadOnlyInventoryItem[],System.Predicate{``0})
+  name: GetItemsOfTypeNonAlloc<T>(Inventory, ReadOnlyInventoryItem[], Predicate<T>)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfTypeNonAlloc__1_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ReadOnlyInventoryItem___System_Predicate___0__
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc``1(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ReadOnlyInventoryItem[],System.Predicate{``0})
+  name.vb: GetItemsOfTypeNonAlloc(Of T)(Inventory, ReadOnlyInventoryItem(), Predicate(Of T))
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc<T>(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ReadOnlyInventoryItem[], System.Predicate<T>)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfTypeNonAlloc(Of T)(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ReadOnlyInventoryItem(), System.Predicate(Of T))
+  nameWithType: InventoryExtensions.GetItemsOfTypeNonAlloc<T>(Inventory, ReadOnlyInventoryItem[], Predicate<T>)
+  nameWithType.vb: InventoryExtensions.GetItemsOfTypeNonAlloc(Of T)(Inventory, ReadOnlyInventoryItem(), Predicate(Of T))
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType``1(XIV_Packages.InventorySystem.Inventory)
+  name: GetItemsOfType<T>(Inventory)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfType__1_XIV_Packages_InventorySystem_Inventory_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType``1(XIV_Packages.InventorySystem.Inventory)
+  name.vb: GetItemsOfType(Of T)(Inventory)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType<T>(XIV_Packages.InventorySystem.Inventory)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType(Of T)(XIV_Packages.InventorySystem.Inventory)
+  nameWithType: InventoryExtensions.GetItemsOfType<T>(Inventory)
+  nameWithType.vb: InventoryExtensions.GetItemsOfType(Of T)(Inventory)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType``1(XIV_Packages.InventorySystem.Inventory,System.Predicate{``0})
+  name: GetItemsOfType<T>(Inventory, Predicate<T>)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetItemsOfType__1_XIV_Packages_InventorySystem_Inventory_System_Predicate___0__
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType``1(XIV_Packages.InventorySystem.Inventory,System.Predicate{``0})
+  name.vb: GetItemsOfType(Of T)(Inventory, Predicate(Of T))
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType<T>(XIV_Packages.InventorySystem.Inventory, System.Predicate<T>)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetItemsOfType(Of T)(XIV_Packages.InventorySystem.Inventory, System.Predicate(Of T))
+  nameWithType: InventoryExtensions.GetItemsOfType<T>(Inventory, Predicate<T>)
+  nameWithType.vb: InventoryExtensions.GetItemsOfType(Of T)(Inventory, Predicate(Of T))
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedIndices(XIV_Packages.InventorySystem.Inventory,System.Int32[])
+  name: GetOccupiedIndices(Inventory, int[])
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetOccupiedIndices_XIV_Packages_InventorySystem_Inventory_System_Int32___
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedIndices(XIV_Packages.InventorySystem.Inventory,System.Int32[])
+  name.vb: GetOccupiedIndices(Inventory, Integer())
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedIndices(XIV_Packages.InventorySystem.Inventory, int[])
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedIndices(XIV_Packages.InventorySystem.Inventory, Integer())
+  nameWithType: InventoryExtensions.GetOccupiedIndices(Inventory, int[])
+  nameWithType.vb: InventoryExtensions.GetOccupiedIndices(Inventory, Integer())
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedIndices*
+  name: GetOccupiedIndices
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetOccupiedIndices_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedIndices
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedIndices
+  nameWithType: InventoryExtensions.GetOccupiedIndices
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedSlotCount(XIV_Packages.InventorySystem.Inventory)
+  name: GetOccupiedSlotCount(Inventory)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetOccupiedSlotCount_XIV_Packages_InventorySystem_Inventory_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedSlotCount(XIV_Packages.InventorySystem.Inventory)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedSlotCount(XIV_Packages.InventorySystem.Inventory)
+  nameWithType: InventoryExtensions.GetOccupiedSlotCount(Inventory)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedSlotCount*
+  name: GetOccupiedSlotCount
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetOccupiedSlotCount_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedSlotCount
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetOccupiedSlotCount
+  nameWithType: InventoryExtensions.GetOccupiedSlotCount
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)
+  name: GetQuantityOf(Inventory, ItemBase)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetQuantityOf_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf(XIV_Packages.InventorySystem.Inventory,XIV_Packages.InventorySystem.ItemBase)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf(XIV_Packages.InventorySystem.Inventory, XIV_Packages.InventorySystem.ItemBase)
+  nameWithType: InventoryExtensions.GetQuantityOf(Inventory, ItemBase)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf*
+  name: GetQuantityOf
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetQuantityOf_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf
+  nameWithType: InventoryExtensions.GetQuantityOf
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf``1(XIV_Packages.InventorySystem.Inventory)
+  name: GetQuantityOf<T>(Inventory)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_GetQuantityOf__1_XIV_Packages_InventorySystem_Inventory_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf``1(XIV_Packages.InventorySystem.Inventory)
+  name.vb: GetQuantityOf(Of T)(Inventory)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf<T>(XIV_Packages.InventorySystem.Inventory)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf(Of T)(XIV_Packages.InventorySystem.Inventory)
+  nameWithType: InventoryExtensions.GetQuantityOf<T>(Inventory)
+  nameWithType.vb: InventoryExtensions.GetQuantityOf(Of T)(Inventory)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.Move(XIV_Packages.InventorySystem.Inventory,System.Int32,System.Int32)
+  name: Move(Inventory, int, int)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_Move_XIV_Packages_InventorySystem_Inventory_System_Int32_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.Move(XIV_Packages.InventorySystem.Inventory,System.Int32,System.Int32)
+  name.vb: Move(Inventory, Integer, Integer)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.Move(XIV_Packages.InventorySystem.Inventory, int, int)
+  fullName.vb: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.Move(XIV_Packages.InventorySystem.Inventory, Integer, Integer)
+  nameWithType: InventoryExtensions.Move(Inventory, int, int)
+  nameWithType.vb: InventoryExtensions.Move(Inventory, Integer, Integer)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.Move*
+  name: Move
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_Move_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryExtensions.Move
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryExtensions.Move
+  nameWithType: InventoryExtensions.Move
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions
+  name: InventoryItemExtensions
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.html
+  commentId: T:XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions
+  nameWithType: InventoryItemExtensions
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.NewInventoryItem(XIV_Packages.InventorySystem.ReadOnlyInventoryItem)
+  name: NewInventoryItem(ReadOnlyInventoryItem)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryItemExtensions_NewInventoryItem_XIV_Packages_InventorySystem_ReadOnlyInventoryItem_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.NewInventoryItem(XIV_Packages.InventorySystem.ReadOnlyInventoryItem)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.NewInventoryItem(XIV_Packages.InventorySystem.ReadOnlyInventoryItem)
+  nameWithType: InventoryItemExtensions.NewInventoryItem(ReadOnlyInventoryItem)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.NewInventoryItem*
+  name: NewInventoryItem
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryItemExtensions_NewInventoryItem_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.NewInventoryItem
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.NewInventoryItem
+  nameWithType: InventoryItemExtensions.NewInventoryItem
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.ToReadOnly(XIV_Packages.InventorySystem.InventoryItem)
+  name: ToReadOnly(InventoryItem)
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryItemExtensions_ToReadOnly_XIV_Packages_InventorySystem_InventoryItem_
+  commentId: M:XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.ToReadOnly(XIV_Packages.InventorySystem.InventoryItem)
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.ToReadOnly(XIV_Packages.InventorySystem.InventoryItem)
+  nameWithType: InventoryItemExtensions.ToReadOnly(InventoryItem)
+- uid: XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.ToReadOnly*
+  name: ToReadOnly
+  href: api/XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryItemExtensions_ToReadOnly_
+  commentId: Overload:XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.ToReadOnly
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.ToReadOnly
+  nameWithType: InventoryItemExtensions.ToReadOnly
+- uid: XIV_Packages.InventorySystem.IInventoryListener
+  name: IInventoryListener
+  href: api/XIV_Packages.InventorySystem.IInventoryListener.html
+  commentId: T:XIV_Packages.InventorySystem.IInventoryListener
+  fullName: XIV_Packages.InventorySystem.IInventoryListener
+  nameWithType: IInventoryListener
+- uid: XIV_Packages.InventorySystem.IInventoryListener.OnInventoryChanged(XIV_Packages.InventorySystem.InventoryChange)
+  name: OnInventoryChanged(InventoryChange)
+  href: api/XIV_Packages.InventorySystem.IInventoryListener.html#XIV_Packages_InventorySystem_IInventoryListener_OnInventoryChanged_XIV_Packages_InventorySystem_InventoryChange_
+  commentId: M:XIV_Packages.InventorySystem.IInventoryListener.OnInventoryChanged(XIV_Packages.InventorySystem.InventoryChange)
+  fullName: XIV_Packages.InventorySystem.IInventoryListener.OnInventoryChanged(XIV_Packages.InventorySystem.InventoryChange)
+  nameWithType: IInventoryListener.OnInventoryChanged(InventoryChange)
+- uid: XIV_Packages.InventorySystem.IInventoryListener.OnInventoryChanged*
+  name: OnInventoryChanged
+  href: api/XIV_Packages.InventorySystem.IInventoryListener.html#XIV_Packages_InventorySystem_IInventoryListener_OnInventoryChanged_
+  commentId: Overload:XIV_Packages.InventorySystem.IInventoryListener.OnInventoryChanged
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.IInventoryListener.OnInventoryChanged
+  nameWithType: IInventoryListener.OnInventoryChanged
+- uid: XIV_Packages.InventorySystem.Inventory
+  name: Inventory
+  href: api/XIV_Packages.InventorySystem.Inventory.html
+  commentId: T:XIV_Packages.InventorySystem.Inventory
+  fullName: XIV_Packages.InventorySystem.Inventory
+  nameWithType: Inventory
+- uid: XIV_Packages.InventorySystem.Inventory.#ctor(System.Int32)
+  name: Inventory(int)
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory__ctor_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Inventory.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: XIV_Packages.InventorySystem.Inventory.Inventory(int)
+  fullName.vb: XIV_Packages.InventorySystem.Inventory.New(Integer)
+  nameWithType: Inventory.Inventory(int)
+  nameWithType.vb: Inventory.New(Integer)
+- uid: XIV_Packages.InventorySystem.Inventory.#ctor*
+  name: Inventory
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory__ctor_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: XIV_Packages.InventorySystem.Inventory.Inventory
+  fullName.vb: XIV_Packages.InventorySystem.Inventory.New
+  nameWithType: Inventory.Inventory
+  nameWithType.vb: Inventory.New
+- uid: XIV_Packages.InventorySystem.Inventory.Add(XIV_Packages.InventorySystem.ItemBase,System.Int32)
+  name: Add(ItemBase, int)
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Add_XIV_Packages_InventorySystem_ItemBase_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Inventory.Add(XIV_Packages.InventorySystem.ItemBase,System.Int32)
+  name.vb: Add(ItemBase, Integer)
+  fullName: XIV_Packages.InventorySystem.Inventory.Add(XIV_Packages.InventorySystem.ItemBase, int)
+  fullName.vb: XIV_Packages.InventorySystem.Inventory.Add(XIV_Packages.InventorySystem.ItemBase, Integer)
+  nameWithType: Inventory.Add(ItemBase, int)
+  nameWithType.vb: Inventory.Add(ItemBase, Integer)
+- uid: XIV_Packages.InventorySystem.Inventory.Add*
+  name: Add
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Add_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.Add
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.Add
+  nameWithType: Inventory.Add
+- uid: XIV_Packages.InventorySystem.Inventory.AddSlot(System.Int32)
+  name: AddSlot(int)
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_AddSlot_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Inventory.AddSlot(System.Int32)
+  name.vb: AddSlot(Integer)
+  fullName: XIV_Packages.InventorySystem.Inventory.AddSlot(int)
+  fullName.vb: XIV_Packages.InventorySystem.Inventory.AddSlot(Integer)
+  nameWithType: Inventory.AddSlot(int)
+  nameWithType.vb: Inventory.AddSlot(Integer)
+- uid: XIV_Packages.InventorySystem.Inventory.AddSlot*
+  name: AddSlot
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_AddSlot_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.AddSlot
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.AddSlot
+  nameWithType: Inventory.AddSlot
+- uid: XIV_Packages.InventorySystem.Inventory.CanMerge(System.Int32,System.Int32)
+  name: CanMerge(int, int)
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_CanMerge_System_Int32_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Inventory.CanMerge(System.Int32,System.Int32)
+  name.vb: CanMerge(Integer, Integer)
+  fullName: XIV_Packages.InventorySystem.Inventory.CanMerge(int, int)
+  fullName.vb: XIV_Packages.InventorySystem.Inventory.CanMerge(Integer, Integer)
+  nameWithType: Inventory.CanMerge(int, int)
+  nameWithType.vb: Inventory.CanMerge(Integer, Integer)
+- uid: XIV_Packages.InventorySystem.Inventory.CanMerge*
+  name: CanMerge
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_CanMerge_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.CanMerge
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.CanMerge
+  nameWithType: Inventory.CanMerge
+- uid: XIV_Packages.InventorySystem.Inventory.Clear
+  name: Clear()
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Clear
+  commentId: M:XIV_Packages.InventorySystem.Inventory.Clear
+  fullName: XIV_Packages.InventorySystem.Inventory.Clear()
+  nameWithType: Inventory.Clear()
+- uid: XIV_Packages.InventorySystem.Inventory.Clear*
+  name: Clear
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Clear_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.Clear
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.Clear
+  nameWithType: Inventory.Clear
+- uid: XIV_Packages.InventorySystem.Inventory.ClearRecordedChanges
+  name: ClearRecordedChanges()
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_ClearRecordedChanges
+  commentId: M:XIV_Packages.InventorySystem.Inventory.ClearRecordedChanges
+  fullName: XIV_Packages.InventorySystem.Inventory.ClearRecordedChanges()
+  nameWithType: Inventory.ClearRecordedChanges()
+- uid: XIV_Packages.InventorySystem.Inventory.ClearRecordedChanges*
+  name: ClearRecordedChanges
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_ClearRecordedChanges_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.ClearRecordedChanges
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.ClearRecordedChanges
+  nameWithType: Inventory.ClearRecordedChanges
+- uid: XIV_Packages.InventorySystem.Inventory.Contains(XIV_Packages.InventorySystem.ItemBase)
+  name: Contains(ItemBase)
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Contains_XIV_Packages_InventorySystem_ItemBase_
+  commentId: M:XIV_Packages.InventorySystem.Inventory.Contains(XIV_Packages.InventorySystem.ItemBase)
+  fullName: XIV_Packages.InventorySystem.Inventory.Contains(XIV_Packages.InventorySystem.ItemBase)
+  nameWithType: Inventory.Contains(ItemBase)
+- uid: XIV_Packages.InventorySystem.Inventory.Contains*
+  name: Contains
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Contains_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.Contains
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.Contains
+  nameWithType: Inventory.Contains
+- uid: XIV_Packages.InventorySystem.Inventory.Item(System.Int32)
+  name: this[int]
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Item_System_Int32_
+  commentId: P:XIV_Packages.InventorySystem.Inventory.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: XIV_Packages.InventorySystem.Inventory.this[int]
+  fullName.vb: XIV_Packages.InventorySystem.Inventory.this[](Integer)
+  nameWithType: Inventory.this[int]
+  nameWithType.vb: Inventory.this[](Integer)
+- uid: XIV_Packages.InventorySystem.Inventory.Item*
+  name: this
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Item_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: XIV_Packages.InventorySystem.Inventory.this
+  fullName.vb: XIV_Packages.InventorySystem.Inventory.this[]
+  nameWithType: Inventory.this
+  nameWithType.vb: Inventory.this[]
+- uid: XIV_Packages.InventorySystem.Inventory.Merge(System.Int32,System.Int32)
+  name: Merge(int, int)
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Merge_System_Int32_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Inventory.Merge(System.Int32,System.Int32)
+  name.vb: Merge(Integer, Integer)
+  fullName: XIV_Packages.InventorySystem.Inventory.Merge(int, int)
+  fullName.vb: XIV_Packages.InventorySystem.Inventory.Merge(Integer, Integer)
+  nameWithType: Inventory.Merge(int, int)
+  nameWithType.vb: Inventory.Merge(Integer, Integer)
+- uid: XIV_Packages.InventorySystem.Inventory.Merge*
+  name: Merge
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Merge_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.Merge
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.Merge
+  nameWithType: Inventory.Merge
+- uid: XIV_Packages.InventorySystem.Inventory.Register(XIV_Packages.InventorySystem.IInventoryListener)
+  name: Register(IInventoryListener)
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Register_XIV_Packages_InventorySystem_IInventoryListener_
+  commentId: M:XIV_Packages.InventorySystem.Inventory.Register(XIV_Packages.InventorySystem.IInventoryListener)
+  fullName: XIV_Packages.InventorySystem.Inventory.Register(XIV_Packages.InventorySystem.IInventoryListener)
+  nameWithType: Inventory.Register(IInventoryListener)
+- uid: XIV_Packages.InventorySystem.Inventory.Register*
+  name: Register
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Register_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.Register
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.Register
+  nameWithType: Inventory.Register
+- uid: XIV_Packages.InventorySystem.Inventory.Remove(XIV_Packages.InventorySystem.ItemBase,System.Int32)
+  name: Remove(ItemBase, int)
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Remove_XIV_Packages_InventorySystem_ItemBase_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Inventory.Remove(XIV_Packages.InventorySystem.ItemBase,System.Int32)
+  name.vb: Remove(ItemBase, Integer)
+  fullName: XIV_Packages.InventorySystem.Inventory.Remove(XIV_Packages.InventorySystem.ItemBase, int)
+  fullName.vb: XIV_Packages.InventorySystem.Inventory.Remove(XIV_Packages.InventorySystem.ItemBase, Integer)
+  nameWithType: Inventory.Remove(ItemBase, int)
+  nameWithType.vb: Inventory.Remove(ItemBase, Integer)
+- uid: XIV_Packages.InventorySystem.Inventory.Remove*
+  name: Remove
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Remove_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.Remove
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.Remove
+  nameWithType: Inventory.Remove
+- uid: XIV_Packages.InventorySystem.Inventory.RemoveSlot(System.Int32)
+  name: RemoveSlot(int)
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_RemoveSlot_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Inventory.RemoveSlot(System.Int32)
+  name.vb: RemoveSlot(Integer)
+  fullName: XIV_Packages.InventorySystem.Inventory.RemoveSlot(int)
+  fullName.vb: XIV_Packages.InventorySystem.Inventory.RemoveSlot(Integer)
+  nameWithType: Inventory.RemoveSlot(int)
+  nameWithType.vb: Inventory.RemoveSlot(Integer)
+- uid: XIV_Packages.InventorySystem.Inventory.RemoveSlot*
+  name: RemoveSlot
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_RemoveSlot_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.RemoveSlot
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.RemoveSlot
+  nameWithType: Inventory.RemoveSlot
+- uid: XIV_Packages.InventorySystem.Inventory.Swap(System.Int32,System.Int32)
+  name: Swap(int, int)
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Swap_System_Int32_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.Inventory.Swap(System.Int32,System.Int32)
+  name.vb: Swap(Integer, Integer)
+  fullName: XIV_Packages.InventorySystem.Inventory.Swap(int, int)
+  fullName.vb: XIV_Packages.InventorySystem.Inventory.Swap(Integer, Integer)
+  nameWithType: Inventory.Swap(int, int)
+  nameWithType.vb: Inventory.Swap(Integer, Integer)
+- uid: XIV_Packages.InventorySystem.Inventory.Swap*
+  name: Swap
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Swap_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.Swap
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.Swap
+  nameWithType: Inventory.Swap
+- uid: XIV_Packages.InventorySystem.Inventory.Unregister(XIV_Packages.InventorySystem.IInventoryListener)
+  name: Unregister(IInventoryListener)
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Unregister_XIV_Packages_InventorySystem_IInventoryListener_
+  commentId: M:XIV_Packages.InventorySystem.Inventory.Unregister(XIV_Packages.InventorySystem.IInventoryListener)
+  fullName: XIV_Packages.InventorySystem.Inventory.Unregister(XIV_Packages.InventorySystem.IInventoryListener)
+  nameWithType: Inventory.Unregister(IInventoryListener)
+- uid: XIV_Packages.InventorySystem.Inventory.Unregister*
+  name: Unregister
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_Unregister_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.Unregister
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.Unregister
+  nameWithType: Inventory.Unregister
+- uid: XIV_Packages.InventorySystem.Inventory.informListeners
+  name: informListeners
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_informListeners
+  commentId: P:XIV_Packages.InventorySystem.Inventory.informListeners
+  fullName: XIV_Packages.InventorySystem.Inventory.informListeners
+  nameWithType: Inventory.informListeners
+- uid: XIV_Packages.InventorySystem.Inventory.informListeners*
+  name: informListeners
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_informListeners_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.informListeners
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.informListeners
+  nameWithType: Inventory.informListeners
+- uid: XIV_Packages.InventorySystem.Inventory.slotCount
+  name: slotCount
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_slotCount
+  commentId: P:XIV_Packages.InventorySystem.Inventory.slotCount
+  fullName: XIV_Packages.InventorySystem.Inventory.slotCount
+  nameWithType: Inventory.slotCount
+- uid: XIV_Packages.InventorySystem.Inventory.slotCount*
+  name: slotCount
+  href: api/XIV_Packages.InventorySystem.Inventory.html#XIV_Packages_InventorySystem_Inventory_slotCount_
+  commentId: Overload:XIV_Packages.InventorySystem.Inventory.slotCount
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.Inventory.slotCount
+  nameWithType: Inventory.slotCount
+- uid: XIV_Packages.InventorySystem.InventoryChange
+  name: InventoryChange
+  href: api/XIV_Packages.InventorySystem.InventoryChange.html
+  commentId: T:XIV_Packages.InventorySystem.InventoryChange
+  fullName: XIV_Packages.InventorySystem.InventoryChange
+  nameWithType: InventoryChange
+- uid: XIV_Packages.InventorySystem.InventoryChange.#ctor(System.Collections.Generic.IList{XIV_Packages.InventorySystem.InventoryItemChange},System.Int32,System.Int32)
+  name: InventoryChange(IList<InventoryItemChange>, int, int)
+  href: api/XIV_Packages.InventorySystem.InventoryChange.html#XIV_Packages_InventorySystem_InventoryChange__ctor_System_Collections_Generic_IList_XIV_Packages_InventorySystem_InventoryItemChange__System_Int32_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.InventoryChange.#ctor(System.Collections.Generic.IList{XIV_Packages.InventorySystem.InventoryItemChange},System.Int32,System.Int32)
+  name.vb: New(IList(Of InventoryItemChange), Integer, Integer)
+  fullName: XIV_Packages.InventorySystem.InventoryChange.InventoryChange(System.Collections.Generic.IList<XIV_Packages.InventorySystem.InventoryItemChange>, int, int)
+  fullName.vb: XIV_Packages.InventorySystem.InventoryChange.New(System.Collections.Generic.IList(Of XIV_Packages.InventorySystem.InventoryItemChange), Integer, Integer)
+  nameWithType: InventoryChange.InventoryChange(IList<InventoryItemChange>, int, int)
+  nameWithType.vb: InventoryChange.New(IList(Of InventoryItemChange), Integer, Integer)
+- uid: XIV_Packages.InventorySystem.InventoryChange.#ctor*
+  name: InventoryChange
+  href: api/XIV_Packages.InventorySystem.InventoryChange.html#XIV_Packages_InventorySystem_InventoryChange__ctor_
+  commentId: Overload:XIV_Packages.InventorySystem.InventoryChange.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: XIV_Packages.InventorySystem.InventoryChange.InventoryChange
+  fullName.vb: XIV_Packages.InventorySystem.InventoryChange.New
+  nameWithType: InventoryChange.InventoryChange
+  nameWithType.vb: InventoryChange.New
+- uid: XIV_Packages.InventorySystem.InventoryChange.isSlotCountChanged
+  name: isSlotCountChanged
+  href: api/XIV_Packages.InventorySystem.InventoryChange.html#XIV_Packages_InventorySystem_InventoryChange_isSlotCountChanged
+  commentId: P:XIV_Packages.InventorySystem.InventoryChange.isSlotCountChanged
+  fullName: XIV_Packages.InventorySystem.InventoryChange.isSlotCountChanged
+  nameWithType: InventoryChange.isSlotCountChanged
+- uid: XIV_Packages.InventorySystem.InventoryChange.isSlotCountChanged*
+  name: isSlotCountChanged
+  href: api/XIV_Packages.InventorySystem.InventoryChange.html#XIV_Packages_InventorySystem_InventoryChange_isSlotCountChanged_
+  commentId: Overload:XIV_Packages.InventorySystem.InventoryChange.isSlotCountChanged
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.InventoryChange.isSlotCountChanged
+  nameWithType: InventoryChange.isSlotCountChanged
+- uid: XIV_Packages.InventorySystem.InventoryChange.itemChanges
+  name: itemChanges
+  href: api/XIV_Packages.InventorySystem.InventoryChange.html#XIV_Packages_InventorySystem_InventoryChange_itemChanges
+  commentId: F:XIV_Packages.InventorySystem.InventoryChange.itemChanges
+  fullName: XIV_Packages.InventorySystem.InventoryChange.itemChanges
+  nameWithType: InventoryChange.itemChanges
+- uid: XIV_Packages.InventorySystem.InventoryChange.slotCountAfter
+  name: slotCountAfter
+  href: api/XIV_Packages.InventorySystem.InventoryChange.html#XIV_Packages_InventorySystem_InventoryChange_slotCountAfter
+  commentId: F:XIV_Packages.InventorySystem.InventoryChange.slotCountAfter
+  fullName: XIV_Packages.InventorySystem.InventoryChange.slotCountAfter
+  nameWithType: InventoryChange.slotCountAfter
+- uid: XIV_Packages.InventorySystem.InventoryChange.slotCountBefore
+  name: slotCountBefore
+  href: api/XIV_Packages.InventorySystem.InventoryChange.html#XIV_Packages_InventorySystem_InventoryChange_slotCountBefore
+  commentId: F:XIV_Packages.InventorySystem.InventoryChange.slotCountBefore
+  fullName: XIV_Packages.InventorySystem.InventoryChange.slotCountBefore
+  nameWithType: InventoryChange.slotCountBefore
+- uid: XIV_Packages.InventorySystem.InventoryHelper
+  name: InventoryHelper
+  href: api/XIV_Packages.InventorySystem.InventoryHelper.html
+  commentId: T:XIV_Packages.InventorySystem.InventoryHelper
+  fullName: XIV_Packages.InventorySystem.InventoryHelper
+  nameWithType: InventoryHelper
+- uid: XIV_Packages.InventorySystem.InventoryHelper.Dispose*
+  name: Dispose
+  href: api/XIV_Packages.InventorySystem.InventoryHelper.html#XIV_Packages_InventorySystem_InventoryHelper_Dispose_
+  commentId: Overload:XIV_Packages.InventorySystem.InventoryHelper.Dispose
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.InventoryHelper.Dispose
+  nameWithType: InventoryHelper.Dispose
+- uid: XIV_Packages.InventorySystem.InventoryHelper.Dispose``1(``0@)
+  name: Dispose<T>(ref T)
+  href: api/XIV_Packages.InventorySystem.InventoryHelper.html#XIV_Packages_InventorySystem_InventoryHelper_Dispose__1___0__
+  commentId: M:XIV_Packages.InventorySystem.InventoryHelper.Dispose``1(``0@)
+  name.vb: Dispose(Of T)(T)
+  fullName: XIV_Packages.InventorySystem.InventoryHelper.Dispose<T>(ref T)
+  fullName.vb: XIV_Packages.InventorySystem.InventoryHelper.Dispose(Of T)(T)
+  nameWithType: InventoryHelper.Dispose<T>(ref T)
+  nameWithType.vb: InventoryHelper.Dispose(Of T)(T)
+- uid: XIV_Packages.InventorySystem.InventoryHelper.IsEqual(XIV_Packages.InventorySystem.InventoryItem,XIV_Packages.InventorySystem.ItemBase)
+  name: IsEqual(InventoryItem, ItemBase)
+  href: api/XIV_Packages.InventorySystem.InventoryHelper.html#XIV_Packages_InventorySystem_InventoryHelper_IsEqual_XIV_Packages_InventorySystem_InventoryItem_XIV_Packages_InventorySystem_ItemBase_
+  commentId: M:XIV_Packages.InventorySystem.InventoryHelper.IsEqual(XIV_Packages.InventorySystem.InventoryItem,XIV_Packages.InventorySystem.ItemBase)
+  fullName: XIV_Packages.InventorySystem.InventoryHelper.IsEqual(XIV_Packages.InventorySystem.InventoryItem, XIV_Packages.InventorySystem.ItemBase)
+  nameWithType: InventoryHelper.IsEqual(InventoryItem, ItemBase)
+- uid: XIV_Packages.InventorySystem.InventoryHelper.IsEqual*
+  name: IsEqual
+  href: api/XIV_Packages.InventorySystem.InventoryHelper.html#XIV_Packages_InventorySystem_InventoryHelper_IsEqual_
+  commentId: Overload:XIV_Packages.InventorySystem.InventoryHelper.IsEqual
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.InventoryHelper.IsEqual
+  nameWithType: InventoryHelper.IsEqual
+- uid: XIV_Packages.InventorySystem.InventoryHelper.NextPowerOfTwo(System.Int32)
+  name: NextPowerOfTwo(int)
+  href: api/XIV_Packages.InventorySystem.InventoryHelper.html#XIV_Packages_InventorySystem_InventoryHelper_NextPowerOfTwo_System_Int32_
+  commentId: M:XIV_Packages.InventorySystem.InventoryHelper.NextPowerOfTwo(System.Int32)
+  name.vb: NextPowerOfTwo(Integer)
+  fullName: XIV_Packages.InventorySystem.InventoryHelper.NextPowerOfTwo(int)
+  fullName.vb: XIV_Packages.InventorySystem.InventoryHelper.NextPowerOfTwo(Integer)
+  nameWithType: InventoryHelper.NextPowerOfTwo(int)
+  nameWithType.vb: InventoryHelper.NextPowerOfTwo(Integer)
+- uid: XIV_Packages.InventorySystem.InventoryHelper.NextPowerOfTwo*
+  name: NextPowerOfTwo
+  href: api/XIV_Packages.InventorySystem.InventoryHelper.html#XIV_Packages_InventorySystem_InventoryHelper_NextPowerOfTwo_
+  commentId: Overload:XIV_Packages.InventorySystem.InventoryHelper.NextPowerOfTwo
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.InventoryHelper.NextPowerOfTwo
+  nameWithType: InventoryHelper.NextPowerOfTwo
+- uid: XIV_Packages.InventorySystem.InventoryItem
+  name: InventoryItem
+  href: api/XIV_Packages.InventorySystem.InventoryItem.html
+  commentId: T:XIV_Packages.InventorySystem.InventoryItem
+  fullName: XIV_Packages.InventorySystem.InventoryItem
+  nameWithType: InventoryItem
+- uid: XIV_Packages.InventorySystem.InventoryItem.#ctor(System.Int32,System.Int32,XIV_Packages.InventorySystem.ItemBase)
+  name: InventoryItem(int, int, ItemBase)
+  href: api/XIV_Packages.InventorySystem.InventoryItem.html#XIV_Packages_InventorySystem_InventoryItem__ctor_System_Int32_System_Int32_XIV_Packages_InventorySystem_ItemBase_
+  commentId: M:XIV_Packages.InventorySystem.InventoryItem.#ctor(System.Int32,System.Int32,XIV_Packages.InventorySystem.ItemBase)
+  name.vb: New(Integer, Integer, ItemBase)
+  fullName: XIV_Packages.InventorySystem.InventoryItem.InventoryItem(int, int, XIV_Packages.InventorySystem.ItemBase)
+  fullName.vb: XIV_Packages.InventorySystem.InventoryItem.New(Integer, Integer, XIV_Packages.InventorySystem.ItemBase)
+  nameWithType: InventoryItem.InventoryItem(int, int, ItemBase)
+  nameWithType.vb: InventoryItem.New(Integer, Integer, ItemBase)
+- uid: XIV_Packages.InventorySystem.InventoryItem.#ctor*
+  name: InventoryItem
+  href: api/XIV_Packages.InventorySystem.InventoryItem.html#XIV_Packages_InventorySystem_InventoryItem__ctor_
+  commentId: Overload:XIV_Packages.InventorySystem.InventoryItem.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: XIV_Packages.InventorySystem.InventoryItem.InventoryItem
+  fullName.vb: XIV_Packages.InventorySystem.InventoryItem.New
+  nameWithType: InventoryItem.InventoryItem
+  nameWithType.vb: InventoryItem.New
+- uid: XIV_Packages.InventorySystem.InventoryItem.Index
+  name: Index
+  href: api/XIV_Packages.InventorySystem.InventoryItem.html#XIV_Packages_InventorySystem_InventoryItem_Index
+  commentId: P:XIV_Packages.InventorySystem.InventoryItem.Index
+  fullName: XIV_Packages.InventorySystem.InventoryItem.Index
+  nameWithType: InventoryItem.Index
+- uid: XIV_Packages.InventorySystem.InventoryItem.Index*
+  name: Index
+  href: api/XIV_Packages.InventorySystem.InventoryItem.html#XIV_Packages_InventorySystem_InventoryItem_Index_
+  commentId: Overload:XIV_Packages.InventorySystem.InventoryItem.Index
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.InventoryItem.Index
+  nameWithType: InventoryItem.Index
+- uid: XIV_Packages.InventorySystem.InventoryItem.InvalidInventoryItem
+  name: InvalidInventoryItem
+  href: api/XIV_Packages.InventorySystem.InventoryItem.html#XIV_Packages_InventorySystem_InventoryItem_InvalidInventoryItem
+  commentId: F:XIV_Packages.InventorySystem.InventoryItem.InvalidInventoryItem
+  fullName: XIV_Packages.InventorySystem.InventoryItem.InvalidInventoryItem
+  nameWithType: InventoryItem.InvalidInventoryItem
+- uid: XIV_Packages.InventorySystem.InventoryItem.IsEmpty
+  name: IsEmpty
+  href: api/XIV_Packages.InventorySystem.InventoryItem.html#XIV_Packages_InventorySystem_InventoryItem_IsEmpty
+  commentId: P:XIV_Packages.InventorySystem.InventoryItem.IsEmpty
+  fullName: XIV_Packages.InventorySystem.InventoryItem.IsEmpty
+  nameWithType: InventoryItem.IsEmpty
+- uid: XIV_Packages.InventorySystem.InventoryItem.IsEmpty*
+  name: IsEmpty
+  href: api/XIV_Packages.InventorySystem.InventoryItem.html#XIV_Packages_InventorySystem_InventoryItem_IsEmpty_
+  commentId: Overload:XIV_Packages.InventorySystem.InventoryItem.IsEmpty
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.InventoryItem.IsEmpty
+  nameWithType: InventoryItem.IsEmpty
+- uid: XIV_Packages.InventorySystem.InventoryItem.Item
+  name: Item
+  href: api/XIV_Packages.InventorySystem.InventoryItem.html#XIV_Packages_InventorySystem_InventoryItem_Item
+  commentId: P:XIV_Packages.InventorySystem.InventoryItem.Item
+  fullName: XIV_Packages.InventorySystem.InventoryItem.Item
+  nameWithType: InventoryItem.Item
+- uid: XIV_Packages.InventorySystem.InventoryItem.Item*
+  name: Item
+  href: api/XIV_Packages.InventorySystem.InventoryItem.html#XIV_Packages_InventorySystem_InventoryItem_Item_
+  commentId: Overload:XIV_Packages.InventorySystem.InventoryItem.Item
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.InventoryItem.Item
+  nameWithType: InventoryItem.Item
+- uid: XIV_Packages.InventorySystem.InventoryItem.Quantity
+  name: Quantity
+  href: api/XIV_Packages.InventorySystem.InventoryItem.html#XIV_Packages_InventorySystem_InventoryItem_Quantity
+  commentId: P:XIV_Packages.InventorySystem.InventoryItem.Quantity
+  fullName: XIV_Packages.InventorySystem.InventoryItem.Quantity
+  nameWithType: InventoryItem.Quantity
+- uid: XIV_Packages.InventorySystem.InventoryItem.Quantity*
+  name: Quantity
+  href: api/XIV_Packages.InventorySystem.InventoryItem.html#XIV_Packages_InventorySystem_InventoryItem_Quantity_
+  commentId: Overload:XIV_Packages.InventorySystem.InventoryItem.Quantity
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.InventoryItem.Quantity
+  nameWithType: InventoryItem.Quantity
+- uid: XIV_Packages.InventorySystem.InventoryItemChange
+  name: InventoryItemChange
+  href: api/XIV_Packages.InventorySystem.InventoryItemChange.html
+  commentId: T:XIV_Packages.InventorySystem.InventoryItemChange
+  fullName: XIV_Packages.InventorySystem.InventoryItemChange
+  nameWithType: InventoryItemChange
+- uid: XIV_Packages.InventorySystem.InventoryItemChange.#ctor(XIV_Packages.InventorySystem.ReadOnlyInventoryItem,XIV_Packages.InventorySystem.ReadOnlyInventoryItem,System.Boolean)
+  name: InventoryItemChange(ReadOnlyInventoryItem, ReadOnlyInventoryItem, bool)
+  href: api/XIV_Packages.InventorySystem.InventoryItemChange.html#XIV_Packages_InventorySystem_InventoryItemChange__ctor_XIV_Packages_InventorySystem_ReadOnlyInventoryItem_XIV_Packages_InventorySystem_ReadOnlyInventoryItem_System_Boolean_
+  commentId: M:XIV_Packages.InventorySystem.InventoryItemChange.#ctor(XIV_Packages.InventorySystem.ReadOnlyInventoryItem,XIV_Packages.InventorySystem.ReadOnlyInventoryItem,System.Boolean)
+  name.vb: New(ReadOnlyInventoryItem, ReadOnlyInventoryItem, Boolean)
+  fullName: XIV_Packages.InventorySystem.InventoryItemChange.InventoryItemChange(XIV_Packages.InventorySystem.ReadOnlyInventoryItem, XIV_Packages.InventorySystem.ReadOnlyInventoryItem, bool)
+  fullName.vb: XIV_Packages.InventorySystem.InventoryItemChange.New(XIV_Packages.InventorySystem.ReadOnlyInventoryItem, XIV_Packages.InventorySystem.ReadOnlyInventoryItem, Boolean)
+  nameWithType: InventoryItemChange.InventoryItemChange(ReadOnlyInventoryItem, ReadOnlyInventoryItem, bool)
+  nameWithType.vb: InventoryItemChange.New(ReadOnlyInventoryItem, ReadOnlyInventoryItem, Boolean)
+- uid: XIV_Packages.InventorySystem.InventoryItemChange.#ctor*
+  name: InventoryItemChange
+  href: api/XIV_Packages.InventorySystem.InventoryItemChange.html#XIV_Packages_InventorySystem_InventoryItemChange__ctor_
+  commentId: Overload:XIV_Packages.InventorySystem.InventoryItemChange.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: XIV_Packages.InventorySystem.InventoryItemChange.InventoryItemChange
+  fullName.vb: XIV_Packages.InventorySystem.InventoryItemChange.New
+  nameWithType: InventoryItemChange.InventoryItemChange
+  nameWithType.vb: InventoryItemChange.New
+- uid: XIV_Packages.InventorySystem.InventoryItemChange.after
+  name: after
+  href: api/XIV_Packages.InventorySystem.InventoryItemChange.html#XIV_Packages_InventorySystem_InventoryItemChange_after
+  commentId: F:XIV_Packages.InventorySystem.InventoryItemChange.after
+  fullName: XIV_Packages.InventorySystem.InventoryItemChange.after
+  nameWithType: InventoryItemChange.after
+- uid: XIV_Packages.InventorySystem.InventoryItemChange.before
+  name: before
+  href: api/XIV_Packages.InventorySystem.InventoryItemChange.html#XIV_Packages_InventorySystem_InventoryItemChange_before
+  commentId: F:XIV_Packages.InventorySystem.InventoryItemChange.before
+  fullName: XIV_Packages.InventorySystem.InventoryItemChange.before
+  nameWithType: InventoryItemChange.before
+- uid: XIV_Packages.InventorySystem.InventoryItemChange.isDiscarded
+  name: isDiscarded
+  href: api/XIV_Packages.InventorySystem.InventoryItemChange.html#XIV_Packages_InventorySystem_InventoryItemChange_isDiscarded
+  commentId: F:XIV_Packages.InventorySystem.InventoryItemChange.isDiscarded
+  fullName: XIV_Packages.InventorySystem.InventoryItemChange.isDiscarded
+  nameWithType: InventoryItemChange.isDiscarded
+- uid: XIV_Packages.InventorySystem.InventoryItemChange.isMerged
+  name: isMerged
+  href: api/XIV_Packages.InventorySystem.InventoryItemChange.html#XIV_Packages_InventorySystem_InventoryItemChange_isMerged
+  commentId: F:XIV_Packages.InventorySystem.InventoryItemChange.isMerged
+  fullName: XIV_Packages.InventorySystem.InventoryItemChange.isMerged
+  nameWithType: InventoryItemChange.isMerged
+- uid: XIV_Packages.InventorySystem.InventoryItemChange.isMoved
+  name: isMoved
+  href: api/XIV_Packages.InventorySystem.InventoryItemChange.html#XIV_Packages_InventorySystem_InventoryItemChange_isMoved
+  commentId: F:XIV_Packages.InventorySystem.InventoryItemChange.isMoved
+  fullName: XIV_Packages.InventorySystem.InventoryItemChange.isMoved
+  nameWithType: InventoryItemChange.isMoved
+- uid: XIV_Packages.InventorySystem.ItemBase
+  name: ItemBase
+  href: api/XIV_Packages.InventorySystem.ItemBase.html
+  commentId: T:XIV_Packages.InventorySystem.ItemBase
+  fullName: XIV_Packages.InventorySystem.ItemBase
+  nameWithType: ItemBase
+- uid: XIV_Packages.InventorySystem.ItemBase.Equals(System.Object)
+  name: Equals(object)
+  href: api/XIV_Packages.InventorySystem.ItemBase.html#XIV_Packages_InventorySystem_ItemBase_Equals_System_Object_
+  commentId: M:XIV_Packages.InventorySystem.ItemBase.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: XIV_Packages.InventorySystem.ItemBase.Equals(object)
+  fullName.vb: XIV_Packages.InventorySystem.ItemBase.Equals(Object)
+  nameWithType: ItemBase.Equals(object)
+  nameWithType.vb: ItemBase.Equals(Object)
+- uid: XIV_Packages.InventorySystem.ItemBase.Equals(XIV_Packages.InventorySystem.ItemBase)
+  name: Equals(ItemBase)
+  href: api/XIV_Packages.InventorySystem.ItemBase.html#XIV_Packages_InventorySystem_ItemBase_Equals_XIV_Packages_InventorySystem_ItemBase_
+  commentId: M:XIV_Packages.InventorySystem.ItemBase.Equals(XIV_Packages.InventorySystem.ItemBase)
+  fullName: XIV_Packages.InventorySystem.ItemBase.Equals(XIV_Packages.InventorySystem.ItemBase)
+  nameWithType: ItemBase.Equals(ItemBase)
+- uid: XIV_Packages.InventorySystem.ItemBase.Equals*
+  name: Equals
+  href: api/XIV_Packages.InventorySystem.ItemBase.html#XIV_Packages_InventorySystem_ItemBase_Equals_
+  commentId: Overload:XIV_Packages.InventorySystem.ItemBase.Equals
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.ItemBase.Equals
+  nameWithType: ItemBase.Equals
+- uid: XIV_Packages.InventorySystem.ItemBase.GetHashCode
+  name: GetHashCode()
+  href: api/XIV_Packages.InventorySystem.ItemBase.html#XIV_Packages_InventorySystem_ItemBase_GetHashCode
+  commentId: M:XIV_Packages.InventorySystem.ItemBase.GetHashCode
+  fullName: XIV_Packages.InventorySystem.ItemBase.GetHashCode()
+  nameWithType: ItemBase.GetHashCode()
+- uid: XIV_Packages.InventorySystem.ItemBase.GetHashCode*
+  name: GetHashCode
+  href: api/XIV_Packages.InventorySystem.ItemBase.html#XIV_Packages_InventorySystem_ItemBase_GetHashCode_
+  commentId: Overload:XIV_Packages.InventorySystem.ItemBase.GetHashCode
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.ItemBase.GetHashCode
+  nameWithType: ItemBase.GetHashCode
+- uid: XIV_Packages.InventorySystem.ItemBase.description
+  name: description
+  href: api/XIV_Packages.InventorySystem.ItemBase.html#XIV_Packages_InventorySystem_ItemBase_description
+  commentId: F:XIV_Packages.InventorySystem.ItemBase.description
+  fullName: XIV_Packages.InventorySystem.ItemBase.description
+  nameWithType: ItemBase.description
+- uid: XIV_Packages.InventorySystem.ItemBase.name
+  name: name
+  href: api/XIV_Packages.InventorySystem.ItemBase.html#XIV_Packages_InventorySystem_ItemBase_name
+  commentId: F:XIV_Packages.InventorySystem.ItemBase.name
+  fullName: XIV_Packages.InventorySystem.ItemBase.name
+  nameWithType: ItemBase.name
+- uid: XIV_Packages.InventorySystem.ItemBase.stackableQuantity
+  name: stackableQuantity
+  href: api/XIV_Packages.InventorySystem.ItemBase.html#XIV_Packages_InventorySystem_ItemBase_stackableQuantity
+  commentId: F:XIV_Packages.InventorySystem.ItemBase.stackableQuantity
+  fullName: XIV_Packages.InventorySystem.ItemBase.stackableQuantity
+  nameWithType: ItemBase.stackableQuantity
+- uid: XIV_Packages.InventorySystem.ReadOnlyInventoryItem
+  name: ReadOnlyInventoryItem
+  href: api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html
+  commentId: T:XIV_Packages.InventorySystem.ReadOnlyInventoryItem
+  fullName: XIV_Packages.InventorySystem.ReadOnlyInventoryItem
+  nameWithType: ReadOnlyInventoryItem
+- uid: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.#ctor(XIV_Packages.InventorySystem.InventoryItem)
+  name: ReadOnlyInventoryItem(InventoryItem)
+  href: api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem__ctor_XIV_Packages_InventorySystem_InventoryItem_
+  commentId: M:XIV_Packages.InventorySystem.ReadOnlyInventoryItem.#ctor(XIV_Packages.InventorySystem.InventoryItem)
+  name.vb: New(InventoryItem)
+  fullName: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.ReadOnlyInventoryItem(XIV_Packages.InventorySystem.InventoryItem)
+  fullName.vb: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.New(XIV_Packages.InventorySystem.InventoryItem)
+  nameWithType: ReadOnlyInventoryItem.ReadOnlyInventoryItem(InventoryItem)
+  nameWithType.vb: ReadOnlyInventoryItem.New(InventoryItem)
+- uid: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.#ctor*
+  name: ReadOnlyInventoryItem
+  href: api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem__ctor_
+  commentId: Overload:XIV_Packages.InventorySystem.ReadOnlyInventoryItem.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.ReadOnlyInventoryItem
+  fullName.vb: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.New
+  nameWithType: ReadOnlyInventoryItem.ReadOnlyInventoryItem
+  nameWithType.vb: ReadOnlyInventoryItem.New
+- uid: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Index
+  name: Index
+  href: api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Index
+  commentId: P:XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Index
+  fullName: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Index
+  nameWithType: ReadOnlyInventoryItem.Index
+- uid: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Index*
+  name: Index
+  href: api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Index_
+  commentId: Overload:XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Index
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Index
+  nameWithType: ReadOnlyInventoryItem.Index
+- uid: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.InvalidReadonlyInventoryItem
+  name: InvalidReadonlyInventoryItem
+  href: api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_InvalidReadonlyInventoryItem
+  commentId: F:XIV_Packages.InventorySystem.ReadOnlyInventoryItem.InvalidReadonlyInventoryItem
+  fullName: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.InvalidReadonlyInventoryItem
+  nameWithType: ReadOnlyInventoryItem.InvalidReadonlyInventoryItem
+- uid: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.IsEmpty
+  name: IsEmpty
+  href: api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_IsEmpty
+  commentId: P:XIV_Packages.InventorySystem.ReadOnlyInventoryItem.IsEmpty
+  fullName: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.IsEmpty
+  nameWithType: ReadOnlyInventoryItem.IsEmpty
+- uid: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.IsEmpty*
+  name: IsEmpty
+  href: api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_IsEmpty_
+  commentId: Overload:XIV_Packages.InventorySystem.ReadOnlyInventoryItem.IsEmpty
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.IsEmpty
+  nameWithType: ReadOnlyInventoryItem.IsEmpty
+- uid: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Item
+  name: Item
+  href: api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Item
+  commentId: P:XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Item
+  fullName: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Item
+  nameWithType: ReadOnlyInventoryItem.Item
+- uid: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Item*
+  name: Item
+  href: api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Item_
+  commentId: Overload:XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Item
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Item
+  nameWithType: ReadOnlyInventoryItem.Item
+- uid: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Quantity
+  name: Quantity
+  href: api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Quantity
+  commentId: P:XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Quantity
+  fullName: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Quantity
+  nameWithType: ReadOnlyInventoryItem.Quantity
+- uid: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Quantity*
+  name: Quantity
+  href: api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Quantity_
+  commentId: Overload:XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Quantity
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.ReadOnlyInventoryItem.Quantity
+  nameWithType: ReadOnlyInventoryItem.Quantity
+- uid: XIV_Packages.InventorySystem.ScriptableObjects
+  name: XIV_Packages.InventorySystem.ScriptableObjects
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.html
+  commentId: N:XIV_Packages.InventorySystem.ScriptableObjects
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects
+  nameWithType: XIV_Packages.InventorySystem.ScriptableObjects
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.InventorySO
+  name: InventorySO
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.html
+  commentId: T:XIV_Packages.InventorySystem.ScriptableObjects.InventorySO
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.InventorySO
+  nameWithType: InventorySO
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.GetInventory
+  name: GetInventory()
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.html#XIV_Packages_InventorySystem_ScriptableObjects_InventorySO_GetInventory
+  commentId: M:XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.GetInventory
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.GetInventory()
+  nameWithType: InventorySO.GetInventory()
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.GetInventory*
+  name: GetInventory
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.html#XIV_Packages_InventorySystem_ScriptableObjects_InventorySO_GetInventory_
+  commentId: Overload:XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.GetInventory
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.GetInventory
+  nameWithType: InventorySO.GetInventory
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.items
+  name: items
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.html#XIV_Packages_InventorySystem_ScriptableObjects_InventorySO_items
+  commentId: F:XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.items
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.items
+  nameWithType: InventorySO.items
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.slotCount
+  name: slotCount
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.html#XIV_Packages_InventorySystem_ScriptableObjects_InventorySO_slotCount
+  commentId: F:XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.slotCount
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.slotCount
+  nameWithType: InventorySO.slotCount
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO
+  name: ItemDatabaseSO
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html
+  commentId: T:XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO
+  nameWithType: ItemDatabaseSO
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSO(XIV_Packages.InventorySystem.ItemBase)
+  name: GetItemSO(ItemBase)
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemDatabaseSO_GetItemSO_XIV_Packages_InventorySystem_ItemBase_
+  commentId: M:XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSO(XIV_Packages.InventorySystem.ItemBase)
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSO(XIV_Packages.InventorySystem.ItemBase)
+  nameWithType: ItemDatabaseSO.GetItemSO(ItemBase)
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSO*
+  name: GetItemSO
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemDatabaseSO_GetItemSO_
+  commentId: Overload:XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSO
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSO
+  nameWithType: ItemDatabaseSO.GetItemSO
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSO``1
+  name: GetItemSO<T>()
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemDatabaseSO_GetItemSO__1
+  commentId: M:XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSO``1
+  name.vb: GetItemSO(Of T)()
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSO<T>()
+  fullName.vb: XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSO(Of T)()
+  nameWithType: ItemDatabaseSO.GetItemSO<T>()
+  nameWithType.vb: ItemDatabaseSO.GetItemSO(Of T)()
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO
+  name: ItemSO
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.html
+  commentId: T:XIV_Packages.InventorySystem.ScriptableObjects.ItemSO
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO
+  nameWithType: ItemSO
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.GetItem
+  name: GetItem()
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemSO_GetItem
+  commentId: M:XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.GetItem
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.GetItem()
+  nameWithType: ItemSO.GetItem()
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.GetItem*
+  name: GetItem
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemSO_GetItem_
+  commentId: Overload:XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.GetItem
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.GetItem
+  nameWithType: ItemSO.GetItem
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.icon
+  name: icon
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemSO_icon
+  commentId: F:XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.icon
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.icon
+  nameWithType: ItemSO.icon
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData
+  name: ItemSOData
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.html
+  commentId: T:XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData
+  nameWithType: ItemSOData
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.itemSO
+  name: itemSO
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemSOData_itemSO
+  commentId: F:XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.itemSO
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.itemSO
+  nameWithType: ItemSOData.itemSO
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.quantity
+  name: quantity
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemSOData_quantity
+  commentId: F:XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.quantity
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.quantity
+  nameWithType: ItemSOData.quantity
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO`1
+  name: ItemSO<T>
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO-1.html
+  commentId: T:XIV_Packages.InventorySystem.ScriptableObjects.ItemSO`1
+  name.vb: ItemSO(Of T)
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO<T>
+  fullName.vb: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO(Of T)
+  nameWithType: ItemSO<T>
+  nameWithType.vb: ItemSO(Of T)
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO`1.GetItem
+  name: GetItem()
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO-1.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemSO_1_GetItem
+  commentId: M:XIV_Packages.InventorySystem.ScriptableObjects.ItemSO`1.GetItem
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO<T>.GetItem()
+  fullName.vb: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO(Of T).GetItem()
+  nameWithType: ItemSO<T>.GetItem()
+  nameWithType.vb: ItemSO(Of T).GetItem()
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO`1.GetItem*
+  name: GetItem
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO-1.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemSO_1_GetItem_
+  commentId: Overload:XIV_Packages.InventorySystem.ScriptableObjects.ItemSO`1.GetItem
+  isSpec: "True"
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO<T>.GetItem
+  fullName.vb: XIV_Packages.InventorySystem.ScriptableObjects.ItemSO(Of T).GetItem
+  nameWithType: ItemSO<T>.GetItem
+  nameWithType.vb: ItemSO(Of T).GetItem
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths
+  name: MenuPaths
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.html
+  commentId: T:XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths
+  nameWithType: MenuPaths
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.BASE_MENU
+  name: BASE_MENU
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.html#XIV_Packages_InventorySystem_ScriptableObjects_MenuPaths_BASE_MENU
+  commentId: F:XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.BASE_MENU
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.BASE_MENU
+  nameWithType: MenuPaths.BASE_MENU
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.DATA_MENU
+  name: DATA_MENU
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.html#XIV_Packages_InventorySystem_ScriptableObjects_MenuPaths_DATA_MENU
+  commentId: F:XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.DATA_MENU
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.DATA_MENU
+  nameWithType: MenuPaths.DATA_MENU
+- uid: XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.ITEMS_MENU
+  name: ITEMS_MENU
+  href: api/XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.html#XIV_Packages_InventorySystem_ScriptableObjects_MenuPaths_ITEMS_MENU
+  commentId: F:XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.ITEMS_MENU
+  fullName: XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.ITEMS_MENU
+  nameWithType: MenuPaths.ITEMS_MENU
+- uid: XIV_Packages.InventorySystem.TempArray`1
+  name: TempArray<T>
+  href: api/XIV_Packages.InventorySystem.TempArray-1.html
+  commentId: T:XIV_Packages.InventorySystem.TempArray`1
+  name.vb: TempArray(Of T)
+  fullName: XIV_Packages.InventorySystem.TempArray<T>
+  fullName.vb: XIV_Packages.InventorySystem.TempArray(Of T)
+  nameWithType: TempArray<T>
+  nameWithType.vb: TempArray(Of T)
+- uid: XIV_Packages.InventorySystem.TempArray`1.#ctor(System.Collections.Generic.IList{`0})
+  name: TempArray(IList<T>)
+  href: api/XIV_Packages.InventorySystem.TempArray-1.html#XIV_Packages_InventorySystem_TempArray_1__ctor_System_Collections_Generic_IList__0__
+  commentId: M:XIV_Packages.InventorySystem.TempArray`1.#ctor(System.Collections.Generic.IList{`0})
+  name.vb: New(IList(Of T))
+  fullName: XIV_Packages.InventorySystem.TempArray<T>.TempArray(System.Collections.Generic.IList<T>)
+  fullName.vb: XIV_Packages.InventorySystem.TempArray(Of T).New(System.Collections.Generic.IList(Of T))
+  nameWithType: TempArray<T>.TempArray(IList<T>)
+  nameWithType.vb: TempArray(Of T).New(IList(Of T))
+- uid: XIV_Packages.InventorySystem.TempArray`1.#ctor*
+  name: TempArray
+  href: api/XIV_Packages.InventorySystem.TempArray-1.html#XIV_Packages_InventorySystem_TempArray_1__ctor_
+  commentId: Overload:XIV_Packages.InventorySystem.TempArray`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: XIV_Packages.InventorySystem.TempArray<T>.TempArray
+  fullName.vb: XIV_Packages.InventorySystem.TempArray(Of T).New
+  nameWithType: TempArray<T>.TempArray
+  nameWithType.vb: TempArray(Of T).New
+- uid: XIV_Packages.InventorySystem.TempArray`1.Item(System.Int32)
+  name: this[int]
+  href: api/XIV_Packages.InventorySystem.TempArray-1.html#XIV_Packages_InventorySystem_TempArray_1_Item_System_Int32_
+  commentId: P:XIV_Packages.InventorySystem.TempArray`1.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: XIV_Packages.InventorySystem.TempArray<T>.this[int]
+  fullName.vb: XIV_Packages.InventorySystem.TempArray(Of T).this[](Integer)
+  nameWithType: TempArray<T>.this[int]
+  nameWithType.vb: TempArray(Of T).this[](Integer)
+- uid: XIV_Packages.InventorySystem.TempArray`1.Item*
+  name: this
+  href: api/XIV_Packages.InventorySystem.TempArray-1.html#XIV_Packages_InventorySystem_TempArray_1_Item_
+  commentId: Overload:XIV_Packages.InventorySystem.TempArray`1.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: XIV_Packages.InventorySystem.TempArray<T>.this
+  fullName.vb: XIV_Packages.InventorySystem.TempArray(Of T).this[]
+  nameWithType: TempArray<T>.this
+  nameWithType.vb: TempArray(Of T).this[]
+- uid: XIV_Packages.InventorySystem.TempArray`1.Length
+  name: Length
+  href: api/XIV_Packages.InventorySystem.TempArray-1.html#XIV_Packages_InventorySystem_TempArray_1_Length
+  commentId: F:XIV_Packages.InventorySystem.TempArray`1.Length
+  fullName: XIV_Packages.InventorySystem.TempArray<T>.Length
+  fullName.vb: XIV_Packages.InventorySystem.TempArray(Of T).Length
+  nameWithType: TempArray<T>.Length
+  nameWithType.vb: TempArray(Of T).Length

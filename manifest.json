@@ -3,6 +3,206 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.Extensions.InventoryExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.Extensions.InventoryItemExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.IInventoryListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.IInventoryListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.Inventory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.Inventory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.InventoryChange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.InventoryChange.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.InventoryHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.InventoryHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.InventoryItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.InventoryItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.InventoryItemChange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.InventoryItemChange.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.ItemBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.ItemBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.ReadOnlyInventoryItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.InventorySO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.ItemSOData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.MenuPaths.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.ScriptableObjects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.TempArray-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.TempArray-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV_Packages.InventorySystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV_Packages.InventorySystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
