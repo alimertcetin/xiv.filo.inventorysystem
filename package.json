@@ -8,14 +8,23 @@
   "documentationUrl": "",
   "changelogUrl": "",
   "licensesUrl": "",
-  "dependencies": { },
   "keywords": [
     "XIV",
     "Unity",
     "Inventory"
   ],
-  "author": {
-    "name": "Ali Mert Çetin",
-    "url": "https://github.com/alimertcetin"
-  }
+  "author": "Ali Mert Çetin (https://github.com/alimertcetin)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alimertcetin/xiv.filo.inventorysystem.git"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/alimertcetin/xiv.filo.inventorysystem/issues"
+  },
+  "homepage": "https://github.com/alimertcetin/xiv.filo.inventorysystem#readme"
 }
