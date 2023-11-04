@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.0.3...v1.0.4) (2023-11-04)
+
+
+### Bug Fixes
+
+* **package.json:** Change name ([d01616b](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/d01616b090694bb5a6c76707fe2ca2e4707ecfd0))
+
 ## [1.0.3](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.0.2...v1.0.3) (2023-11-04)
 
 
