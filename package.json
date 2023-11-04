@@ -1,8 +1,8 @@
 {
-  "name": "xiv.filo.package-name",
-  "version": "0.1.0",
-  "displayName": "Package Display Name",
-  "description": "Package Description.",
+  "name": "xiv.filo.inventorysystem",
+  "version": "1.0.1",
+  "displayName": "XIV Inventory System",
+  "description": "Inventory System that can be used in Unity projects.",
   "unity": "",
   "unityRelease": "",
   "documentationUrl": "",
@@ -11,10 +11,11 @@
   "dependencies": { },
   "keywords": [
     "XIV",
-    "Unity"
+    "Unity",
+    "Inventory"
   ],
   "author": {
     "name": "Ali Mert Çetin",
-    "url": "https://alimertcetin.github.io/"
+    "url": "https://github.com/alimertcetin"
   }
 }
