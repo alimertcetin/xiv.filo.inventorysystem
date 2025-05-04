@@ -30,7 +30,7 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
     [CreateAssetMenu(menuName = MenuPaths.BASE_MENU + nameof(InventorySO))]
     public class InventorySO : ScriptableObject
     {
-        public int slotCount;
+        public int slotCount = 8;
         public List<ItemSOData> items;
 #if UNITY_EDITOR
         [System.Serializable]
