@@ -21,13 +21,13 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
     /// <inheritdoc cref="ItemSO"/>
     /// <example>
     /// <code>
-    /// Define a class that contains required values for your item.
+    /// // Define a class that contains required values for your item.
     /// public class SwordItem : ItemBase
     /// {
     ///     public int damage;
     ///     public float swingSpeed;
     /// }
-    /// Create another class to allow creating SwordItem in the Editor.
+    /// // Create another class to allow creating SwordItem in the Editor.
     /// [CreateAssetMenu(menuName = "Items/" + nameof(SwordItemSO))]
     /// public class SwordItemSO : ItemSO&lt;SwordItem&gt;
     /// {
