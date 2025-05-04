@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.0.5...v1.1.0) (2025-05-04)
+
+
+### Features
+
+* **InventorySO:** Define a default slot count of 8 ([b89cdd1](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/b89cdd1809df728a4f21faf1843bddb4dfa4960c))
+
 ## [1.0.5](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.0.4...v1.0.5) (2023-11-04)
 
 
