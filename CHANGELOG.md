@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.1.0...v1.2.0) (2025-07-31)
+
+
+### Features
+
+* **documentation.yml:** Update dotnet-version to 8.x ([a04c084](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/a04c08490080ae02f7536021e3bef92fed38eada))
+
 # [1.1.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.0.5...v1.1.0) (2025-05-04)
 
 
