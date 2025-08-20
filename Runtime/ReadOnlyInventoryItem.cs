@@ -35,5 +35,21 @@ namespace XIV.Packages.InventorySystem
             this.Quantity = inventoryItem.Quantity;
             this.Item = inventoryItem.Item;
         }
+        
+        public static bool operator ==(ReadOnlyInventoryItem item1, ReadOnlyInventoryItem item2)
+        {
+            // TODO : Requires better equality comparison
+            return item1.Index == item2.Index && item1.Quantity == item2.Quantity && item1.Item.Equals(item2.Item);
+        }
+        
+        public static bool operator !=(ReadOnlyInventoryItem item1, ReadOnlyInventoryItem item2)
+        {
+            return !(item1 == item2);
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is ReadOnlyInventoryItem item && this == item;
+        }
     }
 }
