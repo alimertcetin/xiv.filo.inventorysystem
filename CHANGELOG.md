@@ -1,3 +1,17 @@
+# [1.3.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.2.0...v1.3.0) (2025-08-20)
+
+
+### Bug Fixes
+
+* **ClassGenerator:** Add space before inheritance ([8e144d4](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/8e144d44193979a1a868f05570588d441a863e8d))
+* **ItemCreatorWindow:** Remove unnecessary usings ([7e48700](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/7e4870018c495dc7a195804fba223b06dd4b679d))
+
+
+### Features
+
+* Initial Commit for ItemGenerator ([43ef551](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/43ef5511a32dd8bdf45349dec0fb433a27dd54a3))
+* **ItemDatabaseSO:** Add GetItemsOfType ([ea2dd1a](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/ea2dd1ade2e32eb78327182065d8c64922c1dd12))
+
 # [1.2.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.1.0...v1.2.0) (2025-07-31)
 
 
