@@ -41,7 +41,7 @@ namespace XIV.Core.Utils
             var line = Space(accessModifier) + Space(classModifier) + "class " + className;
             if (IsNull(inheritance) == false)
             {
-                line += ": " + inheritance;
+                line += " : " + inheritance;
             }
 
             WriteLine(classBuilder, line);
