@@ -41,5 +41,6 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
         [SerializeField] T item;
 
         public override ItemBase GetItem() => item;
+        public T GetItemT() => item;
     }
 }
