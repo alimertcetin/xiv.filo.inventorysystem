@@ -56,6 +56,22 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
 
             return null;
         }
+
+        public List<ItemSO> GetItemsOfType<T>() where T : ItemBase
+        {
+            List<ItemSO> list = new List<ItemSO>();
+            int length = items.Length;
+            for (int i = 0; i < length; i++)
+            {
+                var itemSO = items[i];
+                if (itemSO is ItemSO<T> so)
+                {
+                    list.Add(so);
+                }
+            }
+
+            return list;
+        }
     }
 
 #if UNITY_EDITOR
