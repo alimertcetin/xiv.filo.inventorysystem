@@ -1,3 +1,17 @@
+# [1.2.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.1.0...v1.2.0) (2025-07-31)
+
+
+### Features
+
+* **documentation.yml:** Update dotnet-version to 8.x ([a04c084](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/a04c08490080ae02f7536021e3bef92fed38eada))
+
+# [1.1.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.0.5...v1.1.0) (2025-05-04)
+
+
+### Features
+
+* **InventorySO:** Define a default slot count of 8 ([b89cdd1](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/b89cdd1809df728a4f21faf1843bddb4dfa4960c))
+
 ## [1.0.5](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.0.4...v1.0.5) (2023-11-04)
 
 
