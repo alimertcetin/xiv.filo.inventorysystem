@@ -33,16 +33,9 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
         public int slotCount = 8;
         public List<ItemSOData> items;
 #if UNITY_EDITOR
-        [System.Serializable]
-        struct RuntimeItemData
-        {
-            public string name;
-            public ItemBase item;
-            public int quantity;
-        }
-        [SerializeField] List<RuntimeItemData> runtimeItems;
+        [SerializeField] RuntimeInventoryDisplayer inventoryDisplayer;
 #endif
-
+        
         /// <summary>
         /// Returns a new <see cref="Inventory"/> object that can be used for storing items.
         /// </summary>
@@ -67,58 +60,12 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
                     break;
                 }
             }
-            
+
 #if UNITY_EDITOR
-            runtimeItems = new List<RuntimeItemData>(slotCount);
-            for (var i = 0; i < inventory.slotCount; i++)
-            {
-                ReadOnlyInventoryItem item = inventory[i];
-                var runtimeItem = new RuntimeItemData
-                {
-                    name = item.IsEmpty ? "EMPTY" : item.Item.GetType().Name.Split('.')[^1],
-                    quantity = item.Quantity,
-                    item = item.Item,
-                };
-                runtimeItems.Add(runtimeItem);
-            }
-            inventory.Register(new InventoryRuntimeListener(inventory, runtimeItems));
+            inventoryDisplayer = new RuntimeInventoryDisplayer(inventory, slotCount);
 #endif
             
             return inventory;
         }
-
-#if UNITY_EDITOR
-        class InventoryRuntimeListener : IInventoryListener
-        {
-            Inventory inventory;
-            List<RuntimeItemData> runtimeItems;
-            
-            public InventoryRuntimeListener(Inventory inventory, List<RuntimeItemData> runtimeItems)
-            {
-                this.inventory = inventory;
-                this.runtimeItems = runtimeItems;
-                Refresh();
-            }
-            
-            void IInventoryListener.OnInventoryChanged(InventoryChange inventoryChange)
-            {
-                Refresh();
-            }
-
-            void Refresh()
-            {
-                runtimeItems.Clear();
-                for (int i = 0; i < inventory.slotCount; i++)
-                {
-                    ReadOnlyInventoryItem item = inventory[i];
-                    var name = item.IsEmpty == false ? item.Item.GetType().Name.Split('.')[^1] : "Empty";
-                    var quantity = item.Quantity;
-                    var itemBase = item.Item;
-                    var runtimeItem = new RuntimeItemData { name = name, quantity = quantity, item = itemBase, };
-                    runtimeItems.Add(runtimeItem);
-                }
-            }
-        }
-#endif
     }
 }
