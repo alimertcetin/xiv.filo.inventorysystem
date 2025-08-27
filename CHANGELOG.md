@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.3.0...v1.4.0) (2025-08-27)
+
+
+### Features
+
+* **InventorySO:** Add RuntimeInventoryDisplayer ([7a83395](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/7a8339552cce007f89578cd20a524b0aa67e2819))
+
 # [1.3.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.2.0...v1.3.0) (2025-08-20)
 
 
