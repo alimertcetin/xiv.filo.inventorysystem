@@ -56,9 +56,16 @@ namespace XIV.Packages.InventorySystem.Editor
                 if (!itemCreatorData)
                 {
                     itemCreatorData = CreateInstance<ItemCreatorData>();
+                    Directory.CreateDirectory(path);
                     AssetDatabase.CreateAsset(itemCreatorData, path);
                     AssetDatabase.SaveAssets();
                 }
+            }
+            
+            var obj = EditorGUILayout.ObjectField(itemCreatorData, typeof(ItemCreatorData), false);
+            if (obj is ItemCreatorData newObj && obj != itemCreatorData)
+            {
+                itemCreatorData = newObj;
             }
             
             EditorGUILayout.LabelField("Item Creator", EditorStyles.boldLabel);
@@ -202,7 +209,7 @@ namespace XIV.Packages.InventorySystem.Editor
                 }
                 string itemNameSO = tmpItemName + "SO";
                 ClassGenerator soGenerator = new ClassGenerator(className: itemNameSO, inheritance: "ItemSO<" + tmpItemName + ">");
-                soGenerator.AddAttribute($"[CreateAssetMenu(menuName = \"Items/\" + nameof({itemNameSO}))]");
+                soGenerator.AddAttribute($"[CreateAssetMenu(menuName = MenuPaths.ITEMS_MENU + nameof({itemNameSO}))]");
                 soGenerator.AddUsing("UnityEngine");
                 soGenerator.AddUsing("XIV.Packages.InventorySystem.ScriptableObjects");
                 soGenerator.AddUsing("TheGame.Items");

@@ -1,10 +1,10 @@
 using System;
-using System.Collections;
 using UnityEngine;
+using XIV.Packages.InventorySystem.ScriptableObjects;
 
 namespace XIV.Packages.InventorySystem.Editor
 {
-    [CreateAssetMenu(menuName = "Create ItemCreatorData", fileName = "ItemCreatorData", order = 0)]
+    [CreateAssetMenu(menuName = MenuPaths.EDITOR_DATA_MENU + nameof(ItemCreatorData), fileName = nameof(ItemCreatorData), order = 0)]
     public class ItemCreatorData : ScriptableObject
     {
         [Serializable]
