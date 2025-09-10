@@ -1,10 +1,5 @@
-using UnityEngine;
-#if UNITY_EDITOR
-using System.IO;
-using System.Reflection;
 using System.Collections.Generic;
-using UnityEditor;
-#endif
+using UnityEngine;
 
 namespace XIV.Packages.InventorySystem.ScriptableObjects
 {
@@ -18,10 +13,8 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
         [SerializeField] ItemSO[] items;
 
         /// <summary>
-        /// Determines the <see cref="ItemSO"/> of a specific <see cref="ItemBase"/> in the <see cref="ItemDatabaseSO"/>.
+        /// Retrieves the <see cref="ItemSO"/> associated with a given <see cref="ItemBase"/>.
         /// </summary>
-        /// <param name="item">The item to locate in the list</param>
-        /// <returns>The corresponding <see cref="ItemSO"/> if found in the collection; otherwise, -1.</returns>
         public ItemSO GetItemSO(ItemBase item)
         {
             int length = items.Length;
@@ -38,10 +31,8 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
         }
 
         /// <summary>
-        /// Determines the <see cref="ItemSO"/> of a specific <typeparamref name="T"/> in the <see cref="ItemDatabaseSO"/>.
+        /// Retrieves the first <see cref="ItemSO"/> associated with <typeparamref name="T"/>.
         /// </summary>
-        /// <typeparam name="T">The item type to locate</typeparam>
-        /// <returns>The corresponding <see cref="ItemSO"/> if found in the collection; otherwise, -1.</returns>
         public ItemSO<T> GetItemSO<T>() where T : ItemBase
         {
             int length = items.Length;
@@ -57,7 +48,10 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
             return null;
         }
 
-        public List<ItemSO> GetItemsOfType<T>() where T : ItemBase
+        /// <summary>
+        /// Retrieves a list of <see cref="ItemSO"/>s that are of the specified type <typeparamref name="T"/>.
+        /// </summary>
+        public List<ItemSO> GetItemSOsOfType<T>() where T : ItemBase
         {
             List<ItemSO> list = new List<ItemSO>();
             int length = items.Length;
@@ -72,59 +66,24 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
 
             return list;
         }
-    }
 
-#if UNITY_EDITOR
-    
-    [CustomEditor(typeof(ItemDatabaseSO))]
-    class ItemDatabaseSOEditor : UnityEditor.Editor
-    {
-        const string BTN_LOAD_STRING = "Load All Items";
-        const string PATH = "Assets";
-        
-        public override void OnInspectorGUI()
+        /// <summary>
+        /// Retrieves a list of items of type <typeparamref name="T"/>, converting them from <see cref="ItemSO"/> to the specified type.
+        /// </summary>
+        public List<T> GetItemsOfType<T>() where T : ItemBase
         {
-            ItemDatabaseSO container = (ItemDatabaseSO)target;
-
-            if (GUILayout.Button(BTN_LOAD_STRING))
+            List<T> list = new List<T>();
+            int length = items.Length;
+            for (int i = 0; i < length; i++)
             {
-                var dataContainers = LoadAssetsOfType<ItemSO>(PATH);
-                Undo.RecordObject(container, BTN_LOAD_STRING);
-                var items = new ItemSO[dataContainers.Count];
-                for (int i = 0; i < dataContainers.Count; i++)
+                var itemSO = items[i];
+                if (itemSO is ItemSO<T> so)
                 {
-                    items[i] = dataContainers[i];
+                    list.Add(so.GetItemT());
                 }
-
-                typeof(ItemDatabaseSO).GetField("items", GetFlags()).SetValue(container, items);
-                EditorUtility.SetDirty(container);
-                AssetDatabase.SaveAssetIfDirty(container);
-            }
-            
-            base.OnInspectorGUI();
-        }
-
-        static BindingFlags GetFlags()
-        {
-            return BindingFlags.Instance | BindingFlags.NonPublic;
-        }
-        
-        static List<TAsset> LoadAssetsOfType<TAsset>(string folderPath, 
-            SearchOption searchOption = SearchOption.AllDirectories)
-            where TAsset : Object
-        {
-            string[] assetPaths = Directory.GetFiles(folderPath, "*", searchOption);
-            
-            List<TAsset> list = new List<TAsset>();
-            for (int i = 0; i < assetPaths.Length; i++)
-            {
-                TAsset asset = AssetDatabase.LoadAssetAtPath<TAsset>(assetPaths[i]);
-                if (asset == null) continue;
-                list.Add(asset);
             }
 
             return list;
         }
     }
-#endif
 }
