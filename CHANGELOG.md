@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.4.0...v1.5.0) (2025-09-10)
+
+
+### Features
+
+* Move ItemDatabaseSOEditor to Editor folder ([17696c0](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/17696c020d16bb4e3912255c6aecae4611a8495c))
+
 # [1.4.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.3.0...v1.4.0) (2025-08-27)
 
 
