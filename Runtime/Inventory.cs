@@ -135,7 +135,11 @@ namespace XIV.Packages.InventorySystem
             var capacity = arrayCapacity;
             if (capacity < newSlotCount)
             {
-                Array.Resize(ref items, capacity * 2);
+                while (capacity < newSlotCount)
+                {
+                    capacity *= 2;
+                    Array.Resize(ref items, capacity);
+                }
                 InitializeArrayValues(slotCount - 1, newSlotCount - 1);
             }
 
