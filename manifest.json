@@ -4,13 +4,381 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.ClassGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.ClassGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils.ClassGenerator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Core.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Core.Utils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Core.Utils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoBool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoBool.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoBool",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoByte.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoByte.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoByte",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoChar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoChar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoChar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoDouble.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoDouble",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoFloat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoFloat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoFloat",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoInt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoInt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoLong.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoLong.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoLong",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoString.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoString",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableBoolList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableBoolList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableBoolList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableByteList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableByteList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableByteList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableCharList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableCharList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableCharList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableDoubleList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableDoubleList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableDoubleList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableFloatList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableFloatList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableFloatList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableIntList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableIntList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableIntList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableLongList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableLongList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableLongList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableStringList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableStringList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableStringList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.XIVSerializedStringToXIVSerializedListDict.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.XIVSerializedStringToXIVSerializedListDict.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData.XIVSerializedStringToXIVSerializedListDict",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.ItemCreatorWindow",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary<TKey, TValue>",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary-2.yml\" sourcestartlinenumber=\"1\">A Serializable Dictionary</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.yml\" sourcestartlinenumber=\"1\">Designed to use with <xref href=\"XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary%602\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor.XIVSerializedList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.Editor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Editor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/XIV.Packages.InventorySystem.Extensions.InventoryExtensions.yml",
       "output": {
         ".html": {
           "relative_path": "api/XIV.Packages.InventorySystem.Extensions.InventoryExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Extensions.InventoryExtensions",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.Extensions.InventoryExtensions.yml\" sourcestartlinenumber=\"1\">Contains extension methods for <xref href=\"XIV.Packages.InventorySystem.Inventory\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20,7 +388,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.Extensions.InventoryItemExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Extensions.InventoryItemExtensions",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.Extensions.InventoryItemExtensions.yml\" sourcestartlinenumber=\"1\">Contains extension methods for <xref href=\"XIV.Packages.InventorySystem.InventoryItem\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"XIV.Packages.InventorySystem.ReadOnlyInventoryItem\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30,7 +402,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.Extensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Extensions",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -40,7 +416,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.IInventoryListener.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.IInventoryListener",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.IInventoryListener.yml\" sourcestartlinenumber=\"1\">Provides a mechanism for receiving <xref href=\"XIV.Packages.InventorySystem.InventoryChange\" data-throw-if-not-resolved=\"false\"></xref> information.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -50,7 +430,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.Inventory.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.Inventory",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -60,7 +444,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.InventoryChange.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.InventoryChange",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.InventoryChange.yml\" sourcestartlinenumber=\"1\">Stores the changes that has been made in <xref href=\"XIV.Packages.InventorySystem.Inventory\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -70,7 +458,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.InventoryHelper.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.InventoryHelper",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -80,7 +472,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.InventoryItem.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.InventoryItem",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.InventoryItem.yml\" sourcestartlinenumber=\"1\">Used in <xref href=\"XIV.Packages.InventorySystem.Inventory\" data-throw-if-not-resolved=\"false\"></xref> to store <xref href=\"XIV.Packages.InventorySystem.ItemBase\" data-throw-if-not-resolved=\"false\"></xref>.\nContains inventory related data.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -90,7 +486,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.InventoryItemChange.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.InventoryItemChange",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.InventoryItemChange.yml\" sourcestartlinenumber=\"1\">Stores the changes about the <xref href=\"XIV.Packages.InventorySystem.ItemBase\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -100,7 +500,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.ItemBase.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.ItemBase",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.ItemBase.yml\" sourcestartlinenumber=\"1\">An abstract class to represent items in the game.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -110,7 +514,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.ReadOnlyInventoryItem.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.ReadOnlyInventoryItem",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.ReadOnlyInventoryItem.yml\" sourcestartlinenumber=\"1\">Provides a safe way to read values of <xref href=\"XIV.Packages.InventorySystem.InventoryItem\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -120,7 +528,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.InventorySO.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.ScriptableObjects.InventorySO",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.ScriptableObjects.InventorySO.yml\" sourcestartlinenumber=\"1\">This class is useful for easily modify <xref href=\"XIV.Packages.InventorySystem.Inventory\" data-throw-if-not-resolved=\"false\"></xref> in Editor.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -130,7 +542,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.yml\" sourcestartlinenumber=\"1\">Stores a collection of <xref href=\"XIV.Packages.InventorySystem.ScriptableObjects.ItemSO\" data-throw-if-not-resolved=\"false\"></xref> and\nprovides a way of mapping <xref href=\"XIV.Packages.InventorySystem.ItemBase\" data-throw-if-not-resolved=\"false\"></xref> to <xref href=\"XIV.Packages.InventorySystem.ScriptableObjects.ItemSO\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -140,7 +556,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSO-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.ScriptableObjects.ItemSO<T>",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSO-1.yml\" sourcestartlinenumber=\"1\">An abstract class to connect primitive items to Unity.\nAny non-serializable object can be stored in this class.</p>\n<example>\n<pre><code class=\"lang-csharp\">// Define a class that contains required values for your item.\npublic class SwordItem : ItemBase\n{\n    public int damage;\n    public float swingSpeed;\n}\n// Create another class to allow creating SwordItem in the Editor.\n[CreateAssetMenu(menuName = \"Items/\" + nameof(SwordItemSO))]\npublic class SwordItemSO : ItemSO&lt;SwordItem&gt;\n{\n}</code></pre>\n</example>\n"
     },
     {
       "type": "ManagedReference",
@@ -150,7 +570,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSO.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.ScriptableObjects.ItemSO",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSO.yml\" sourcestartlinenumber=\"1\">An abstract class to connect primitive items to Unity.\nAny non-serializable object can be stored in this class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -160,7 +584,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSOData.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.ScriptableObjects.ItemSOData",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSOData.yml\" sourcestartlinenumber=\"1\">Stores the quantity and the associated itemSO</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -170,7 +598,25 @@
           "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer",
+      "Summary": "<p sourcefile=\"api/XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.yml\" sourcestartlinenumber=\"1\">Helps us to visualize the inventory in the inspector by listening the changes.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -180,7 +626,11 @@
           "relative_path": "api/XIV.Packages.InventorySystem.ScriptableObjects.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.ScriptableObjects",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -190,7 +640,39 @@
           "relative_path": "api/XIV.Packages.InventorySystem.TempArray-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.TempArray<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -200,7 +682,25 @@
           "relative_path": "api/XIV.Packages.InventorySystem.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "XIV.Packages.InventorySystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/XIV.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/XIV.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
     },
     {
       "type": "Conceptual",
@@ -216,11 +716,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""
@@ -239,11 +739,11 @@
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "articles/toc.html"
-        },
         ".json": {
           "relative_path": "articles/toc.json"
+        },
+        ".html": {
+          "relative_path": "articles/toc.html"
         }
       },
       "version": ""
@@ -262,11 +762,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""

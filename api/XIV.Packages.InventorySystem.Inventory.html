@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Inventory
- </title>
+      <title>Class Inventory </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Inventory
- ">
+      <meta name="title" content="Class Inventory ">
+      
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -86,8 +85,7 @@
 
 
   <h1 id="XIV_Packages_InventorySystem_Inventory" data-uid="XIV.Packages.InventorySystem.Inventory" class="text-break">
-    Class Inventory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Inventory.cs/#L6"><i class="bi bi-code-slash"></i></a>
+Class Inventory  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Inventory.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -115,7 +113,7 @@
 
 
 
-  <dl class="typelist derived">
+  <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
@@ -487,7 +485,7 @@ If you want to avoid that, call <a class="xref" href="XIV.Packages.InventorySyst
 
   <h3 id="XIV_Packages_InventorySystem_Inventory_CanMerge_System_Int32_System_Int32_" data-uid="XIV.Packages.InventorySystem.Inventory.CanMerge(System.Int32,System.Int32)">
   CanMerge(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Inventory.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Inventory.cs/#L201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This will compare items at <code class="paramref">index1</code> and <code class="paramref">index2</code> and
@@ -618,7 +616,7 @@ will return true if they are same.</p>
 
   <h3 id="XIV_Packages_InventorySystem_Inventory_Merge_System_Int32_System_Int32_" data-uid="XIV.Packages.InventorySystem.Inventory.Merge(System.Int32,System.Int32)">
   Merge(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Inventory.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Inventory.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Merges the items at <code class="paramref">index1</code> and <code class="paramref">index2</code> if both items are same.
@@ -736,7 +734,7 @@ Doesn't do anything if one of the indices are empty.</p>
 
   <h3 id="XIV_Packages_InventorySystem_Inventory_RemoveSlot_System_Int32_" data-uid="XIV.Packages.InventorySystem.Inventory.RemoveSlot(System.Int32)">
   RemoveSlot(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Inventory.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Inventory.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes slots</p>
@@ -769,7 +767,7 @@ Doesn't do anything if one of the indices are empty.</p>
 
   <h3 id="XIV_Packages_InventorySystem_Inventory_Swap_System_Int32_System_Int32_" data-uid="XIV.Packages.InventorySystem.Inventory.Swap(System.Int32,System.Int32)">
   Swap(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Inventory.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Inventory.cs/#L176"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Swaps the item indices. No matter if indices are empty or not.</p>

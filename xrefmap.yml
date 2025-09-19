@@ -1,12 +1,849 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: XIV
+  name: XIV
+  href: api/XIV.html
+- uid: XIV.Core.Utils
+  name: XIV.Core.Utils
+  href: api/XIV.Core.Utils.html
+  commentId: N:XIV.Core.Utils
+  fullName: XIV.Core.Utils
+  nameWithType: XIV.Core.Utils
+- uid: XIV.Core.Utils.ClassGenerator
+  name: ClassGenerator
+  href: api/XIV.Core.Utils.ClassGenerator.html
+  commentId: T:XIV.Core.Utils.ClassGenerator
+  fullName: XIV.Core.Utils.ClassGenerator
+  nameWithType: ClassGenerator
+- uid: XIV.Core.Utils.ClassGenerator.#ctor(System.String,System.String,System.Boolean)
+  name: ClassGenerator(string, string, bool)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator__ctor_System_String_System_String_System_Boolean_
+  commentId: M:XIV.Core.Utils.ClassGenerator.#ctor(System.String,System.String,System.Boolean)
+  name.vb: New(String, String, Boolean)
+  fullName: XIV.Core.Utils.ClassGenerator.ClassGenerator(string, string, bool)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.New(String, String, Boolean)
+  nameWithType: ClassGenerator.ClassGenerator(string, string, bool)
+  nameWithType.vb: ClassGenerator.New(String, String, Boolean)
+- uid: XIV.Core.Utils.ClassGenerator.#ctor(System.String,System.String,System.String,System.String,System.Boolean)
+  name: ClassGenerator(string, string, string, string, bool)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator__ctor_System_String_System_String_System_String_System_String_System_Boolean_
+  commentId: M:XIV.Core.Utils.ClassGenerator.#ctor(System.String,System.String,System.String,System.String,System.Boolean)
+  name.vb: New(String, String, String, String, Boolean)
+  fullName: XIV.Core.Utils.ClassGenerator.ClassGenerator(string, string, string, string, bool)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.New(String, String, String, String, Boolean)
+  nameWithType: ClassGenerator.ClassGenerator(string, string, string, string, bool)
+  nameWithType.vb: ClassGenerator.New(String, String, String, String, Boolean)
+- uid: XIV.Core.Utils.ClassGenerator.#ctor*
+  name: ClassGenerator
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator__ctor_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: XIV.Core.Utils.ClassGenerator.ClassGenerator
+  fullName.vb: XIV.Core.Utils.ClassGenerator.New
+  nameWithType: ClassGenerator.ClassGenerator
+  nameWithType.vb: ClassGenerator.New
+- uid: XIV.Core.Utils.ClassGenerator.AddAttribute(System.String)
+  name: AddAttribute(string)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddAttribute_System_String_
+  commentId: M:XIV.Core.Utils.ClassGenerator.AddAttribute(System.String)
+  name.vb: AddAttribute(String)
+  fullName: XIV.Core.Utils.ClassGenerator.AddAttribute(string)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.AddAttribute(String)
+  nameWithType: ClassGenerator.AddAttribute(string)
+  nameWithType.vb: ClassGenerator.AddAttribute(String)
+- uid: XIV.Core.Utils.ClassGenerator.AddAttribute*
+  name: AddAttribute
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddAttribute_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.AddAttribute
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.AddAttribute
+  nameWithType: ClassGenerator.AddAttribute
+- uid: XIV.Core.Utils.ClassGenerator.AddField(System.String)
+  name: AddField(string)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddField_System_String_
+  commentId: M:XIV.Core.Utils.ClassGenerator.AddField(System.String)
+  name.vb: AddField(String)
+  fullName: XIV.Core.Utils.ClassGenerator.AddField(string)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.AddField(String)
+  nameWithType: ClassGenerator.AddField(string)
+  nameWithType.vb: ClassGenerator.AddField(String)
+- uid: XIV.Core.Utils.ClassGenerator.AddField(System.String,System.String,System.String,System.String,System.String)
+  name: AddField(string, string, string, string, string)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddField_System_String_System_String_System_String_System_String_System_String_
+  commentId: M:XIV.Core.Utils.ClassGenerator.AddField(System.String,System.String,System.String,System.String,System.String)
+  name.vb: AddField(String, String, String, String, String)
+  fullName: XIV.Core.Utils.ClassGenerator.AddField(string, string, string, string, string)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.AddField(String, String, String, String, String)
+  nameWithType: ClassGenerator.AddField(string, string, string, string, string)
+  nameWithType.vb: ClassGenerator.AddField(String, String, String, String, String)
+- uid: XIV.Core.Utils.ClassGenerator.AddField*
+  name: AddField
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddField_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.AddField
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.AddField
+  nameWithType: ClassGenerator.AddField
+- uid: XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty(System.String,System.String)
+  name: AddGetOnlyProperty(string, string)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddGetOnlyProperty_System_String_System_String_
+  commentId: M:XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty(System.String,System.String)
+  name.vb: AddGetOnlyProperty(String, String)
+  fullName: XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty(string, string)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty(String, String)
+  nameWithType: ClassGenerator.AddGetOnlyProperty(string, string)
+  nameWithType.vb: ClassGenerator.AddGetOnlyProperty(String, String)
+- uid: XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty(System.String,System.String,System.String,System.String,System.String)
+  name: AddGetOnlyProperty(string, string, string, string, string)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddGetOnlyProperty_System_String_System_String_System_String_System_String_System_String_
+  commentId: M:XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty(System.String,System.String,System.String,System.String,System.String)
+  name.vb: AddGetOnlyProperty(String, String, String, String, String)
+  fullName: XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty(string, string, string, string, string)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty(String, String, String, String, String)
+  nameWithType: ClassGenerator.AddGetOnlyProperty(string, string, string, string, string)
+  nameWithType.vb: ClassGenerator.AddGetOnlyProperty(String, String, String, String, String)
+- uid: XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty*
+  name: AddGetOnlyProperty
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddGetOnlyProperty_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty
+  nameWithType: ClassGenerator.AddGetOnlyProperty
+- uid: XIV.Core.Utils.ClassGenerator.AddGetSetProperty(System.String,System.String,System.String)
+  name: AddGetSetProperty(string, string, string)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddGetSetProperty_System_String_System_String_System_String_
+  commentId: M:XIV.Core.Utils.ClassGenerator.AddGetSetProperty(System.String,System.String,System.String)
+  name.vb: AddGetSetProperty(String, String, String)
+  fullName: XIV.Core.Utils.ClassGenerator.AddGetSetProperty(string, string, string)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.AddGetSetProperty(String, String, String)
+  nameWithType: ClassGenerator.AddGetSetProperty(string, string, string)
+  nameWithType.vb: ClassGenerator.AddGetSetProperty(String, String, String)
+- uid: XIV.Core.Utils.ClassGenerator.AddGetSetProperty(System.String,System.String,System.String,System.String,System.String,System.String)
+  name: AddGetSetProperty(string, string, string, string, string, string)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddGetSetProperty_System_String_System_String_System_String_System_String_System_String_System_String_
+  commentId: M:XIV.Core.Utils.ClassGenerator.AddGetSetProperty(System.String,System.String,System.String,System.String,System.String,System.String)
+  name.vb: AddGetSetProperty(String, String, String, String, String, String)
+  fullName: XIV.Core.Utils.ClassGenerator.AddGetSetProperty(string, string, string, string, string, string)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.AddGetSetProperty(String, String, String, String, String, String)
+  nameWithType: ClassGenerator.AddGetSetProperty(string, string, string, string, string, string)
+  nameWithType.vb: ClassGenerator.AddGetSetProperty(String, String, String, String, String, String)
+- uid: XIV.Core.Utils.ClassGenerator.AddGetSetProperty*
+  name: AddGetSetProperty
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddGetSetProperty_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.AddGetSetProperty
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.AddGetSetProperty
+  nameWithType: ClassGenerator.AddGetSetProperty
+- uid: XIV.Core.Utils.ClassGenerator.AddInnerClass(XIV.Core.Utils.ClassGenerator)
+  name: AddInnerClass(ClassGenerator)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddInnerClass_XIV_Core_Utils_ClassGenerator_
+  commentId: M:XIV.Core.Utils.ClassGenerator.AddInnerClass(XIV.Core.Utils.ClassGenerator)
+  fullName: XIV.Core.Utils.ClassGenerator.AddInnerClass(XIV.Core.Utils.ClassGenerator)
+  nameWithType: ClassGenerator.AddInnerClass(ClassGenerator)
+- uid: XIV.Core.Utils.ClassGenerator.AddInnerClass*
+  name: AddInnerClass
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddInnerClass_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.AddInnerClass
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.AddInnerClass
+  nameWithType: ClassGenerator.AddInnerClass
+- uid: XIV.Core.Utils.ClassGenerator.AddUsing(System.String)
+  name: AddUsing(string)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddUsing_System_String_
+  commentId: M:XIV.Core.Utils.ClassGenerator.AddUsing(System.String)
+  name.vb: AddUsing(String)
+  fullName: XIV.Core.Utils.ClassGenerator.AddUsing(string)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.AddUsing(String)
+  nameWithType: ClassGenerator.AddUsing(string)
+  nameWithType.vb: ClassGenerator.AddUsing(String)
+- uid: XIV.Core.Utils.ClassGenerator.AddUsing*
+  name: AddUsing
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_AddUsing_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.AddUsing
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.AddUsing
+  nameWithType: ClassGenerator.AddUsing
+- uid: XIV.Core.Utils.ClassGenerator.EndClass
+  name: EndClass()
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_EndClass
+  commentId: M:XIV.Core.Utils.ClassGenerator.EndClass
+  fullName: XIV.Core.Utils.ClassGenerator.EndClass()
+  nameWithType: ClassGenerator.EndClass()
+- uid: XIV.Core.Utils.ClassGenerator.EndClass*
+  name: EndClass
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_EndClass_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.EndClass
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.EndClass
+  nameWithType: ClassGenerator.EndClass
+- uid: XIV.Core.Utils.ClassGenerator.EndMethod
+  name: EndMethod()
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_EndMethod
+  commentId: M:XIV.Core.Utils.ClassGenerator.EndMethod
+  fullName: XIV.Core.Utils.ClassGenerator.EndMethod()
+  nameWithType: ClassGenerator.EndMethod()
+- uid: XIV.Core.Utils.ClassGenerator.EndMethod*
+  name: EndMethod
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_EndMethod_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.EndMethod
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.EndMethod
+  nameWithType: ClassGenerator.EndMethod
+- uid: XIV.Core.Utils.ClassGenerator.PutInsideNamespace(System.String)
+  name: PutInsideNamespace(string)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_PutInsideNamespace_System_String_
+  commentId: M:XIV.Core.Utils.ClassGenerator.PutInsideNamespace(System.String)
+  name.vb: PutInsideNamespace(String)
+  fullName: XIV.Core.Utils.ClassGenerator.PutInsideNamespace(string)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.PutInsideNamespace(String)
+  nameWithType: ClassGenerator.PutInsideNamespace(string)
+  nameWithType.vb: ClassGenerator.PutInsideNamespace(String)
+- uid: XIV.Core.Utils.ClassGenerator.PutInsideNamespace*
+  name: PutInsideNamespace
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_PutInsideNamespace_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.PutInsideNamespace
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.PutInsideNamespace
+  nameWithType: ClassGenerator.PutInsideNamespace
+- uid: XIV.Core.Utils.ClassGenerator.StartMethod(System.String)
+  name: StartMethod(string)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_StartMethod_System_String_
+  commentId: M:XIV.Core.Utils.ClassGenerator.StartMethod(System.String)
+  name.vb: StartMethod(String)
+  fullName: XIV.Core.Utils.ClassGenerator.StartMethod(string)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.StartMethod(String)
+  nameWithType: ClassGenerator.StartMethod(string)
+  nameWithType.vb: ClassGenerator.StartMethod(String)
+- uid: XIV.Core.Utils.ClassGenerator.StartMethod*
+  name: StartMethod
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_StartMethod_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.StartMethod
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.StartMethod
+  nameWithType: ClassGenerator.StartMethod
+- uid: XIV.Core.Utils.ClassGenerator.ToString
+  name: ToString()
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_ToString
+  commentId: M:XIV.Core.Utils.ClassGenerator.ToString
+  fullName: XIV.Core.Utils.ClassGenerator.ToString()
+  nameWithType: ClassGenerator.ToString()
+- uid: XIV.Core.Utils.ClassGenerator.ToString*
+  name: ToString
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_ToString_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.ToString
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.ToString
+  nameWithType: ClassGenerator.ToString
+- uid: XIV.Core.Utils.ClassGenerator.WriteCommentInsideMethod(System.String,System.Boolean)
+  name: WriteCommentInsideMethod(string, bool)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_WriteCommentInsideMethod_System_String_System_Boolean_
+  commentId: M:XIV.Core.Utils.ClassGenerator.WriteCommentInsideMethod(System.String,System.Boolean)
+  name.vb: WriteCommentInsideMethod(String, Boolean)
+  fullName: XIV.Core.Utils.ClassGenerator.WriteCommentInsideMethod(string, bool)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.WriteCommentInsideMethod(String, Boolean)
+  nameWithType: ClassGenerator.WriteCommentInsideMethod(string, bool)
+  nameWithType.vb: ClassGenerator.WriteCommentInsideMethod(String, Boolean)
+- uid: XIV.Core.Utils.ClassGenerator.WriteCommentInsideMethod*
+  name: WriteCommentInsideMethod
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_WriteCommentInsideMethod_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.WriteCommentInsideMethod
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.WriteCommentInsideMethod
+  nameWithType: ClassGenerator.WriteCommentInsideMethod
+- uid: XIV.Core.Utils.ClassGenerator.WriteMethodLine(System.String)
+  name: WriteMethodLine(string)
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_WriteMethodLine_System_String_
+  commentId: M:XIV.Core.Utils.ClassGenerator.WriteMethodLine(System.String)
+  name.vb: WriteMethodLine(String)
+  fullName: XIV.Core.Utils.ClassGenerator.WriteMethodLine(string)
+  fullName.vb: XIV.Core.Utils.ClassGenerator.WriteMethodLine(String)
+  nameWithType: ClassGenerator.WriteMethodLine(string)
+  nameWithType.vb: ClassGenerator.WriteMethodLine(String)
+- uid: XIV.Core.Utils.ClassGenerator.WriteMethodLine*
+  name: WriteMethodLine
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_WriteMethodLine_
+  commentId: Overload:XIV.Core.Utils.ClassGenerator.WriteMethodLine
+  isSpec: "True"
+  fullName: XIV.Core.Utils.ClassGenerator.WriteMethodLine
+  nameWithType: ClassGenerator.WriteMethodLine
+- uid: XIV.Core.Utils.ClassGenerator.accessModifier
+  name: accessModifier
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_accessModifier
+  commentId: F:XIV.Core.Utils.ClassGenerator.accessModifier
+  fullName: XIV.Core.Utils.ClassGenerator.accessModifier
+  nameWithType: ClassGenerator.accessModifier
+- uid: XIV.Core.Utils.ClassGenerator.classModifier
+  name: classModifier
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_classModifier
+  commentId: F:XIV.Core.Utils.ClassGenerator.classModifier
+  fullName: XIV.Core.Utils.ClassGenerator.classModifier
+  nameWithType: ClassGenerator.classModifier
+- uid: XIV.Core.Utils.ClassGenerator.className
+  name: className
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_className
+  commentId: F:XIV.Core.Utils.ClassGenerator.className
+  fullName: XIV.Core.Utils.ClassGenerator.className
+  nameWithType: ClassGenerator.className
+- uid: XIV.Core.Utils.ClassGenerator.isInnerClass
+  name: isInnerClass
+  href: api/XIV.Core.Utils.ClassGenerator.html#XIV_Core_Utils_ClassGenerator_isInnerClass
+  commentId: F:XIV.Core.Utils.ClassGenerator.isInnerClass
+  fullName: XIV.Core.Utils.ClassGenerator.isInnerClass
+  nameWithType: ClassGenerator.isInnerClass
 - uid: XIV.Packages.InventorySystem
   name: XIV.Packages.InventorySystem
   href: api/XIV.Packages.InventorySystem.html
   commentId: N:XIV.Packages.InventorySystem
   fullName: XIV.Packages.InventorySystem
   nameWithType: XIV.Packages.InventorySystem
+- uid: XIV.Packages.InventorySystem.Editor
+  name: XIV.Packages.InventorySystem.Editor
+  href: api/XIV.Packages.InventorySystem.Editor.html
+  commentId: N:XIV.Packages.InventorySystem.Editor
+  fullName: XIV.Packages.InventorySystem.Editor
+  nameWithType: XIV.Packages.InventorySystem.Editor
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData
+  name: ItemCreatorData
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData
+  nameWithType: ItemCreatorData
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoBool
+  name: ItemCreatorData.FInfoBool
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoBool.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoBool
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoBool
+  nameWithType: ItemCreatorData.FInfoBool
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoByte
+  name: ItemCreatorData.FInfoByte
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoByte.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoByte
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoByte
+  nameWithType: ItemCreatorData.FInfoByte
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoChar
+  name: ItemCreatorData.FInfoChar
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoChar.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoChar
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoChar
+  nameWithType: ItemCreatorData.FInfoChar
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoDouble
+  name: ItemCreatorData.FInfoDouble
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoDouble.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoDouble
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoDouble
+  nameWithType: ItemCreatorData.FInfoDouble
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoFloat
+  name: ItemCreatorData.FInfoFloat
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoFloat.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoFloat
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoFloat
+  nameWithType: ItemCreatorData.FInfoFloat
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoInt
+  name: ItemCreatorData.FInfoInt
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoInt.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoInt
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoInt
+  nameWithType: ItemCreatorData.FInfoInt
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoLong
+  name: ItemCreatorData.FInfoLong
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoLong.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoLong
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoLong
+  nameWithType: ItemCreatorData.FInfoLong
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoString
+  name: ItemCreatorData.FInfoString
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoString.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoString
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfoString
+  nameWithType: ItemCreatorData.FInfoString
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1
+  name: ItemCreatorData.FInfo<T>
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo-1.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1
+  name.vb: ItemCreatorData.FInfo(Of T)
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo<T>
+  fullName.vb: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo(Of T)
+  nameWithType: ItemCreatorData.FInfo<T>
+  nameWithType.vb: ItemCreatorData.FInfo(Of T)
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1.#ctor
+  name: FInfo()
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo-1.html#XIV_Packages_InventorySystem_Editor_ItemCreatorData_FInfo_1__ctor
+  commentId: M:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1.#ctor
+  name.vb: New()
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo<T>.FInfo()
+  fullName.vb: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo(Of T).New()
+  nameWithType: ItemCreatorData.FInfo<T>.FInfo()
+  nameWithType.vb: ItemCreatorData.FInfo(Of T).New()
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1.#ctor*
+  name: FInfo
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo-1.html#XIV_Packages_InventorySystem_Editor_ItemCreatorData_FInfo_1__ctor_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo<T>.FInfo
+  fullName.vb: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo(Of T).New
+  nameWithType: ItemCreatorData.FInfo<T>.FInfo
+  nameWithType.vb: ItemCreatorData.FInfo(Of T).New
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1.fieldName
+  name: fieldName
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo-1.html#XIV_Packages_InventorySystem_Editor_ItemCreatorData_FInfo_1_fieldName
+  commentId: F:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1.fieldName
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo<T>.fieldName
+  fullName.vb: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo(Of T).fieldName
+  nameWithType: ItemCreatorData.FInfo<T>.fieldName
+  nameWithType.vb: ItemCreatorData.FInfo(Of T).fieldName
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1.fieldType
+  name: fieldType
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo-1.html#XIV_Packages_InventorySystem_Editor_ItemCreatorData_FInfo_1_fieldType
+  commentId: P:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1.fieldType
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo<T>.fieldType
+  fullName.vb: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo(Of T).fieldType
+  nameWithType: ItemCreatorData.FInfo<T>.fieldType
+  nameWithType.vb: ItemCreatorData.FInfo(Of T).fieldType
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1.fieldType*
+  name: fieldType
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo-1.html#XIV_Packages_InventorySystem_Editor_ItemCreatorData_FInfo_1_fieldType_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1.fieldType
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo<T>.fieldType
+  fullName.vb: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo(Of T).fieldType
+  nameWithType: ItemCreatorData.FInfo<T>.fieldType
+  nameWithType.vb: ItemCreatorData.FInfo(Of T).fieldType
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1.fieldValue
+  name: fieldValue
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo-1.html#XIV_Packages_InventorySystem_Editor_ItemCreatorData_FInfo_1_fieldValue
+  commentId: F:XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo`1.fieldValue
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo<T>.fieldValue
+  fullName.vb: XIV.Packages.InventorySystem.Editor.ItemCreatorData.FInfo(Of T).fieldValue
+  nameWithType: ItemCreatorData.FInfo<T>.fieldValue
+  nameWithType.vb: ItemCreatorData.FInfo(Of T).fieldValue
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableBoolList
+  name: ItemCreatorData.SerializableBoolList
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableBoolList.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableBoolList
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableBoolList
+  nameWithType: ItemCreatorData.SerializableBoolList
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableByteList
+  name: ItemCreatorData.SerializableByteList
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableByteList.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableByteList
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableByteList
+  nameWithType: ItemCreatorData.SerializableByteList
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableCharList
+  name: ItemCreatorData.SerializableCharList
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableCharList.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableCharList
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableCharList
+  nameWithType: ItemCreatorData.SerializableCharList
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableDoubleList
+  name: ItemCreatorData.SerializableDoubleList
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableDoubleList.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableDoubleList
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableDoubleList
+  nameWithType: ItemCreatorData.SerializableDoubleList
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableFloatList
+  name: ItemCreatorData.SerializableFloatList
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableFloatList.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableFloatList
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableFloatList
+  nameWithType: ItemCreatorData.SerializableFloatList
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableIntList
+  name: ItemCreatorData.SerializableIntList
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableIntList.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableIntList
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableIntList
+  nameWithType: ItemCreatorData.SerializableIntList
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableLongList
+  name: ItemCreatorData.SerializableLongList
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableLongList.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableLongList
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableLongList
+  nameWithType: ItemCreatorData.SerializableLongList
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableStringList
+  name: ItemCreatorData.SerializableStringList
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableStringList.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableStringList
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.SerializableStringList
+  nameWithType: ItemCreatorData.SerializableStringList
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.XIVSerializedStringToXIVSerializedListDict
+  name: ItemCreatorData.XIVSerializedStringToXIVSerializedListDict
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.XIVSerializedStringToXIVSerializedListDict.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorData.XIVSerializedStringToXIVSerializedListDict
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.XIVSerializedStringToXIVSerializedListDict
+  nameWithType: ItemCreatorData.XIVSerializedStringToXIVSerializedListDict
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorData.fields
+  name: fields
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorData.html#XIV_Packages_InventorySystem_Editor_ItemCreatorData_fields
+  commentId: F:XIV.Packages.InventorySystem.Editor.ItemCreatorData.fields
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorData.fields
+  nameWithType: ItemCreatorData.fields
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorWindow
+  name: ItemCreatorWindow
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.ItemCreatorWindow
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorWindow
+  nameWithType: ItemCreatorWindow
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.ShowWindow
+  name: ShowWindow()
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.html#XIV_Packages_InventorySystem_Editor_ItemCreatorWindow_ShowWindow
+  commentId: M:XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.ShowWindow
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.ShowWindow()
+  nameWithType: ItemCreatorWindow.ShowWindow()
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.ShowWindow*
+  name: ShowWindow
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.html#XIV_Packages_InventorySystem_Editor_ItemCreatorWindow_ShowWindow_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.ShowWindow
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.ShowWindow
+  nameWithType: ItemCreatorWindow.ShowWindow
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.itemCreatorData
+  name: itemCreatorData
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.html#XIV_Packages_InventorySystem_Editor_ItemCreatorWindow_itemCreatorData
+  commentId: F:XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.itemCreatorData
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.itemCreatorData
+  nameWithType: ItemCreatorWindow.itemCreatorData
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.itemName
+  name: itemName
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.html#XIV_Packages_InventorySystem_Editor_ItemCreatorWindow_itemName
+  commentId: F:XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.itemName
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.itemName
+  nameWithType: ItemCreatorWindow.itemName
+- uid: XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.path
+  name: path
+  href: api/XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.html#XIV_Packages_InventorySystem_Editor_ItemCreatorWindow_path
+  commentId: F:XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.path
+  fullName: XIV.Packages.InventorySystem.Editor.ItemCreatorWindow.path
+  nameWithType: ItemCreatorWindow.path
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2
+  name: XIVSerializedDictionary<TKey, TValue>
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary-2.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2
+  name.vb: XIVSerializedDictionary(Of TKey, TValue)
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary<TKey, TValue>
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary(Of TKey, TValue)
+  nameWithType: XIVSerializedDictionary<TKey, TValue>
+  nameWithType.vb: XIVSerializedDictionary(Of TKey, TValue)
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2.OnAfterDeserialize
+  name: OnAfterDeserialize()
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary-2.html#XIV_Packages_InventorySystem_Editor_XIVSerializedDictionary_2_OnAfterDeserialize
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2.OnAfterDeserialize
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary<TKey, TValue>.OnAfterDeserialize()
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary(Of TKey, TValue).OnAfterDeserialize()
+  nameWithType: XIVSerializedDictionary<TKey, TValue>.OnAfterDeserialize()
+  nameWithType.vb: XIVSerializedDictionary(Of TKey, TValue).OnAfterDeserialize()
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2.OnAfterDeserialize*
+  name: OnAfterDeserialize
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary-2.html#XIV_Packages_InventorySystem_Editor_XIVSerializedDictionary_2_OnAfterDeserialize_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2.OnAfterDeserialize
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary<TKey, TValue>.OnAfterDeserialize
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary(Of TKey, TValue).OnAfterDeserialize
+  nameWithType: XIVSerializedDictionary<TKey, TValue>.OnAfterDeserialize
+  nameWithType.vb: XIVSerializedDictionary(Of TKey, TValue).OnAfterDeserialize
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2.OnBeforeSerialize
+  name: OnBeforeSerialize()
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary-2.html#XIV_Packages_InventorySystem_Editor_XIVSerializedDictionary_2_OnBeforeSerialize
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2.OnBeforeSerialize
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary<TKey, TValue>.OnBeforeSerialize()
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary(Of TKey, TValue).OnBeforeSerialize()
+  nameWithType: XIVSerializedDictionary<TKey, TValue>.OnBeforeSerialize()
+  nameWithType.vb: XIVSerializedDictionary(Of TKey, TValue).OnBeforeSerialize()
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2.OnBeforeSerialize*
+  name: OnBeforeSerialize
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary-2.html#XIV_Packages_InventorySystem_Editor_XIVSerializedDictionary_2_OnBeforeSerialize_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2.OnBeforeSerialize
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary<TKey, TValue>.OnBeforeSerialize
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary(Of TKey, TValue).OnBeforeSerialize
+  nameWithType: XIVSerializedDictionary<TKey, TValue>.OnBeforeSerialize
+  nameWithType.vb: XIVSerializedDictionary(Of TKey, TValue).OnBeforeSerialize
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2.keys
+  name: keys
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary-2.html#XIV_Packages_InventorySystem_Editor_XIVSerializedDictionary_2_keys
+  commentId: F:XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2.keys
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary<TKey, TValue>.keys
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary(Of TKey, TValue).keys
+  nameWithType: XIVSerializedDictionary<TKey, TValue>.keys
+  nameWithType.vb: XIVSerializedDictionary(Of TKey, TValue).keys
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2.values
+  name: values
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary-2.html#XIV_Packages_InventorySystem_Editor_XIVSerializedDictionary_2_values
+  commentId: F:XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary`2.values
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary<TKey, TValue>.values
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedDictionary(Of TKey, TValue).values
+  nameWithType: XIVSerializedDictionary<TKey, TValue>.values
+  nameWithType.vb: XIVSerializedDictionary(Of TKey, TValue).values
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList
+  name: XIVSerializedList
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.XIVSerializedList
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList
+  nameWithType: XIVSerializedList
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Add(System.Object)
+  name: Add(object)
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_Add_System_Object_
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedList.Add(System.Object)
+  name.vb: Add(Object)
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Add(object)
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Add(Object)
+  nameWithType: XIVSerializedList.Add(object)
+  nameWithType.vb: XIVSerializedList.Add(Object)
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Add*
+  name: Add
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_Add_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList.Add
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Add
+  nameWithType: XIVSerializedList.Add
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Clear
+  name: Clear()
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_Clear
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedList.Clear
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Clear()
+  nameWithType: XIVSerializedList.Clear()
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Clear*
+  name: Clear
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_Clear_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList.Clear
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Clear
+  nameWithType: XIVSerializedList.Clear
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Count
+  name: Count
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_Count
+  commentId: P:XIV.Packages.InventorySystem.Editor.XIVSerializedList.Count
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Count
+  nameWithType: XIVSerializedList.Count
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Count*
+  name: Count
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_Count_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList.Count
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Count
+  nameWithType: XIVSerializedList.Count
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.GetCount
+  name: GetCount()
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_GetCount
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedList.GetCount
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.GetCount()
+  nameWithType: XIVSerializedList.GetCount()
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.GetCount*
+  name: GetCount
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_GetCount_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList.GetCount
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.GetCount
+  nameWithType: XIVSerializedList.GetCount
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.GetItem(System.Int32)
+  name: GetItem(int)
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_GetItem_System_Int32_
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedList.GetItem(System.Int32)
+  name.vb: GetItem(Integer)
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.GetItem(int)
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList.GetItem(Integer)
+  nameWithType: XIVSerializedList.GetItem(int)
+  nameWithType.vb: XIVSerializedList.GetItem(Integer)
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.GetItem*
+  name: GetItem
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_GetItem_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList.GetItem
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.GetItem
+  nameWithType: XIVSerializedList.GetItem
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Item(System.Int32)
+  name: this[int]
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_Item_System_Int32_
+  commentId: P:XIV.Packages.InventorySystem.Editor.XIVSerializedList.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.this[int]
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList.this[](Integer)
+  nameWithType: XIVSerializedList.this[int]
+  nameWithType.vb: XIVSerializedList.this[](Integer)
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.Item*
+  name: this
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_Item_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.this
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList.this[]
+  nameWithType: XIVSerializedList.this
+  nameWithType.vb: XIVSerializedList.this[]
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.RemoveAt(System.Int32)
+  name: RemoveAt(int)
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_RemoveAt_System_Int32_
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedList.RemoveAt(System.Int32)
+  name.vb: RemoveAt(Integer)
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.RemoveAt(int)
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList.RemoveAt(Integer)
+  nameWithType: XIVSerializedList.RemoveAt(int)
+  nameWithType.vb: XIVSerializedList.RemoveAt(Integer)
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList.RemoveAt*
+  name: RemoveAt
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_RemoveAt_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList.RemoveAt
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList.RemoveAt
+  nameWithType: XIVSerializedList.RemoveAt
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1
+  name: XIVSerializedList<T>
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html
+  commentId: T:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1
+  name.vb: XIVSerializedList(Of T)
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T)
+  nameWithType: XIVSerializedList<T>
+  nameWithType.vb: XIVSerializedList(Of T)
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Add(System.Object)
+  name: Add(object)
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_Add_System_Object_
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Add(System.Object)
+  name.vb: Add(Object)
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.Add(object)
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).Add(Object)
+  nameWithType: XIVSerializedList<T>.Add(object)
+  nameWithType.vb: XIVSerializedList(Of T).Add(Object)
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Add(`0)
+  name: Add(T)
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_Add__0_
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Add(`0)
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.Add(T)
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).Add(T)
+  nameWithType: XIVSerializedList<T>.Add(T)
+  nameWithType.vb: XIVSerializedList(Of T).Add(T)
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Add*
+  name: Add
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_Add_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Add
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.Add
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).Add
+  nameWithType: XIVSerializedList<T>.Add
+  nameWithType.vb: XIVSerializedList(Of T).Add
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Clear
+  name: Clear()
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_Clear
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Clear
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.Clear()
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).Clear()
+  nameWithType: XIVSerializedList<T>.Clear()
+  nameWithType.vb: XIVSerializedList(Of T).Clear()
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Clear*
+  name: Clear
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_Clear_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Clear
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.Clear
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).Clear
+  nameWithType: XIVSerializedList<T>.Clear
+  nameWithType.vb: XIVSerializedList(Of T).Clear
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.GetCount
+  name: GetCount()
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_GetCount
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.GetCount
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.GetCount()
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).GetCount()
+  nameWithType: XIVSerializedList<T>.GetCount()
+  nameWithType.vb: XIVSerializedList(Of T).GetCount()
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.GetCount*
+  name: GetCount
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_GetCount_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.GetCount
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.GetCount
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).GetCount
+  nameWithType: XIVSerializedList<T>.GetCount
+  nameWithType.vb: XIVSerializedList(Of T).GetCount
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.GetItem(System.Int32)
+  name: GetItem(int)
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_GetItem_System_Int32_
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.GetItem(System.Int32)
+  name.vb: GetItem(Integer)
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.GetItem(int)
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).GetItem(Integer)
+  nameWithType: XIVSerializedList<T>.GetItem(int)
+  nameWithType.vb: XIVSerializedList(Of T).GetItem(Integer)
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.GetItem*
+  name: GetItem
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_GetItem_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.GetItem
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.GetItem
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).GetItem
+  nameWithType: XIVSerializedList<T>.GetItem
+  nameWithType.vb: XIVSerializedList(Of T).GetItem
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Item(System.Int32)
+  name: this[int]
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_Item_System_Int32_
+  commentId: P:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.this[int]
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).this[](Integer)
+  nameWithType: XIVSerializedList<T>.this[int]
+  nameWithType.vb: XIVSerializedList(Of T).this[](Integer)
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Item*
+  name: this
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_Item_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.this
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).this[]
+  nameWithType: XIVSerializedList<T>.this
+  nameWithType.vb: XIVSerializedList(Of T).this[]
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.OnAfterDeserialize
+  name: OnAfterDeserialize()
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_OnAfterDeserialize
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.OnAfterDeserialize
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.OnAfterDeserialize()
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).OnAfterDeserialize()
+  nameWithType: XIVSerializedList<T>.OnAfterDeserialize()
+  nameWithType.vb: XIVSerializedList(Of T).OnAfterDeserialize()
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.OnAfterDeserialize*
+  name: OnAfterDeserialize
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_OnAfterDeserialize_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.OnAfterDeserialize
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.OnAfterDeserialize
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).OnAfterDeserialize
+  nameWithType: XIVSerializedList<T>.OnAfterDeserialize
+  nameWithType.vb: XIVSerializedList(Of T).OnAfterDeserialize
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.OnBeforeSerialize
+  name: OnBeforeSerialize()
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_OnBeforeSerialize
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.OnBeforeSerialize
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.OnBeforeSerialize()
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).OnBeforeSerialize()
+  nameWithType: XIVSerializedList<T>.OnBeforeSerialize()
+  nameWithType.vb: XIVSerializedList(Of T).OnBeforeSerialize()
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.OnBeforeSerialize*
+  name: OnBeforeSerialize
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_OnBeforeSerialize_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.OnBeforeSerialize
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.OnBeforeSerialize
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).OnBeforeSerialize
+  nameWithType: XIVSerializedList<T>.OnBeforeSerialize
+  nameWithType.vb: XIVSerializedList(Of T).OnBeforeSerialize
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.RemoveAt(System.Int32)
+  name: RemoveAt(int)
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_RemoveAt_System_Int32_
+  commentId: M:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.RemoveAt(System.Int32)
+  name.vb: RemoveAt(Integer)
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.RemoveAt(int)
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).RemoveAt(Integer)
+  nameWithType: XIVSerializedList<T>.RemoveAt(int)
+  nameWithType.vb: XIVSerializedList(Of T).RemoveAt(Integer)
+- uid: XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.RemoveAt*
+  name: RemoveAt
+  href: api/XIV.Packages.InventorySystem.Editor.XIVSerializedList-1.html#XIV_Packages_InventorySystem_Editor_XIVSerializedList_1_RemoveAt_
+  commentId: Overload:XIV.Packages.InventorySystem.Editor.XIVSerializedList`1.RemoveAt
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Editor.XIVSerializedList<T>.RemoveAt
+  fullName.vb: XIV.Packages.InventorySystem.Editor.XIVSerializedList(Of T).RemoveAt
+  nameWithType: XIVSerializedList<T>.RemoveAt
+  nameWithType.vb: XIVSerializedList(Of T).RemoveAt
 - uid: XIV.Packages.InventorySystem.Extensions
   name: XIV.Packages.InventorySystem.Extensions
   href: api/XIV.Packages.InventorySystem.Extensions.html
@@ -1083,6 +1920,22 @@ references:
   fullName.vb: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.New
   nameWithType: ReadOnlyInventoryItem.ReadOnlyInventoryItem
   nameWithType.vb: ReadOnlyInventoryItem.New
+- uid: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.Equals(System.Object)
+  name: Equals(object)
+  href: api/XIV.Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Equals_System_Object_
+  commentId: M:XIV.Packages.InventorySystem.ReadOnlyInventoryItem.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.Equals(object)
+  fullName.vb: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.Equals(Object)
+  nameWithType: ReadOnlyInventoryItem.Equals(object)
+  nameWithType.vb: ReadOnlyInventoryItem.Equals(Object)
+- uid: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.Equals*
+  name: Equals
+  href: api/XIV.Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Equals_
+  commentId: Overload:XIV.Packages.InventorySystem.ReadOnlyInventoryItem.Equals
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.Equals
+  nameWithType: ReadOnlyInventoryItem.Equals
 - uid: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.Index
   name: Index
   href: api/XIV.Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_Index
@@ -1141,6 +1994,44 @@ references:
   isSpec: "True"
   fullName: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.Quantity
   nameWithType: ReadOnlyInventoryItem.Quantity
+- uid: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.op_Equality(XIV.Packages.InventorySystem.ReadOnlyInventoryItem,XIV.Packages.InventorySystem.ReadOnlyInventoryItem)
+  name: operator ==(ReadOnlyInventoryItem, ReadOnlyInventoryItem)
+  href: api/XIV.Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_op_Equality_XIV_Packages_InventorySystem_ReadOnlyInventoryItem_XIV_Packages_InventorySystem_ReadOnlyInventoryItem_
+  commentId: M:XIV.Packages.InventorySystem.ReadOnlyInventoryItem.op_Equality(XIV.Packages.InventorySystem.ReadOnlyInventoryItem,XIV.Packages.InventorySystem.ReadOnlyInventoryItem)
+  name.vb: =(ReadOnlyInventoryItem, ReadOnlyInventoryItem)
+  fullName: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.operator ==(XIV.Packages.InventorySystem.ReadOnlyInventoryItem, XIV.Packages.InventorySystem.ReadOnlyInventoryItem)
+  fullName.vb: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.=(XIV.Packages.InventorySystem.ReadOnlyInventoryItem, XIV.Packages.InventorySystem.ReadOnlyInventoryItem)
+  nameWithType: ReadOnlyInventoryItem.operator ==(ReadOnlyInventoryItem, ReadOnlyInventoryItem)
+  nameWithType.vb: ReadOnlyInventoryItem.=(ReadOnlyInventoryItem, ReadOnlyInventoryItem)
+- uid: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.op_Equality*
+  name: operator ==
+  href: api/XIV.Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_op_Equality_
+  commentId: Overload:XIV.Packages.InventorySystem.ReadOnlyInventoryItem.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.operator ==
+  fullName.vb: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.=
+  nameWithType: ReadOnlyInventoryItem.operator ==
+  nameWithType.vb: ReadOnlyInventoryItem.=
+- uid: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.op_Inequality(XIV.Packages.InventorySystem.ReadOnlyInventoryItem,XIV.Packages.InventorySystem.ReadOnlyInventoryItem)
+  name: operator !=(ReadOnlyInventoryItem, ReadOnlyInventoryItem)
+  href: api/XIV.Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_op_Inequality_XIV_Packages_InventorySystem_ReadOnlyInventoryItem_XIV_Packages_InventorySystem_ReadOnlyInventoryItem_
+  commentId: M:XIV.Packages.InventorySystem.ReadOnlyInventoryItem.op_Inequality(XIV.Packages.InventorySystem.ReadOnlyInventoryItem,XIV.Packages.InventorySystem.ReadOnlyInventoryItem)
+  name.vb: <>(ReadOnlyInventoryItem, ReadOnlyInventoryItem)
+  fullName: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.operator !=(XIV.Packages.InventorySystem.ReadOnlyInventoryItem, XIV.Packages.InventorySystem.ReadOnlyInventoryItem)
+  fullName.vb: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.<>(XIV.Packages.InventorySystem.ReadOnlyInventoryItem, XIV.Packages.InventorySystem.ReadOnlyInventoryItem)
+  nameWithType: ReadOnlyInventoryItem.operator !=(ReadOnlyInventoryItem, ReadOnlyInventoryItem)
+  nameWithType.vb: ReadOnlyInventoryItem.<>(ReadOnlyInventoryItem, ReadOnlyInventoryItem)
+- uid: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.op_Inequality*
+  name: operator !=
+  href: api/XIV.Packages.InventorySystem.ReadOnlyInventoryItem.html#XIV_Packages_InventorySystem_ReadOnlyInventoryItem_op_Inequality_
+  commentId: Overload:XIV.Packages.InventorySystem.ReadOnlyInventoryItem.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.operator !=
+  fullName.vb: XIV.Packages.InventorySystem.ReadOnlyInventoryItem.<>
+  nameWithType: ReadOnlyInventoryItem.operator !=
+  nameWithType.vb: ReadOnlyInventoryItem.<>
 - uid: XIV.Packages.InventorySystem.ScriptableObjects
   name: XIV.Packages.InventorySystem.ScriptableObjects
   href: api/XIV.Packages.InventorySystem.ScriptableObjects.html
@@ -1206,6 +2097,38 @@ references:
   fullName.vb: XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSO(Of T)()
   nameWithType: ItemDatabaseSO.GetItemSO<T>()
   nameWithType.vb: ItemDatabaseSO.GetItemSO(Of T)()
+- uid: XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSOsOfType*
+  name: GetItemSOsOfType
+  href: api/XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemDatabaseSO_GetItemSOsOfType_
+  commentId: Overload:XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSOsOfType
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSOsOfType
+  nameWithType: ItemDatabaseSO.GetItemSOsOfType
+- uid: XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSOsOfType``1
+  name: GetItemSOsOfType<T>()
+  href: api/XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemDatabaseSO_GetItemSOsOfType__1
+  commentId: M:XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSOsOfType``1
+  name.vb: GetItemSOsOfType(Of T)()
+  fullName: XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSOsOfType<T>()
+  fullName.vb: XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemSOsOfType(Of T)()
+  nameWithType: ItemDatabaseSO.GetItemSOsOfType<T>()
+  nameWithType.vb: ItemDatabaseSO.GetItemSOsOfType(Of T)()
+- uid: XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemsOfType*
+  name: GetItemsOfType
+  href: api/XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemDatabaseSO_GetItemsOfType_
+  commentId: Overload:XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemsOfType
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemsOfType
+  nameWithType: ItemDatabaseSO.GetItemsOfType
+- uid: XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemsOfType``1
+  name: GetItemsOfType<T>()
+  href: api/XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemDatabaseSO_GetItemsOfType__1
+  commentId: M:XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemsOfType``1
+  name.vb: GetItemsOfType(Of T)()
+  fullName: XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemsOfType<T>()
+  fullName.vb: XIV.Packages.InventorySystem.ScriptableObjects.ItemDatabaseSO.GetItemsOfType(Of T)()
+  nameWithType: ItemDatabaseSO.GetItemsOfType<T>()
+  nameWithType.vb: ItemDatabaseSO.GetItemsOfType(Of T)()
 - uid: XIV.Packages.InventorySystem.ScriptableObjects.ItemSO
   name: ItemSO
   href: api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSO.html
@@ -1275,6 +2198,23 @@ references:
   fullName.vb: XIV.Packages.InventorySystem.ScriptableObjects.ItemSO(Of T).GetItem
   nameWithType: ItemSO<T>.GetItem
   nameWithType.vb: ItemSO(Of T).GetItem
+- uid: XIV.Packages.InventorySystem.ScriptableObjects.ItemSO`1.GetItemT
+  name: GetItemT()
+  href: api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSO-1.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemSO_1_GetItemT
+  commentId: M:XIV.Packages.InventorySystem.ScriptableObjects.ItemSO`1.GetItemT
+  fullName: XIV.Packages.InventorySystem.ScriptableObjects.ItemSO<T>.GetItemT()
+  fullName.vb: XIV.Packages.InventorySystem.ScriptableObjects.ItemSO(Of T).GetItemT()
+  nameWithType: ItemSO<T>.GetItemT()
+  nameWithType.vb: ItemSO(Of T).GetItemT()
+- uid: XIV.Packages.InventorySystem.ScriptableObjects.ItemSO`1.GetItemT*
+  name: GetItemT
+  href: api/XIV.Packages.InventorySystem.ScriptableObjects.ItemSO-1.html#XIV_Packages_InventorySystem_ScriptableObjects_ItemSO_1_GetItemT_
+  commentId: Overload:XIV.Packages.InventorySystem.ScriptableObjects.ItemSO`1.GetItemT
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.ScriptableObjects.ItemSO<T>.GetItemT
+  fullName.vb: XIV.Packages.InventorySystem.ScriptableObjects.ItemSO(Of T).GetItemT
+  nameWithType: ItemSO<T>.GetItemT
+  nameWithType.vb: ItemSO(Of T).GetItemT
 - uid: XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths
   name: MenuPaths
   href: api/XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.html
@@ -1293,12 +2233,49 @@ references:
   commentId: F:XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.DATA_MENU
   fullName: XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.DATA_MENU
   nameWithType: MenuPaths.DATA_MENU
+- uid: XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.EDITOR_DATA_MENU
+  name: EDITOR_DATA_MENU
+  href: api/XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.html#XIV_Packages_InventorySystem_ScriptableObjects_MenuPaths_EDITOR_DATA_MENU
+  commentId: F:XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.EDITOR_DATA_MENU
+  fullName: XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.EDITOR_DATA_MENU
+  nameWithType: MenuPaths.EDITOR_DATA_MENU
+- uid: XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.EDITOR_MENU
+  name: EDITOR_MENU
+  href: api/XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.html#XIV_Packages_InventorySystem_ScriptableObjects_MenuPaths_EDITOR_MENU
+  commentId: F:XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.EDITOR_MENU
+  fullName: XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.EDITOR_MENU
+  nameWithType: MenuPaths.EDITOR_MENU
 - uid: XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.ITEMS_MENU
   name: ITEMS_MENU
   href: api/XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.html#XIV_Packages_InventorySystem_ScriptableObjects_MenuPaths_ITEMS_MENU
   commentId: F:XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.ITEMS_MENU
   fullName: XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.ITEMS_MENU
   nameWithType: MenuPaths.ITEMS_MENU
+- uid: XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer
+  name: RuntimeInventoryDisplayer
+  href: api/XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.html
+  commentId: T:XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer
+  fullName: XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer
+  nameWithType: RuntimeInventoryDisplayer
+- uid: XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.#ctor(XIV.Packages.InventorySystem.Inventory)
+  name: RuntimeInventoryDisplayer(Inventory)
+  href: api/XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.html#XIV_Packages_InventorySystem_ScriptableObjects_RuntimeInventoryDisplayer__ctor_XIV_Packages_InventorySystem_Inventory_
+  commentId: M:XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.#ctor(XIV.Packages.InventorySystem.Inventory)
+  name.vb: New(Inventory)
+  fullName: XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.RuntimeInventoryDisplayer(XIV.Packages.InventorySystem.Inventory)
+  fullName.vb: XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.New(XIV.Packages.InventorySystem.Inventory)
+  nameWithType: RuntimeInventoryDisplayer.RuntimeInventoryDisplayer(Inventory)
+  nameWithType.vb: RuntimeInventoryDisplayer.New(Inventory)
+- uid: XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.#ctor*
+  name: RuntimeInventoryDisplayer
+  href: api/XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.html#XIV_Packages_InventorySystem_ScriptableObjects_RuntimeInventoryDisplayer__ctor_
+  commentId: Overload:XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.RuntimeInventoryDisplayer
+  fullName.vb: XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.New
+  nameWithType: RuntimeInventoryDisplayer.RuntimeInventoryDisplayer
+  nameWithType.vb: RuntimeInventoryDisplayer.New
 - uid: XIV.Packages.InventorySystem.TempArray`1
   name: TempArray<T>
   href: api/XIV.Packages.InventorySystem.TempArray-1.html
@@ -1354,3 +2331,41 @@ references:
   fullName.vb: XIV.Packages.InventorySystem.TempArray(Of T).Length
   nameWithType: TempArray<T>.Length
   nameWithType.vb: TempArray(Of T).Length
+- uid: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor
+  name: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor
+  href: api/XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.html
+  commentId: N:XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor
+  fullName: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor
+  nameWithType: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor
+- uid: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer
+  name: XIVSerializedDictionaryDrawer
+  href: api/XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.html
+  commentId: T:XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer
+  fullName: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer
+  nameWithType: XIVSerializedDictionaryDrawer
+- uid: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api/XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.html#XIV_Packages_InventorySystem_xiv_filo_inventorysystem_Runtime_Editor_XIVSerializedDictionaryDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  commentId: M:XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  fullName: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: XIVSerializedDictionaryDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.GetPropertyHeight*
+  name: GetPropertyHeight
+  href: api/XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.html#XIV_Packages_InventorySystem_xiv_filo_inventorysystem_Runtime_Editor_XIVSerializedDictionaryDrawer_GetPropertyHeight_
+  commentId: Overload:XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.GetPropertyHeight
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.GetPropertyHeight
+  nameWithType: XIVSerializedDictionaryDrawer.GetPropertyHeight
+- uid: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.html#XIV_Packages_InventorySystem_xiv_filo_inventorysystem_Runtime_Editor_XIVSerializedDictionaryDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: XIVSerializedDictionaryDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.OnGUI*
+  name: OnGUI
+  href: api/XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.html#XIV_Packages_InventorySystem_xiv_filo_inventorysystem_Runtime_Editor_XIVSerializedDictionaryDrawer_OnGUI_
+  commentId: Overload:XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.OnGUI
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.xiv.filo.inventorysystem.Runtime.Editor.XIVSerializedDictionaryDrawer.OnGUI
+  nameWithType: XIVSerializedDictionaryDrawer.OnGUI

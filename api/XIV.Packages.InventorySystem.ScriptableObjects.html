@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace XIV.Packages.InventorySystem.ScriptableObjects
- </title>
+      <title>Namespace XIV.Packages.InventorySystem.ScriptableObjects </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace XIV.Packages.InventorySystem.ScriptableObjects
- ">
+      <meta name="title" content="Namespace XIV.Packages.InventorySystem.ScriptableObjects ">
+      
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -30,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -74,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -83,8 +82,7 @@
 
         <article data-uid="XIV.Packages.InventorySystem.ScriptableObjects">
 
-  <h1 id="XIV_Packages_InventorySystem_ScriptableObjects" data-uid="XIV.Packages.InventorySystem.ScriptableObjects" class="text-break">Namespace XIV.Packages.InventorySystem.ScriptableObjects
-</h1>
+  <h1 id="XIV_Packages_InventorySystem_ScriptableObjects" data-uid="XIV.Packages.InventorySystem.ScriptableObjects" class="text-break">Namespace XIV.Packages.InventorySystem.ScriptableObjects</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
@@ -114,13 +112,13 @@ Any non-serializable object can be stored in this class.</p>
       <dd><p>An abstract class to connect primitive items to Unity.
 Any non-serializable object can be stored in this class.</p>
 <example>
-<pre><code class="lang-csharp">Define a class that contains required values for your item.
+<pre><code class="lang-csharp">// Define a class that contains required values for your item.
 public class SwordItem : ItemBase
 {
     public int damage;
     public float swingSpeed;
 }
-Create another class to allow creating SwordItem in the Editor.
+// Create another class to allow creating SwordItem in the Editor.
 [CreateAssetMenu(menuName = "Items/" + nameof(SwordItemSO))]
 public class SwordItemSO : ItemSO&lt;SwordItem&gt;
 {
@@ -131,6 +129,11 @@ public class SwordItemSO : ItemSO&lt;SwordItem&gt;
     <dl class="jumplist">
       <dt><a class="xref" href="XIV.Packages.InventorySystem.ScriptableObjects.MenuPaths.html">MenuPaths</a></dt>
       <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.ScriptableObjects.RuntimeInventoryDisplayer.html">RuntimeInventoryDisplayer</a></dt>
+      <dd><p>Helps us to visualize the inventory in the inspector by listening the changes.</p>
+</dd>
     </dl>
     <h3 id="structs">
 Structs

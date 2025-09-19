@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ClassGenerator </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ClassGenerator ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/alimertcetin/xiv.filo.inventorysystem/new/main/apiSpec/new?filename=XIV_Core_Utils_ClassGenerator.md&amp;value=---%0Auid%3A%20XIV.Core.Utils.ClassGenerator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XIV.Core.Utils.ClassGenerator">
+
+
+
+  <h1 id="XIV_Core_Utils_ClassGenerator" data-uid="XIV.Core.Utils.ClassGenerator" class="text-break">
+Class ClassGenerator  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XIV.html">XIV</a>.<a class="xref" href="XIV.Core.html">Core</a>.<a class="xref" href="XIV.Core.Utils.html">Utils</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ClassGenerator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ClassGenerator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="XIV_Core_Utils_ClassGenerator__ctor_" data-uid="XIV.Core.Utils.ClassGenerator.#ctor*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator__ctor_System_String_System_String_System_Boolean_" data-uid="XIV.Core.Utils.ClassGenerator.#ctor(System.String,System.String,System.Boolean)">
+  ClassGenerator(string, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClassGenerator(string className, string classDefinitionLine, bool isInnerClass = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>className</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>classDefinitionLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>isInnerClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator__ctor_" data-uid="XIV.Core.Utils.ClassGenerator.#ctor*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator__ctor_System_String_System_String_System_String_System_String_System_Boolean_" data-uid="XIV.Core.Utils.ClassGenerator.#ctor(System.String,System.String,System.String,System.String,System.Boolean)">
+  ClassGenerator(string, string, string, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClassGenerator(string className, string classModifier = &quot;&quot;, string accessModifier = &quot;public&quot;, string inheritance = &quot;&quot;, bool isInnerClass = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>className</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>classModifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>accessModifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>inheritance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>isInnerClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_accessModifier" data-uid="XIV.Core.Utils.ClassGenerator.accessModifier">
+  accessModifier
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string accessModifier</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_classModifier" data-uid="XIV.Core.Utils.ClassGenerator.classModifier">
+  classModifier
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string classModifier</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_className" data-uid="XIV.Core.Utils.ClassGenerator.className">
+  className
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string className</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_isInnerClass" data-uid="XIV.Core.Utils.ClassGenerator.isInnerClass">
+  isInnerClass
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool isInnerClass</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_AddAttribute_" data-uid="XIV.Core.Utils.ClassGenerator.AddAttribute*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_AddAttribute_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddAttribute(System.String)">
+  AddAttribute(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAttribute(string attribute)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attribute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_AddField_" data-uid="XIV.Core.Utils.ClassGenerator.AddField*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_AddField_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddField(System.String)">
+  AddField(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddField(string line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_AddField_" data-uid="XIV.Core.Utils.ClassGenerator.AddField*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_AddField_System_String_System_String_System_String_System_String_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddField(System.String,System.String,System.String,System.String,System.String)">
+  AddField(string, string, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddField(string fieldName, string fieldValue, string returnType, string modifier = &quot;&quot;, string accessModifier = &quot;public&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>fieldValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>returnType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>accessModifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_AddGetOnlyProperty_" data-uid="XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_AddGetOnlyProperty_System_String_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty(System.String,System.String)">
+  AddGetOnlyProperty(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddGetOnlyProperty(string line, string getBlockContent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>getBlockContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_AddGetOnlyProperty_" data-uid="XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_AddGetOnlyProperty_System_String_System_String_System_String_System_String_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddGetOnlyProperty(System.String,System.String,System.String,System.String,System.String)">
+  AddGetOnlyProperty(string, string, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddGetOnlyProperty(string propertyName, string returnType, string getBlockContent, string modifier = &quot;&quot;, string accessModifier = &quot;public&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>returnType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>getBlockContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>accessModifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_AddGetSetProperty_" data-uid="XIV.Core.Utils.ClassGenerator.AddGetSetProperty*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_AddGetSetProperty_System_String_System_String_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddGetSetProperty(System.String,System.String,System.String)">
+  AddGetSetProperty(string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddGetSetProperty(string propertyDefinition, string getBlockContent, string setBlockContent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyDefinition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>getBlockContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>setBlockContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_AddGetSetProperty_" data-uid="XIV.Core.Utils.ClassGenerator.AddGetSetProperty*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_AddGetSetProperty_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddGetSetProperty(System.String,System.String,System.String,System.String,System.String,System.String)">
+  AddGetSetProperty(string, string, string, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddGetSetProperty(string propertyName, string returnType, string getBlockContent, string setBlockContent, string modifier = &quot;&quot;, string accessModifier = &quot;public&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>returnType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>getBlockContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>setBlockContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>accessModifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_AddInnerClass_" data-uid="XIV.Core.Utils.ClassGenerator.AddInnerClass*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_AddInnerClass_XIV_Core_Utils_ClassGenerator_" data-uid="XIV.Core.Utils.ClassGenerator.AddInnerClass(XIV.Core.Utils.ClassGenerator)">
+  AddInnerClass(ClassGenerator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddInnerClass(ClassGenerator classGenerator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>classGenerator</code> <a class="xref" href="XIV.Core.Utils.ClassGenerator.html">ClassGenerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_AddUsing_" data-uid="XIV.Core.Utils.ClassGenerator.AddUsing*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_AddUsing_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.AddUsing(System.String)">
+  AddUsing(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddUsing(string libName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>libName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_EndClass_" data-uid="XIV.Core.Utils.ClassGenerator.EndClass*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_EndClass" data-uid="XIV.Core.Utils.ClassGenerator.EndClass">
+  EndClass()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EndClass()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_EndMethod_" data-uid="XIV.Core.Utils.ClassGenerator.EndMethod*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_EndMethod" data-uid="XIV.Core.Utils.ClassGenerator.EndMethod">
+  EndMethod()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndMethod()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_PutInsideNamespace_" data-uid="XIV.Core.Utils.ClassGenerator.PutInsideNamespace*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_PutInsideNamespace_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.PutInsideNamespace(System.String)">
+  PutInsideNamespace(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutInsideNamespace(string @namespace)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>namespace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_StartMethod_" data-uid="XIV.Core.Utils.ClassGenerator.StartMethod*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_StartMethod_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.StartMethod(System.String)">
+  StartMethod(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartMethod(string line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_ToString_" data-uid="XIV.Core.Utils.ClassGenerator.ToString*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_ToString" data-uid="XIV.Core.Utils.ClassGenerator.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_WriteCommentInsideMethod_" data-uid="XIV.Core.Utils.ClassGenerator.WriteCommentInsideMethod*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_WriteCommentInsideMethod_System_String_System_Boolean_" data-uid="XIV.Core.Utils.ClassGenerator.WriteCommentInsideMethod(System.String,System.Boolean)">
+  WriteCommentInsideMethod(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteCommentInsideMethod(string comment, bool oneLine = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>comment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>oneLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XIV_Core_Utils_ClassGenerator_WriteMethodLine_" data-uid="XIV.Core.Utils.ClassGenerator.WriteMethodLine*"></a>
+
+  <h3 id="XIV_Core_Utils_ClassGenerator_WriteMethodLine_System_String_" data-uid="XIV.Core.Utils.ClassGenerator.WriteMethodLine(System.String)">
+  WriteMethodLine(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteMethodLine(string line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/Editor/ClassGenerator.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
