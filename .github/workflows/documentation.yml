@@ -22,7 +22,6 @@ jobs:
         dotnet-version: 8.x
 
     - run: dotnet tool update -g docfx
-    - run: docfx init -q
     - run: docfx docfx_project/docfx.json
 
     - name: Deploy
