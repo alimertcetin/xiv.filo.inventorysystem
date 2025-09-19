@@ -62,7 +62,7 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
             }
 
 #if UNITY_EDITOR
-            inventoryDisplayer = new RuntimeInventoryDisplayer(inventory, slotCount);
+            inventoryDisplayer = new RuntimeInventoryDisplayer(inventory);
 #endif
             
             return inventory;

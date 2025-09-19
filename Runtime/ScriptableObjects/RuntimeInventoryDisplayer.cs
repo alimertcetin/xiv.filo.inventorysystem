@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// Helps us to visualize the inventory in the inspector by listening the changes.
-/// </summary>
 namespace XIV.Packages.InventorySystem.ScriptableObjects
 {
+    /// <summary>
+    /// Helps us to visualize the inventory in the inspector by listening the changes.
+    /// </summary>
     [System.Serializable]
     public class RuntimeInventoryDisplayer
     {
@@ -18,27 +18,16 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
         }
         [SerializeField] List<RuntimeItemData> runtimeItems;
 
-        public RuntimeInventoryDisplayer(Inventory inventory, int slotCount)
+        public RuntimeInventoryDisplayer(Inventory inventory)
         {
-            runtimeItems = new List<RuntimeItemData>(slotCount);
-            for (var i = 0; i < inventory.slotCount; i++)
-            {
-                ReadOnlyInventoryItem item = inventory[i];
-                var runtimeItem = new RuntimeItemData
-                {
-                    name = item.IsEmpty ? "EMPTY" : item.Item.GetType().Name.Split('.')[^1],
-                    quantity = item.Quantity,
-                    item = item.Item,
-                };
-                runtimeItems.Add(runtimeItem);
-            }
+            runtimeItems = new List<RuntimeItemData>(inventory.slotCount);
             inventory.Register(new InventoryRuntimeListener(inventory, runtimeItems));
         }
             
         class InventoryRuntimeListener : IInventoryListener
         {
-            Inventory inventory;
-            List<RuntimeItemData> runtimeItems;
+            readonly Inventory inventory;
+            readonly List<RuntimeItemData> runtimeItems;
             
             public InventoryRuntimeListener(Inventory inventory, List<RuntimeItemData> runtimeItems)
             {
@@ -58,7 +47,7 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
                 for (int i = 0; i < inventory.slotCount; i++)
                 {
                     ReadOnlyInventoryItem item = inventory[i];
-                    var name = item.IsEmpty == false ? item.Item.GetType().Name.Split('.')[^1] : "Empty";
+                    var name = item.IsEmpty == false ? item.Item.name : "Empty";
                     var quantity = item.Quantity;
                     var itemBase = item.Item;
                     var runtimeItem = new RuntimeItemData { name = name, quantity = quantity, item = itemBase, };
