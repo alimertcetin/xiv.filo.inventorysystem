@@ -1,3 +1,16 @@
+## [1.5.1](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.5.0...v1.5.1) (2025-09-19)
+
+
+### Bug Fixes
+
+* **Inventory:** AddSlot ([4036ffd](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/4036ffd4d393267467b034c90fca01112a9ef266))
+* **ItemCreatorData:** Correctly initialize ItemCreatorData ([cc33d8c](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/cc33d8c49a59921cd7302563413fff828b982708))
+
+
+### Performance Improvements
+
+* **RuntimeInventoryDisplayer:** Cleanup ([2735e3a](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/2735e3a86afb7b4c695eec139014ad78cabf1043))
+
 # [1.5.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.4.0...v1.5.0) (2025-09-10)
 
 
