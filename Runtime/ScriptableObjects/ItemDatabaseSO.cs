@@ -10,7 +10,7 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
     [CreateAssetMenu(menuName = MenuPaths.DATA_MENU + nameof(ItemDatabaseSO))]
     public class ItemDatabaseSO : ScriptableObject
     {
-        [SerializeField] ItemSO[] items;
+        public ItemSO[] items;
 
         /// <summary>
         /// Retrieves the <see cref="ItemSO"/> associated with a given <see cref="ItemBase"/>.

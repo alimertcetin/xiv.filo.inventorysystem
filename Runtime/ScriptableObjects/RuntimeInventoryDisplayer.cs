@@ -46,10 +46,10 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
                 runtimeItems.Clear();
                 for (int i = 0; i < inventory.slotCount; i++)
                 {
-                    ReadOnlyInventoryItem item = inventory[i];
-                    var name = item.IsEmpty == false ? item.Item.name : "Empty";
-                    var quantity = item.Quantity;
-                    var itemBase = item.Item;
+                    ReadOnlyInventorySlot slot = inventory[i];
+                    var name = slot.IsEmpty == false ? slot.Item.name : "Empty";
+                    var quantity = slot.Quantity;
+                    var itemBase = slot.Item;
                     var runtimeItem = new RuntimeItemData { name = name, quantity = quantity, item = itemBase, };
                     runtimeItems.Add(runtimeItem);
                 }
