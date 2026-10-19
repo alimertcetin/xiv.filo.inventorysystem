@@ -6,11 +6,15 @@ namespace XIV.Packages.InventorySystem
     /// An abstract class to represent items in the game.
     /// </summary>
     /// <remarks>
-    /// It is recommended to implement every derived class to implement <see cref="IEquatable{T}"/>.
+    /// It is recommended for every derived class to implement <see cref="IEquatable{T}"/>.
     /// </remarks>
     [Serializable]
     public abstract class ItemBase : IEquatable<ItemBase>
     {
+        /// <summary>
+        /// Unique identifier for every ItemBase instance
+        /// </summary>
+        public string id;
         /// <summary>
         /// The name of the item.
         /// </summary>
@@ -32,17 +36,17 @@ namespace XIV.Packages.InventorySystem
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
-            return name == other.name && description == other.description && stackableQuantity == other.stackableQuantity;
+            return id == other.id && name == other.name && description == other.description && stackableQuantity == other.stackableQuantity;
         }
 
         public override bool Equals(object obj)
         {
-            return ReferenceEquals(this, obj) || obj is ItemBase other && Equals(other);
+            return obj is ItemBase other && Equals(other);
         }
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(name, description, stackableQuantity);
+            return HashCode.Combine(id, name, description, stackableQuantity);
         }
     }
 }

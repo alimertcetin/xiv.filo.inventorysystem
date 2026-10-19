@@ -1,43 +1,35 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
-using System.Reflection;
 using UnityEditor;
 using UnityEngine;
-using XIV.Core.Utils;
 
 namespace XIV.Packages.InventorySystem.Editor
 {
     public class ItemCreatorWindow : EditorWindow
     {
         public string itemName = "Misc Item";
-        
         public ItemCreatorData itemCreatorData;
+        public string path = "Scripts/Items/";
 
-        private string[] typeOptions = new string[]
+        string customTypeName = "MyNamespace.MyCustomStruct";
+        string customFieldName = "myField";
+
+        static readonly string[] BuiltInTypeOptions = new string[]
         {
-            "Add Field", "int", "float", "bool", "char", "string", "double", "long", "byte"
+            "Add Built-In Field...", "int", "float", "bool", "char", "string", "double", "long", "byte", "Vector2", "Vector3", "Color"
         };
-
-        Dictionary<string, Type> FInfoMap = new()
-        {
-            { "int", typeof(ItemCreatorData.FInfoInt) },
-            { "float", typeof(ItemCreatorData.FInfoFloat) },
-            { "double", typeof(ItemCreatorData.FInfoDouble) },
-            { "long", typeof(ItemCreatorData.FInfoLong) },
-            { "byte", typeof(ItemCreatorData.FInfoByte) },
-            { "bool", typeof(ItemCreatorData.FInfoBool) },
-            { "char", typeof(ItemCreatorData.FInfoChar) },
-            { "string", typeof(ItemCreatorData.FInfoString) },
-        };
-
-        public string path;
 
         [MenuItem("XIV Tools/Inventory System/ItemCreator")]
         public static void ShowWindow()
         {
             var w = GetWindow<ItemCreatorWindow>("Item Creator");
-            w.path = EditorPrefs.GetString(nameof(ItemCreatorWindow) + "-" + nameof(path));
+            string savedPath = EditorPrefs.GetString(nameof(ItemCreatorWindow) + "-" + nameof(path), "Scripts/Items/");
+            if (!string.IsNullOrEmpty(savedPath))
+            {
+                w.path = savedPath;
+            }
             w.Show();
         }
 
@@ -48,250 +40,278 @@ namespace XIV.Packages.InventorySystem.Editor
 
         void OnGUI()
         {
-            if (!itemCreatorData)
-            {
-                string path = "Assets/Editor/ItemCreatorData.asset";
-                itemCreatorData = AssetDatabase.LoadAssetAtPath<ItemCreatorData>(path);
+            EnsureDataAsset();
 
-                if (!itemCreatorData)
-                {
-                    itemCreatorData = CreateInstance<ItemCreatorData>();
-                    Directory.CreateDirectory(path);
-                    AssetDatabase.CreateAsset(itemCreatorData, path);
-                    AssetDatabase.SaveAssets();
-                }
-            }
-            
-            var obj = EditorGUILayout.ObjectField(itemCreatorData, typeof(ItemCreatorData), false);
+            var obj = EditorGUILayout.ObjectField("Creator Data", itemCreatorData, typeof(ItemCreatorData), false);
             if (obj is ItemCreatorData newObj && obj != itemCreatorData)
             {
                 itemCreatorData = newObj;
             }
-            
+
+            EditorGUILayout.Space();
             EditorGUILayout.LabelField("Item Creator", EditorStyles.boldLabel);
+            
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("Item Name");
+            EditorGUILayout.LabelField("Item Name", GUILayout.Width(90));
             itemName = EditorGUILayout.TextField(itemName);
             EditorGUILayout.EndHorizontal();
-            
+
             EditorGUILayout.Space();
-            
-            EditorGUILayout.LabelField("Select a Type", EditorStyles.boldLabel);
-            var selectedTypeIndex = EditorGUILayout.Popup("Type", 0, typeOptions);
-            if (selectedTypeIndex != 0)
+            DrawAddFieldsSection();
+
+            EditorGUILayout.Space();
+            DrawFieldsListSection();
+
+            EditorGUILayout.Space();
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Create At:", GUILayout.Width(90));
+            EditorGUILayout.LabelField("Assets/", GUILayout.Width(55));
+            path = EditorGUILayout.TextField(path, GUILayout.ExpandWidth(true));
+            EditorGUILayout.EndHorizontal();
+
+            EditorGUILayout.Space();
+            if (GUILayout.Button("Create Item Classes", GUILayout.Height(30)))
             {
-                var typeName = typeOptions[selectedTypeIndex];
-                var selectedType = GetSelectionType(typeName);
-                var fieldInfoType = FInfoMap[typeName];
-                object instance = Activator.CreateInstance(fieldInfoType);
-                itemCreatorData.fields[selectedType.FullName].Add(instance);
+                GenerateItemClasses();
+            }
+
+            if (GUILayout.Button("Clear All Fields"))
+            {
+                itemCreatorData.fields.Clear();
                 EditorUtility.SetDirty(itemCreatorData);
             }
-            
-            EditorGUILayout.Space();
-            foreach (var kvp in itemCreatorData.fields)
-            {
-                Type type = Type.GetType(kvp.Key);
-                var list = kvp.Value;
 
-                if (list.Count == 0) continue;
-
-                EditorGUILayout.Space();
-                EditorGUILayout.LabelField($"Fields of type {type.Name}", EditorStyles.boldLabel);
-
-                for (int i = 0; i < list.Count; i++)
-                {
-                    object fieldInfoObj = list[i];
-                    Type fieldInfoType = fieldInfoObj.GetType();
-                    
-                    FieldInfo nameField = fieldInfoType.GetField("fieldName");
-                    FieldInfo valueField = fieldInfoType.GetField("fieldValue");
-
-                    if (nameField != null && valueField != null)
-                    {
-                        string name = (string)nameField.GetValue(fieldInfoObj);
-                        object value = valueField.GetValue(fieldInfoObj);
-                        name = name?.Replace(" ", "");
-
-                        EditorGUILayout.BeginHorizontal();
-
-                        name = EditorGUILayout.TextField(name);
-                        object newValue = DrawFieldValue(type, value);
-
-                        nameField.SetValue(fieldInfoObj, name);
-                        valueField.SetValue(fieldInfoObj, newValue);
-                        
-                        if (GUILayout.Button("X", GUILayout.Width(20)))
-                        {
-                            list.RemoveAt(i);
-                            EditorUtility.SetDirty(itemCreatorData);
-                            EditorGUILayout.EndHorizontal();
-                            break;
-                        }
-
-                        EditorGUILayout.EndHorizontal();
-                    }
-                }
-            }
-
-            if (HasFields())
-            {
-                EditorGUILayout.BeginHorizontal();
-                EditorGUILayout.LabelField("Create At:", GUILayout.Width(90));
-                EditorGUILayout.LabelField("Assets/", GUILayout.Width(55));
-                path = EditorGUILayout.TextArea(path, GUILayout.ExpandWidth(true));
-                EditorGUILayout.EndHorizontal();
-            }
-            
-            if (HasFields() && GUILayout.Button("Create Item"))
-            {
-                var tmpItemName = itemName.Replace(" ", "");
-                ClassGenerator itemGenerator = new ClassGenerator(className: tmpItemName, inheritance: "ItemBase");
-                itemGenerator.AddUsing("XIV.Packages.InventorySystem");
-                itemGenerator.AddAttribute("System.Serializable");
-                itemGenerator.PutInsideNamespace("TheGame.Items");
-
-                Dictionary<string, int> fieldNames = new();
-
-                foreach (var kvp in itemCreatorData.fields)
-                {
-                    for (int i = 0; i < kvp.Value.Count; i++)
-                    {
-                        object fieldInfoObj = kvp.Value[i];
-                        Type fieldInfoType = fieldInfoObj.GetType();
-                        FieldInfo nameField = fieldInfoType.GetField("fieldName");
-                        FieldInfo valueField = fieldInfoType.GetField("fieldValue");
-                        
-                        string name = (string)nameField.GetValue(fieldInfoObj);
-                        object value = valueField.GetValue(fieldInfoObj);
-                        // numeric valuse and boolean
-                        var val = value.ToString().Replace(",", ".").ToLowerInvariant();
-                        var fieldTypeStr = valueField.FieldType.ToString();
-
-                        if (string.IsNullOrEmpty(name))
-                        {
-                            EditorUtility.DisplayDialog("Empty Field Name",
-                                $"There is a field with undefined name in {kvp.Key} at position {i}. Please Fix the naming and try again",
-                                "Ok");
-                            return;
-                        }
-
-                        if (fieldNames.TryGetValue(name, out var v))
-                        {
-                            EditorUtility.DisplayDialog("Duplicate Field Name",
-                                $"Duplicate Detected.\n" +
-                                $"Name : {name}\n" +
-                                $"Field defined with the same or similar name in {kvp.Key} at position {i}.\n",
-                                "Ok");
-                            return;
-                        }
-                        fieldNames.Add(name, i);
-
-                        name = name.Replace(" ", "");
-                        if (fieldTypeStr == "System.String")
-                        {
-                            val = "\"" + val + "\"";
-                        }
-
-                        if (fieldTypeStr == "System.Single")
-                        {
-                            val = val + "f";
-                        }
-
-                        if (fieldTypeStr == "System.Char")
-                        {
-                            val = "'" + val + "'";
-                        }
-                        
-                        itemGenerator.AddUsing(valueField.FieldType.Namespace);
-                        itemGenerator.AddField(name, val, fieldTypeStr, accessModifier:"public");
-                    }
-                }
-                string itemNameSO = tmpItemName + "SO";
-                ClassGenerator soGenerator = new ClassGenerator(className: itemNameSO, inheritance: "ItemSO<" + tmpItemName + ">");
-                soGenerator.AddAttribute($"[CreateAssetMenu(menuName = MenuPaths.ITEMS_MENU + nameof({itemNameSO}))]");
-                soGenerator.AddUsing("UnityEngine");
-                soGenerator.AddUsing("XIV.Packages.InventorySystem.ScriptableObjects");
-                soGenerator.AddUsing("TheGame.Items");
-                soGenerator.PutInsideNamespace("TheGame.ScriptableObjects");
-
-                var tmpPath = Path.Combine("Assets/", path);
-                File.WriteAllText(tmpPath + tmpItemName + ".cs", itemGenerator.ToString());
-                File.WriteAllText(tmpPath + itemNameSO + ".cs", soGenerator.ToString());
-                EditorUtility.SetDirty(itemCreatorData);
-                AssetDatabase.Refresh();
-            }
-
-            if (HasFields() && GUILayout.Button("Clear"))
-            {
-                foreach (var kvp in itemCreatorData.fields)
-                {
-                    kvp.Value.Clear();
-                    EditorUtility.SetDirty(itemCreatorData);
-                }
-            }
-            
             AssetDatabase.SaveAssetIfDirty(itemCreatorData);
         }
 
-        bool HasFields()
+        void EnsureDataAsset()
         {
-            foreach (var kvp in itemCreatorData.fields)
+            if (!itemCreatorData)
             {
-                if (kvp.Value.Count > 0) return true;
+                string assetPath = "Assets/Editor";
+                string fullAssetPath = assetPath + "/ItemCreatorData.asset";
+                itemCreatorData = AssetDatabase.LoadAssetAtPath<ItemCreatorData>(fullAssetPath);
+
+                if (!itemCreatorData)
+                {
+                    itemCreatorData = CreateInstance<ItemCreatorData>();
+                    Directory.CreateDirectory(Path.GetDirectoryName(Application.dataPath + "/../" + assetPath));
+                    AssetDatabase.CreateAsset(itemCreatorData, fullAssetPath);
+                    AssetDatabase.SaveAssets();
+                }
             }
-            return false;
         }
 
-        object DrawFieldValue(Type type, object value)
+        void DrawAddFieldsSection()
         {
-            if (type == typeof(int))
-                return EditorGUILayout.IntField((int)(value ?? 0));
-            if (type == typeof(float))
-                return EditorGUILayout.FloatField((float)(value ?? 0f));
-            if (type == typeof(bool))
-                return EditorGUILayout.Toggle((bool)(value ?? false));
-            if (type == typeof(string))
-                return EditorGUILayout.TextField((string)(value ?? ""));
-            if (type == typeof(double))
-                return EditorGUILayout.DoubleField((double)(value ?? 0d));
-            if (type == typeof(long))
-                return EditorGUILayout.LongField((long)(value ?? 0L));
-            if (type == typeof(byte))
-                return (byte)Mathf.Clamp(EditorGUILayout.IntField((byte)(value ?? (byte)0)), 0, 255);
-            if (type == typeof(char))
+            EditorGUILayout.LabelField("Add Fields", EditorStyles.boldLabel);
+
+            // 1. Built-in Types Dropdown
+            int selectedTypeIndex = EditorGUILayout.Popup("Built-in Type", 0, BuiltInTypeOptions);
+            if (selectedTypeIndex > 0)
             {
-                string str = EditorGUILayout.TextField((value ?? ' ').ToString());
-                return string.IsNullOrEmpty(str) ? ' ' : str[0];
+                string typeName = BuiltInTypeOptions[selectedTypeIndex];
+                itemCreatorData.fields.Add(new ItemCreatorData.CustomFieldInfo("newField", typeName, GetDefaultValueString(typeName)));
+                EditorUtility.SetDirty(itemCreatorData);
             }
 
-            EditorGUILayout.LabelField("Unsupported type");
-            return value;
+            EditorGUILayout.Space(5);
+
+            // 2. Custom Type / Struct Input
+            EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+            EditorGUILayout.LabelField("Add Custom Struct / Type", EditorStyles.miniBoldLabel);
+            customFieldName = EditorGUILayout.TextField("Field Name", customFieldName);
+            customTypeName = EditorGUILayout.TextField("Type (FullName)", customTypeName);
+
+            if (GUILayout.Button("Add Custom Field"))
+            {
+                if (string.IsNullOrWhiteSpace(customFieldName) || string.IsNullOrWhiteSpace(customTypeName))
+                {
+                    EditorUtility.DisplayDialog("Error", "Field Name and Type Name cannot be empty.", "OK");
+                }
+                else
+                {
+                    itemCreatorData.fields.Add(new ItemCreatorData.CustomFieldInfo(customFieldName.Trim(), customTypeName.Trim(), "new()"));
+                    EditorUtility.SetDirty(itemCreatorData);
+                }
+            }
+            EditorGUILayout.EndVertical();
         }
 
-        Type GetSelectionType(string selectedType)
+        void DrawFieldsListSection()
         {
-            switch (selectedType)
+            if (itemCreatorData.fields.Count == 0) return;
+
+            EditorGUILayout.LabelField("Defined Fields", EditorStyles.boldLabel);
+
+            int indexToRemove = -1;
+
+            for (int i = 0; i < itemCreatorData.fields.Count; i++)
+            {
+                var field = itemCreatorData.fields[i];
+
+                EditorGUILayout.BeginHorizontal();
+                field.fieldName = EditorGUILayout.TextField(field.fieldName, GUILayout.Width(130));
+                
+                EditorGUILayout.LabelField($"({field.fieldType})", EditorStyles.miniLabel, GUILayout.Width(110));
+
+                field.valueString = DrawFieldValueInput(field.fieldType, field.valueString);
+
+                if (GUILayout.Button("X", GUILayout.Width(22)))
+                {
+                    indexToRemove = i;
+                }
+                EditorGUILayout.EndHorizontal();
+            }
+
+            if (indexToRemove != -1)
+            {
+                itemCreatorData.fields.RemoveAt(indexToRemove);
+                EditorUtility.SetDirty(itemCreatorData);
+            }
+        }
+
+        string DrawFieldValueInput(string typeName, string currentValue)
+        {
+            switch (typeName)
             {
                 case "int":
-                    return typeof(int);
+                    int.TryParse(currentValue, out int iVal);
+                    return EditorGUILayout.IntField(iVal).ToString();
+
                 case "float":
-                    return typeof(float);
+                    float.TryParse(currentValue, NumberStyles.Any, CultureInfo.InvariantCulture, out float fVal);
+                    return EditorGUILayout.FloatField(fVal).ToString(CultureInfo.InvariantCulture);
+
                 case "bool":
-                    return typeof(bool);
-                case "char":
-                    return typeof(char);
+                    bool.TryParse(currentValue, out bool bVal);
+                    return EditorGUILayout.Toggle(bVal).ToString().ToLowerInvariant();
+
                 case "string":
-                    return typeof(string);
-                case "double": 
-                    return typeof(double);
+                    return EditorGUILayout.TextField(currentValue ?? "");
+
+                case "char":
+                    char cVal = string.IsNullOrEmpty(currentValue) ? ' ' : currentValue[0];
+                    string res = EditorGUILayout.TextField(cVal.ToString());
+                    return string.IsNullOrEmpty(res) ? " " : res[0].ToString();
+
+                case "double":
+                    double.TryParse(currentValue, NumberStyles.Any, CultureInfo.InvariantCulture, out double dVal);
+                    return EditorGUILayout.DoubleField(dVal).ToString(CultureInfo.InvariantCulture);
+
                 case "long":
-                    return typeof(long);
+                    long.TryParse(currentValue, out long lVal);
+                    return EditorGUILayout.LongField(lVal).ToString();
+
                 case "byte":
-                    return typeof(byte);
+                    byte.TryParse(currentValue, out byte byteVal);
+                    return ((byte)Mathf.Clamp(EditorGUILayout.IntField(byteVal), 0, 255)).ToString();
+
                 default:
-                    return null;
+                    // Fallback for custom structs/classes: default initializer string or field expression
+                    return EditorGUILayout.TextField(currentValue ?? "new()");
             }
+        }
+
+        string GetDefaultValueString(string typeName)
+        {
+            return typeName switch
+            {
+                "int" => "0",
+                "float" => "0f",
+                "bool" => "false",
+                "string" => "\"\"",
+                "char" => "' '",
+                "double" => "0d",
+                "long" => "0L",
+                "byte" => "0",
+                "Vector2" => "Vector2.zero",
+                "Vector3" => "Vector3.zero",
+                "Color" => "Color.white",
+                _ => "default",
+            };
+        }
+
+        void GenerateItemClasses()
+        {
+            string tmpItemName = itemName.Replace(" ", "");
+            if (string.IsNullOrEmpty(tmpItemName))
+            {
+                EditorUtility.DisplayDialog("Invalid Name", "Item name cannot be empty.", "Ok");
+                return;
+            }
+
+            var itemGenerator = new ClassGenerator(className: tmpItemName, inheritance: "ItemBase");
+            itemGenerator.AddUsing("XIV.Packages.InventorySystem");
+            itemGenerator.AddUsing("UnityEngine");
+            itemGenerator.AddAttribute("System.Serializable");
+            itemGenerator.PutInsideNamespace("TheGame.Items");
+
+            var fieldNames = new HashSet<string>();
+
+            foreach (var field in itemCreatorData.fields)
+            {
+                string fName = field.fieldName.Replace(" ", "");
+
+                if (string.IsNullOrEmpty(fName))
+                {
+                    EditorUtility.DisplayDialog("Empty Field Name", "Found a field with an empty name.", "Ok");
+                    return;
+                }
+
+                if (!fieldNames.Add(fName))
+                {
+                    EditorUtility.DisplayDialog("Duplicate Field Name", $"Duplicate field name: {fName}", "Ok");
+                    return;
+                }
+
+                // Automatically inject using namespaces for fully qualified custom structs if needed
+                if (field.fieldType.Contains("."))
+                {
+                    int lastDot = field.fieldType.LastIndexOf('.');
+                    string ns = field.fieldType.Substring(0, lastDot);
+                    itemGenerator.AddUsing(ns);
+                }
+
+                string formattedVal = FormatDefaultValue(field.fieldType, field.valueString);
+                itemGenerator.AddField(fName, formattedVal, field.fieldType, accessModifier: "public");
+            }
+
+            string itemNameSO = tmpItemName + "SO";
+            var soGenerator = new ClassGenerator(className: itemNameSO, inheritance: $"ItemSO<{tmpItemName}>");
+            soGenerator.AddAttribute($"[CreateAssetMenu(menuName = MenuPaths.ITEMS_MENU + nameof({itemNameSO}))]");
+            soGenerator.AddUsing("UnityEngine");
+            soGenerator.AddUsing("XIV.Packages.InventorySystem.ScriptableObjects");
+            soGenerator.AddUsing("TheGame.Items");
+            soGenerator.PutInsideNamespace("TheGame.ScriptableObjects");
+
+            string fullFolderPath = Path.Combine(Application.dataPath, path);
+            if (!Directory.Exists(fullFolderPath))
+            {
+                Directory.CreateDirectory(fullFolderPath);
+            }
+
+            File.WriteAllText(Path.Combine(fullFolderPath, tmpItemName + ".cs"), itemGenerator.ToString());
+            File.WriteAllText(Path.Combine(fullFolderPath, itemNameSO + ".cs"), soGenerator.ToString());
+
+            EditorUtility.SetDirty(itemCreatorData);
+            AssetDatabase.Refresh();
+
+            EditorUtility.DisplayDialog("Success", $"Item classes successfully created at Assets/{path}", "Ok");
+        }
+
+        string FormatDefaultValue(string fieldType, string val)
+        {
+            if (string.IsNullOrEmpty(val)) return "default";
+
+            return fieldType switch
+            {
+                "string" => val.StartsWith("\"") && val.EndsWith("\"") ? val : $"\"{val}\"",
+                "float" => val.ToLowerInvariant().EndsWith("f") ? val : $"{val}f",
+                "char" => val.StartsWith("'") && val.EndsWith("'") ? val : $"'{val[0]}'",
+                "bool" => val.ToLowerInvariant(),
+                _ => val
+            };
         }
     }
 }

@@ -22,6 +22,16 @@ namespace XIV.Packages.InventorySystem.Extensions
         }
 
         /// <summary>
+        /// Helper function to add a specific item type to inventory by creating it via it's default parameterless constructor.
+        /// Adds as much as possible item at giving <paramref name="quantity"/>.
+        /// </summary>
+        /// <returns>The quantity that can't be added</returns>
+        public static int Add<T>(this Inventory inventory, int quantity = 1) where T : ItemBase
+        {
+            return inventory.Add(Activator.CreateInstance<T>(), quantity);
+        }
+
+        /// <summary>
         /// Returns true if we can add all giving <paramref name="quantity"/>
         /// </summary>
         public static bool CanAddItem<T>(this Inventory inventory, int stackableAmount, int quantity) where T : ItemBase
@@ -35,6 +45,19 @@ namespace XIV.Packages.InventorySystem.Extensions
         public static bool CanAddItem(this Inventory inventory, ItemBase item, int quantity)
         {
             return CalculateRemainingAfterAdd(inventory, item, quantity) == 0;
+        }
+
+        /// <summary>
+        /// Helper function to remove a specific item type without holding a reference to an instance of it.
+        /// Starts from the slot that has maximum quantity of <typeparamref name="T"/>.
+        /// </summary>
+        /// <returns>The quantity that can't be removed</returns>
+        public static int Remove<T>(this Inventory inventory, int quantity) where T : ItemBase
+        {
+            // grab a ref to an instance of item from the inventory and remove it
+            var readOnlyInventorySlot = GetItemHasMaxQuantity<T>(inventory);
+            if (readOnlyInventorySlot.IsEmpty) return quantity;
+            return inventory.Remove(readOnlyInventorySlot.Item, quantity);
         }
         
         /// <summary>
@@ -58,10 +81,10 @@ namespace XIV.Packages.InventorySystem.Extensions
         /// </summary>
         public static int CalculateRemainingAfterAdd<T>(this Inventory inventory, int stackableAmount, int quantity) where T : ItemBase
         {
-            var readonlyInventoryItemBuffer = ArrayPool<ReadOnlyInventoryItem>.Shared.Rent(inventory.slotCount);
+            var readonlyInventoryItemBuffer = ArrayPool<ReadOnlyInventorySlot>.Shared.Rent(inventory.slotCount);
             int length = GetItemsOfTypeNonAlloc<T>(inventory, readonlyInventoryItemBuffer);
             quantity = CalculateRemainingAfterAdd(inventory, stackableAmount, quantity, readonlyInventoryItemBuffer, length);
-            ArrayPool<ReadOnlyInventoryItem>.Shared.Return(readonlyInventoryItemBuffer);
+            ArrayPool<ReadOnlyInventorySlot>.Shared.Return(readonlyInventoryItemBuffer);
             return quantity;
         }
         
@@ -70,10 +93,10 @@ namespace XIV.Packages.InventorySystem.Extensions
         /// </summary>
         public static int CalculateRemainingAfterAdd(this Inventory inventory, ItemBase item, int quantity)
         {
-            var readonlyInventoryItemBuffer = ArrayPool<ReadOnlyInventoryItem>.Shared.Rent(inventory.slotCount);
+            var readonlyInventoryItemBuffer = ArrayPool<ReadOnlyInventorySlot>.Shared.Rent(inventory.slotCount);
             int length = GetItemsOfTypeNonAlloc(inventory, item, readonlyInventoryItemBuffer);
             quantity = CalculateRemainingAfterAdd(inventory, item.stackableQuantity, quantity, readonlyInventoryItemBuffer, length);
-            ArrayPool<ReadOnlyInventoryItem>.Shared.Return(readonlyInventoryItemBuffer);
+            ArrayPool<ReadOnlyInventorySlot>.Shared.Return(readonlyInventoryItemBuffer);
             return quantity;
         }
         
@@ -82,10 +105,10 @@ namespace XIV.Packages.InventorySystem.Extensions
         /// </summary>
         public static int CalculateRemainingAfterRemove<T>(this Inventory inventory, int quantity) where T : ItemBase
         {
-            var readonlyInventoryItemBuffer = ArrayPool<ReadOnlyInventoryItem>.Shared.Rent(inventory.slotCount);
+            var readonlyInventoryItemBuffer = ArrayPool<ReadOnlyInventorySlot>.Shared.Rent(inventory.slotCount);
             int length = GetItemsOfTypeNonAlloc<T>(inventory, readonlyInventoryItemBuffer);
             var remaining = CalculateRemainingAfterRemove(quantity, readonlyInventoryItemBuffer, length);
-            ArrayPool<ReadOnlyInventoryItem>.Shared.Return(readonlyInventoryItemBuffer);
+            ArrayPool<ReadOnlyInventorySlot>.Shared.Return(readonlyInventoryItemBuffer);
             return remaining;
         }
         
@@ -94,10 +117,10 @@ namespace XIV.Packages.InventorySystem.Extensions
         /// </summary>
         public static int CalculateRemainingAfterRemove(this Inventory inventory, ItemBase item, int quantity)
         {
-            var readonlyInventoryItemBuffer = ArrayPool<ReadOnlyInventoryItem>.Shared.Rent(inventory.slotCount);
+            var readonlyInventoryItemBuffer = ArrayPool<ReadOnlyInventorySlot>.Shared.Rent(inventory.slotCount);
             int length = GetItemsOfTypeNonAlloc(inventory, item, readonlyInventoryItemBuffer);
             var remaining = CalculateRemainingAfterRemove(quantity, readonlyInventoryItemBuffer, length);
-            ArrayPool<ReadOnlyInventoryItem>.Shared.Return(readonlyInventoryItemBuffer);
+            ArrayPool<ReadOnlyInventorySlot>.Shared.Return(readonlyInventoryItemBuffer);
             return remaining;
         }
 
@@ -127,7 +150,7 @@ namespace XIV.Packages.InventorySystem.Extensions
             return count;
         }
 
-        public static ReadOnlyInventoryItem FirstOrDefault<T>(this Inventory inventory) where T : ItemBase
+        public static ReadOnlyInventorySlot FirstOrDefault<T>(this Inventory inventory) where T : ItemBase
         {
             var buffer = ArrayPool<int>.Shared.Rent(inventory.slotCount);
             if (GetIndicesOf<T>(inventory, buffer) == 0)
@@ -140,7 +163,7 @@ namespace XIV.Packages.InventorySystem.Extensions
             return readOnlyInventoryItem;
         }
 
-        public static ReadOnlyInventoryItem FirstOrDefault(this Inventory inventory, ItemBase item)
+        public static ReadOnlyInventorySlot FirstOrDefault(this Inventory inventory, ItemBase item)
         {
             var buffer = ArrayPool<int>.Shared.Rent(inventory.slotCount);
             if (GetIndicesOf(inventory, item, buffer) == 0)
@@ -154,53 +177,53 @@ namespace XIV.Packages.InventorySystem.Extensions
         }
         
         /// <summary>
-        /// Returns a <see cref="ReadOnlyInventoryItem"/> array
-        /// while making sure all <see cref="ReadOnlyInventoryItem.Item"/> is type of <typeparamref name="T"/>
+        /// Returns a <see cref="ReadOnlyInventorySlot"/> array
+        /// while making sure all <see cref="ReadOnlyInventorySlot.Item"/> is type of <typeparamref name="T"/>
         /// </summary>
-        public static ReadOnlyInventoryItem[] GetItemsOfType<T>(this Inventory inventory) where T : ItemBase
+        public static ReadOnlyInventorySlot[] GetItemsOfType<T>(this Inventory inventory) where T : ItemBase
         {
             var indicesBuffer = ArrayPool<int>.Shared.Rent(inventory.slotCount);
             int length = GetIndicesOf<T>(inventory, indicesBuffer);
-            var itemsArr = new ReadOnlyInventoryItem[length];
+            var itemsArr = new ReadOnlyInventorySlot[length];
             Fill(inventory, itemsArr, length, indicesBuffer, length);
             ArrayPool<int>.Shared.Return(indicesBuffer);
             return itemsArr;
         }
         
         /// <summary>
-        /// Returns a <see cref="ReadOnlyInventoryItem"/> array
-        /// while making sure all <see cref="ReadOnlyInventoryItem.Item"/> is type of <typeparamref name="T"/>
+        /// Returns a <see cref="ReadOnlyInventorySlot"/> array
+        /// while making sure all <see cref="ReadOnlyInventorySlot.Item"/> is type of <typeparamref name="T"/>
         /// </summary>
-        public static ReadOnlyInventoryItem[] GetItemsOfType(this Inventory inventory, ItemBase item)
+        public static ReadOnlyInventorySlot[] GetItemsOfType(this Inventory inventory, ItemBase item)
         {
             var indicesBuffer = ArrayPool<int>.Shared.Rent(inventory.slotCount);
             int length = GetIndicesOf(inventory, item, indicesBuffer);
-            var itemsArr = new ReadOnlyInventoryItem[length];
+            var itemsArr = new ReadOnlyInventorySlot[length];
             Fill(inventory, itemsArr, length, indicesBuffer, length);
             ArrayPool<int>.Shared.Return(indicesBuffer);
             return itemsArr;
         }
         
         /// <summary>
-        /// Returns a <see cref="ReadOnlyInventoryItem"/> array
-        /// while making sure all <see cref="ReadOnlyInventoryItem.Item"/> is type of <typeparamref name="T"/>
+        /// Returns a <see cref="ReadOnlyInventorySlot"/> array
+        /// while making sure all <see cref="ReadOnlyInventorySlot.Item"/> is type of <typeparamref name="T"/>
         /// and they all match with <paramref name="match"/>
         /// </summary>
-        public static ReadOnlyInventoryItem[] GetItemsOfType<T>(this Inventory inventory, Predicate<T> match) where T : ItemBase
+        public static ReadOnlyInventorySlot[] GetItemsOfType<T>(this Inventory inventory, Predicate<T> match) where T : ItemBase
         {
             var indicesBuffer = ArrayPool<int>.Shared.Rent(inventory.slotCount);
             int length = GetIndicesOf<T>(inventory, indicesBuffer, match);
-            var itemsArr = new ReadOnlyInventoryItem[length];
+            var itemsArr = new ReadOnlyInventorySlot[length];
             Fill(inventory, itemsArr, length, indicesBuffer, length);
             ArrayPool<int>.Shared.Return(indicesBuffer);
             return itemsArr;
         }
         
-        public static ReadOnlyInventoryItem[] GetItemsOfType(this Inventory inventory, ItemBase item, Predicate<ItemBase> match)
+        public static ReadOnlyInventorySlot[] GetItemsOfType(this Inventory inventory, ItemBase item, Predicate<ItemBase> match)
         {
             var indicesBuffer = ArrayPool<int>.Shared.Rent(inventory.slotCount);
             int length = GetIndicesOf(inventory, item, indicesBuffer, match);
-            var itemsArr = new ReadOnlyInventoryItem[length];
+            var itemsArr = new ReadOnlyInventorySlot[length];
             Fill(inventory, itemsArr, length, indicesBuffer, length);
             ArrayPool<int>.Shared.Return(indicesBuffer);
             return itemsArr;
@@ -208,9 +231,9 @@ namespace XIV.Packages.InventorySystem.Extensions
         
         /// <summary>
         /// Fills the <paramref name="inventoryItemBuffer"/> and returns the filled count
-        /// while making sure all <see cref="ReadOnlyInventoryItem.Item"/> is type of <typeparamref name="T"/>
+        /// while making sure all <see cref="ReadOnlyInventorySlot.Item"/> is type of <typeparamref name="T"/>
         /// </summary>
-        public static int GetItemsOfTypeNonAlloc<T>(this Inventory inventory, ReadOnlyInventoryItem[] inventoryItemBuffer) where T : ItemBase
+        public static int GetItemsOfTypeNonAlloc<T>(this Inventory inventory, ReadOnlyInventorySlot[] inventoryItemBuffer) where T : ItemBase
         {
             int[] indicesBuffer = ArrayPool<int>.Shared.Rent(inventory.slotCount);
             int indicesBufferLength = GetIndicesOf<T>(inventory, indicesBuffer);
@@ -219,7 +242,7 @@ namespace XIV.Packages.InventorySystem.Extensions
             return count;
         }
         
-        public static int GetItemsOfTypeNonAlloc(this Inventory inventory, ItemBase item, ReadOnlyInventoryItem[] inventoryItemBuffer)
+        public static int GetItemsOfTypeNonAlloc(this Inventory inventory, ItemBase item, ReadOnlyInventorySlot[] inventoryItemBuffer)
         {
             int[] indicesBuffer = ArrayPool<int>.Shared.Rent(inventory.slotCount);
             int indicesBufferLength = GetIndicesOf(inventory, item, indicesBuffer);
@@ -230,10 +253,10 @@ namespace XIV.Packages.InventorySystem.Extensions
         
         /// <summary>
         /// Fills the <paramref name="inventoryItemBuffer"/> and returns the filled count
-        /// while making sure all <see cref="ReadOnlyInventoryItem.Item"/> is type of <typeparamref name="T"/>
+        /// while making sure all <see cref="ReadOnlyInventorySlot.Item"/> is type of <typeparamref name="T"/>
         /// and they all match with <paramref name="match"/>
         /// </summary>
-        public static int GetItemsOfTypeNonAlloc<T>(this Inventory inventory, ReadOnlyInventoryItem[] inventoryItemBuffer, Predicate<T> match) where T : ItemBase
+        public static int GetItemsOfTypeNonAlloc<T>(this Inventory inventory, ReadOnlyInventorySlot[] inventoryItemBuffer, Predicate<T> match) where T : ItemBase
         {
             int[] indicesBuffer = ArrayPool<int>.Shared.Rent(inventory.slotCount);
             int indicesBufferLength = GetIndicesOf<T>(inventory, indicesBuffer, match);
@@ -242,7 +265,7 @@ namespace XIV.Packages.InventorySystem.Extensions
             return count;
         }
         
-        public static int GetItemsOfTypeNonAlloc(this Inventory inventory, ItemBase item, ReadOnlyInventoryItem[] inventoryItemBuffer, Predicate<ItemBase> match)
+        public static int GetItemsOfTypeNonAlloc(this Inventory inventory, ItemBase item, ReadOnlyInventorySlot[] inventoryItemBuffer, Predicate<ItemBase> match)
         {
             int[] indicesBuffer = ArrayPool<int>.Shared.Rent(inventory.slotCount);
             int indicesBufferLength = GetIndicesOf(inventory, item, indicesBuffer, match);
@@ -321,7 +344,7 @@ namespace XIV.Packages.InventorySystem.Extensions
         /// <summary>
         /// Returns the item that has minimum quantity
         /// </summary>
-        public static ReadOnlyInventoryItem GetItemHasMinQuantity<T>(this Inventory inventory) where T : ItemBase
+        public static ReadOnlyInventorySlot GetItemHasMinQuantity<T>(this Inventory inventory) where T : ItemBase
         {
             return GetReadOnlyItemMinMax<T>(inventory, false);
         }
@@ -329,7 +352,7 @@ namespace XIV.Packages.InventorySystem.Extensions
         /// <summary>
         /// Returns the item that has minimum quantity
         /// </summary>
-        public static ReadOnlyInventoryItem GetItemHasMinQuantity(this Inventory inventory, ItemBase item)
+        public static ReadOnlyInventorySlot GetItemHasMinQuantity(this Inventory inventory, ItemBase item)
         {
             return GetReadOnlyItemMinMax(inventory, item, false);
         }
@@ -337,7 +360,7 @@ namespace XIV.Packages.InventorySystem.Extensions
         /// <summary>
         /// Returns the item that has maximum quantity
         /// </summary>
-        public static ReadOnlyInventoryItem GetItemHasMaxQuantity<T>(this Inventory inventory) where T : ItemBase
+        public static ReadOnlyInventorySlot GetItemHasMaxQuantity<T>(this Inventory inventory) where T : ItemBase
         {
             return GetReadOnlyItemMinMax<T>(inventory, true);
         }
@@ -345,7 +368,7 @@ namespace XIV.Packages.InventorySystem.Extensions
         /// <summary>
         /// Returns the item that has maximum quantity
         /// </summary>
-        public static ReadOnlyInventoryItem GetItemHasMaxQuantity(this Inventory inventory, ItemBase item)
+        public static ReadOnlyInventorySlot GetItemHasMaxQuantity(this Inventory inventory, ItemBase item)
         {
             return GetReadOnlyItemMinMax(inventory, item, true);
         }
@@ -426,7 +449,7 @@ namespace XIV.Packages.InventorySystem.Extensions
             return count;
         }
 
-        static int CalculateRemainingAfterRemove(int quantity, ReadOnlyInventoryItem[] items, int itemsLength)
+        static int CalculateRemainingAfterRemove(int quantity, ReadOnlyInventorySlot[] items, int itemsLength)
         {
             for (var i = 0; i < itemsLength && quantity > 0; i++)
             {
@@ -452,28 +475,28 @@ namespace XIV.Packages.InventorySystem.Extensions
             return count;
         }
 
-        static ReadOnlyInventoryItem GetReadOnlyItemMinMax<T>(Inventory inventory, bool searchMax) where T : ItemBase
+        static ReadOnlyInventorySlot GetReadOnlyItemMinMax<T>(Inventory inventory, bool searchMax) where T : ItemBase
         {
             var indicesBuffer = ArrayPool<int>.Shared.Rent(inventory.slotCount);
             int length = GetIndicesOf<T>(inventory, indicesBuffer);
-            ReadOnlyInventoryItem current = GetReadOnlyItemMinMax(inventory, indicesBuffer, length, searchMax);
+            ReadOnlyInventorySlot current = GetReadOnlyItemMinMax(inventory, indicesBuffer, length, searchMax);
             ArrayPool<int>.Shared.Return(indicesBuffer);
             return current;
         }
 
-        static ReadOnlyInventoryItem GetReadOnlyItemMinMax(Inventory inventory, ItemBase item, bool searchMax)
+        static ReadOnlyInventorySlot GetReadOnlyItemMinMax(Inventory inventory, ItemBase item, bool searchMax)
         {
             var indicesBuffer = ArrayPool<int>.Shared.Rent(inventory.slotCount);
             int length = GetIndicesOf(inventory, item, indicesBuffer);
-            ReadOnlyInventoryItem current = GetReadOnlyItemMinMax(inventory, indicesBuffer, length, searchMax);
+            ReadOnlyInventorySlot current = GetReadOnlyItemMinMax(inventory, indicesBuffer, length, searchMax);
             ArrayPool<int>.Shared.Return(indicesBuffer);
             return current;
         }
 
-        static ReadOnlyInventoryItem GetReadOnlyItemMinMax(Inventory inventory, int[] indicesBuffer, int indicesBufferLength, bool searchMax)
+        static ReadOnlyInventorySlot GetReadOnlyItemMinMax(Inventory inventory, int[] indicesBuffer, int indicesBufferLength, bool searchMax)
         {
             int max = searchMax ? int.MinValue : int.MaxValue;
-            ReadOnlyInventoryItem current = default;
+            ReadOnlyInventorySlot current = default;
             for (var i = 0; i < indicesBufferLength; i++)
             {
                 var inventoryItem = inventory[indicesBuffer[i]];
@@ -486,7 +509,7 @@ namespace XIV.Packages.InventorySystem.Extensions
             return current;
         }
 
-        static int CalculateRemainingAfterAdd(Inventory inventory, int stackableAmount, int quantity, ReadOnlyInventoryItem[] existingItems, int existingItemsLength)
+        static int CalculateRemainingAfterAdd(Inventory inventory, int stackableAmount, int quantity, ReadOnlyInventorySlot[] existingItems, int existingItemsLength)
         {
             // Fill existing item slots
             for (var i = 0; i < existingItemsLength && quantity > 0; i++)
@@ -553,7 +576,7 @@ namespace XIV.Packages.InventorySystem.Extensions
         /// Use to fill <paramref name="inventoryItemBuffer"/> if both buffers requires different limits
         /// </summary>
         static int Fill(Inventory inventory, 
-            ReadOnlyInventoryItem[] inventoryItemBuffer, int inventoryItemBufferLength, 
+            ReadOnlyInventorySlot[] inventoryItemBuffer, int inventoryItemBufferLength, 
             int[] indicesBuffer, int indicesBufferLength)
         {
             int count = 0;

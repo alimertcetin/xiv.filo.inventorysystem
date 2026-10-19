@@ -6,14 +6,14 @@ namespace XIV.Packages.InventorySystem
     /// Used in <see cref="Inventory"/> to store <see cref="ItemBase"/>.
     /// Contains inventory related data.
     /// </summary>
-    /// <seealso cref="ReadOnlyInventoryItem"/>
+    /// <seealso cref="ReadOnlyInventorySlot"/>
     [System.Serializable]
-    public struct InventoryItem
+    public struct InventorySlot
     {
         /// <summary>
-        /// Invalid <see cref="InventoryItem"/>.
+        /// Invalid <see cref="InventorySlot"/>.
         /// </summary>
-        public static readonly InventoryItem InvalidInventoryItem = new InventoryItem(-1, -1, null);
+        public static readonly InventorySlot InvalidInventorySlot = new InventorySlot(-1, -1, null);
         /// <summary>
         /// Points to the index in <see cref="Inventory"/>.
         /// </summary>
@@ -27,11 +27,11 @@ namespace XIV.Packages.InventorySystem
         /// </summary>
         [field: SerializeField] public ItemBase Item { get; set; }
         /// <summary>
-        /// Determines if this <see cref="InventoryItem"/> is empty or not.
+        /// Determines if this <see cref="InventorySlot"/> is empty or not.
         /// </summary>
         public bool IsEmpty => Quantity <= 0;
 
-        public InventoryItem(int index, int quantity, ItemBase item)
+        public InventorySlot(int index, int quantity, ItemBase item)
         {
             this.Index = index;
             this.Quantity = quantity;

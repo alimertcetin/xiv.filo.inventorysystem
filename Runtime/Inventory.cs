@@ -9,8 +9,8 @@ namespace XIV.Packages.InventorySystem
         /// Gets the number of slots available in the <see cref="Inventory"/>
         /// </summary>
         public int slotCount { get; private set; }
-        public ReadOnlyInventoryItem this[int index] => index < 0 || index >= slotCount ? 
-            ReadOnlyInventoryItem.InvalidReadonlyInventoryItem : new ReadOnlyInventoryItem(items[index]);
+        public ReadOnlyInventorySlot this[int index] => index < 0 || index >= slotCount ? 
+            ReadOnlyInventorySlot.InvalidReadonlyInventorySlot : new ReadOnlyInventorySlot(slots[index]);
 
         /// <summary>
         /// Defines should the listeners be informed about the changes or not.
@@ -23,16 +23,17 @@ namespace XIV.Packages.InventorySystem
             get => informListenersState;
             set
             {
+                if (informListenersState == value) return;
                 informListenersState = value;
-                InformListeners();
+                if (value) InformListeners();
             }
         }
 
         readonly List<IInventoryListener> listeners;
-        readonly List<InventoryItemChange> itemChanges;
+        readonly List<InventorySlotChange> slotChanges;
         
-        InventoryItem[] items;
-        int arrayCapacity => items.Length;
+        InventorySlot[] slots;
+        int arrayCapacity => slots.Length;
         int previousSlotCount;
         bool informListenersState;
 
@@ -43,8 +44,8 @@ namespace XIV.Packages.InventorySystem
             int pow2 = slotCount < 2 ? 2 : InventoryHelper.NextPowerOfTwo(slotCount);
             informListenersState = true;
             listeners = new List<IInventoryListener>(4);
-            itemChanges = new List<InventoryItemChange>(pow2);
-            items = new InventoryItem[pow2];
+            slotChanges = new List<InventorySlotChange>(pow2);
+            slots = new InventorySlot[pow2];
             InitializeArrayValues(0, slotCount - 1);
         }
 
@@ -62,7 +63,7 @@ namespace XIV.Packages.InventorySystem
         /// <summary>
         /// Clears the recorded changes
         /// </summary>
-        public void ClearRecordedChanges() => itemChanges.Clear();
+        public void ClearRecordedChanges() => slotChanges.Clear();
 
         /// <summary>
         /// Returns <see langword="true"/> if <see cref="Inventory"/> contains the item
@@ -71,7 +72,7 @@ namespace XIV.Packages.InventorySystem
         {
             for (var i = 0; i < slotCount; i++)
             {
-                if (InventoryHelper.IsEqual(items[i], item) == false) continue;
+                if (InventoryHelper.IsEqual(slots[i], item) == false) continue;
                 return true;
             }
             return false;
@@ -85,7 +86,7 @@ namespace XIV.Packages.InventorySystem
         {
             for (var i = 0; i < slotCount && quantity > 0; i++)
             {
-                if (InventoryHelper.IsEqual(items[i], item) == false) continue;
+                if (InventoryHelper.IsEqual(slots[i], item) == false) continue;
                 AddExisting_Internal(i, ref quantity);
             }
             if (quantity > 0) AddNew_Internal(item, ref quantity);
@@ -101,7 +102,7 @@ namespace XIV.Packages.InventorySystem
         {
             for (var i = 0; i < slotCount && quantity > 0; i++)
             {
-                if (InventoryHelper.IsEqual(items[i], item) == false) continue;
+                if (InventoryHelper.IsEqual(slots[i], item) == false) continue;
                 RemoveAt_Internal(i, ref quantity);
             }
 
@@ -138,7 +139,7 @@ namespace XIV.Packages.InventorySystem
                 while (capacity < newSlotCount)
                 {
                     capacity *= 2;
-                    Array.Resize(ref items, capacity);
+                    Array.Resize(ref slots, capacity);
                 }
                 InitializeArrayValues(slotCount - 1, newSlotCount - 1);
             }
@@ -201,39 +202,93 @@ namespace XIV.Packages.InventorySystem
         public bool CanMerge(int index1, int index2)
         {
             if (index1 == index2) return false;
-            ref InventoryItem item1 = ref items[index1];
-            ref InventoryItem item2 = ref items[index2];
-            return item1.IsEmpty == false && item2.IsEmpty == false && item1.Item.Equals(item2.Item);
+            ref InventorySlot slot1 = ref slots[index1];
+            ref InventorySlot slot2 = ref slots[index2];
+            return slot1.IsEmpty == false && slot2.IsEmpty == false && slot1.Item.Equals(slot2.Item);
+        }
+        
+        /// <summary>
+        /// Creates a snapshot of the current <see cref="Inventory"/> state.
+        /// The snapshot stores the slot count and all non-empty slots while preserving their indices.
+        /// </summary>
+        /// <returns>A snapshot representing the current state of the <see cref="Inventory"/>.</returns>
+        public InventorySnapshot GetSnapshot()
+        {
+            int nonEmptySlotCount = 0;
+            for (int i = 0; i < slotCount; i++)
+            {
+                nonEmptySlotCount = slots[i].IsEmpty ? nonEmptySlotCount : nonEmptySlotCount + 1;
+            }
+            var snapshotItems = new InventorySlot[nonEmptySlotCount];
+            for (int i = 0, j = 0; i < slotCount; i++)
+            {
+                if (slots[i].IsEmpty == false)
+                {
+                    snapshotItems[j++] = slots[i];
+                }
+            }
+            return new InventorySnapshot(slotCount, snapshotItems);
+        }
+
+        /// <summary>
+        /// Restores the <see cref="Inventory"/> state from the specified <see cref="InventorySnapshot"/>.
+        /// </summary>
+        /// <param name="snapshot">The snapshot used to restore the <see cref="Inventory"/>.</param>
+        public void RestoreSnapshot(InventorySnapshot snapshot)
+        {
+            RemoveSlot_Internal(0);
+            AddSlot(snapshot.slotCount);
+            for (int i = 0; i < snapshot.occupiedSlots.Length; i++)
+            {
+                var slotSnapshot = GetSlotSnapshot(snapshot.occupiedSlots[i].Index);
+                slots[snapshot.occupiedSlots[i].Index] = snapshot.occupiedSlots[i];
+                SaveChange(slotSnapshot, snapshot.occupiedSlots[i].Index, false);
+            }
+            InformListeners();
         }
 
         void Swap_Internal(int index1, int index2)
         {
-            var snapshot1 = GetSnapshot(index1);
-            var snapshot2 = GetSnapshot(index2);
+            var snapshot1 = GetSlotSnapshot(index1);
+            var snapshot2 = GetSlotSnapshot(index2);
             
-            ref InventoryItem item1 = ref items[index1];
-            ref InventoryItem item2 = ref items[index2];
+            ref InventorySlot slot1 = ref slots[index1];
+            ref InventorySlot slot2 = ref slots[index2];
 
-            InventoryItem temp = item2;
-            item2.Quantity = item1.Quantity;
-            item2.Item = item1.Item;
-            item1.Quantity = temp.Quantity;
-            item1.Item = temp.Item;
+            InventorySlot temp = slot2;
+            slot2.Quantity = slot1.Quantity;
+            slot2.Item = slot1.Item;
+            slot1.Quantity = temp.Quantity;
+            slot1.Item = temp.Item;
             
             SaveChange(snapshot1, index1, false);
             SaveChange(snapshot2, index2, false);
         }
-
-        int Merge_Internal(int index1, int index2)
+        
+        int Merge_Internal(int idxSource, int idxDestination)
         {
-            int item1Quantity = items[index1].Quantity;
-            int addAmount = item1Quantity;
-            AddExisting_Internal(index2, ref addAmount);
-            int removeAmount = item1Quantity - addAmount;
-            RemoveAt_Internal(index1, ref removeAmount);
+            ref InventorySlot source = ref slots[idxSource];
+            ref InventorySlot destination = ref slots[idxDestination];
+
+            int sourceQuantity = source.Quantity;
+            int destinationSpace = destination.Item.stackableQuantity - destination.Quantity;
+            int transferAmount = Math.Min(sourceQuantity, destinationSpace);
+            if (transferAmount <= 0) return sourceQuantity;
+
+            var sourceSnapshot = GetSlotSnapshot(idxSource);
+            var destinationSnapshot = GetSlotSnapshot(idxDestination);
+            source.Quantity -= transferAmount;
+            destination.Quantity += transferAmount;
+
+            if (source.Quantity == 0) source.Item = null;
+
+            SaveChange(destinationSnapshot, idxSource, idxDestination, idxDestination, false);
+            SaveChange(sourceSnapshot, idxSource, idxDestination, idxSource, false);
+
             // The remaining quantity at index1
-            return addAmount;
+            return source.Quantity;
         }
+
 
         void RemoveSlot_Internal(int newSlotCount)
         {
@@ -257,7 +312,7 @@ namespace XIV.Packages.InventorySystem
             {
                 for (int i = slotCount - 1; i >= 0; i--)
                 {
-                    if (items[i].IsEmpty) return i;
+                    if (slots[i].IsEmpty) return i;
                 }
                 return -1;
             }
@@ -265,7 +320,7 @@ namespace XIV.Packages.InventorySystem
             for (int i = slotCount - 1; i >= newSlotCount; i--)
             {
                 // if we completely distributed the item no need to swap or anything
-                var snapshot = GetSnapshot(i);
+                var snapshot = GetSlotSnapshot(i);
                 if (DistributeItem(i, newSlotCount) == 0) continue;
 
                 int emptyIndexFromLast = FindEmptyIndexFromLast(newSlotCount);
@@ -283,14 +338,14 @@ namespace XIV.Packages.InventorySystem
 
         void AddExisting_Internal(int index, ref int amount)
         {
-            ref InventoryItem inventoryItem = ref items[index];
-            int stackLeft = inventoryItem.Item.stackableQuantity - inventoryItem.Quantity;
+            ref InventorySlot inventorySlot = ref slots[index];
+            int stackLeft = inventorySlot.Item.stackableQuantity - inventorySlot.Quantity;
             if (stackLeft == 0) return;
 
-            var snapshot = GetSnapshot(index);
+            var snapshot = GetSlotSnapshot(index);
             
             int addAmount = Math.Min(stackLeft, amount);
-            inventoryItem.Quantity += addAmount;
+            inventorySlot.Quantity += addAmount;
             amount -= addAmount;
             
             SaveChange(snapshot, index, false);
@@ -300,14 +355,14 @@ namespace XIV.Packages.InventorySystem
         {
             for (int i = 0; i < slotCount && amount > 0; i++)
             {
-                ref InventoryItem inventoryItem = ref items[i];
-                if (inventoryItem.IsEmpty == false) continue;
+                ref InventorySlot inventorySlot = ref slots[i];
+                if (inventorySlot.IsEmpty == false) continue;
 
-                var snapshot = GetSnapshot(i);
+                var snapshot = GetSlotSnapshot(i);
                 
                 int addAmount = Math.Min(item.stackableQuantity, amount);
-                inventoryItem.Quantity = addAmount;
-                inventoryItem.Item = item;
+                inventorySlot.Quantity = addAmount;
+                inventorySlot.Item = item;
                 amount -= addAmount;
                 
                 SaveChange(snapshot, i, false);
@@ -316,42 +371,54 @@ namespace XIV.Packages.InventorySystem
 
         void RemoveAt_Internal(int index, ref int quantity)
         {
-            var snapshot = GetSnapshot(index);
+            var snapshot = GetSlotSnapshot(index);
             
-            ref InventoryItem inventoryItem = ref items[index];
-            var removeQuantity = Math.Min(inventoryItem.Quantity, quantity);
-            inventoryItem.Quantity -= removeQuantity;
+            ref InventorySlot inventorySlot = ref slots[index];
+            var removeQuantity = Math.Min(inventorySlot.Quantity, quantity);
+            inventorySlot.Quantity -= removeQuantity;
             quantity -= removeQuantity;
+
+            if (inventorySlot.Quantity == 0) inventorySlot.Item = null;
             
             SaveChange(snapshot, index, false);
         }
 
         void InformListeners()
         {
-            if (informListenersState == false || (itemChanges.Count == 0 && previousSlotCount == slotCount)) return;
+            if (informListenersState == false || (slotChanges.Count == 0 && previousSlotCount == slotCount)) return;
 
             int count = listeners.Count;
-            var inventoryChange = new InventoryChange(itemChanges, previousSlotCount, slotCount);
+            var inventoryChange = new InventoryChange(slotChanges, previousSlotCount, slotCount);
             for (int i = 0; i < count; i++)
             {
                 listeners[i].OnInventoryChanged(inventoryChange);
             }
+            previousSlotCount = slotCount;
             InventoryHelper.Dispose(ref inventoryChange);
-            itemChanges.Clear();
+            slotChanges.Clear();
         }
 
         void InitializeArrayValues(int startIndex, int endIndex)
         {
             for (int i = startIndex; i <= endIndex; i++)
             {
-                items[i] = new InventoryItem(i, 0, null);
+                slots[i] = new InventorySlot(i, 0, null);
             }
         }
 
-        ReadOnlyInventoryItem GetSnapshot(int index) => new ReadOnlyInventoryItem(items[index]);
-        void SaveChange(ReadOnlyInventoryItem before, int currentIndex, bool isDiscarded)
+        ReadOnlyInventorySlot GetSlotSnapshot(int index) => new ReadOnlyInventorySlot(slots[index]);
+        
+        void SaveChange(ReadOnlyInventorySlot before, int currentIndex, bool isDiscarded)
         {
-            itemChanges.Add(new InventoryItemChange(before, GetSnapshot(currentIndex), isDiscarded));
+            slotChanges.Add(new InventorySlotChange(before, GetSlotSnapshot(currentIndex), default, isDiscarded));
+        }
+        
+        void SaveChange(ReadOnlyInventorySlot before, int mergeSource, int mergeDestination, int currentIndex, bool isDiscarded)
+        {
+            var otherIndex = currentIndex == mergeSource ? mergeDestination : mergeSource;
+            var mergeState = mergeSource == currentIndex && mergeDestination != currentIndex ? ItemMergeState.ConsumedByMerge : ItemMergeState.ReceivedMerge;
+            var itemMergeData = new ItemMergeData(mergeState, otherIndex);
+            slotChanges.Add(new InventorySlotChange(before, GetSlotSnapshot(currentIndex), itemMergeData, isDiscarded));
         }
 
         void ChangeSlotCount(int newCount)
@@ -378,11 +445,11 @@ namespace XIV.Packages.InventorySystem
         }
 
         /// <summary>
-        /// Check if <paramref name="inventoryItem"/> contains the <paramref name="item"/>
+        /// Check if <paramref name="inventorySlot"/> contains the <paramref name="item"/>
         /// </summary>
-        public static bool IsEqual(InventoryItem inventoryItem, ItemBase item)
+        public static bool IsEqual(InventorySlot inventorySlot, ItemBase item)
         {
-            return inventoryItem.IsEmpty == false && inventoryItem.Item.Equals(item);
+            return inventorySlot.IsEmpty == false && inventorySlot.Item.Equals(item);
         }
 
         /// <summary>

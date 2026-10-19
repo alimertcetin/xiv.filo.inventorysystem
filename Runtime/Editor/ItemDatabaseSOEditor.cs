@@ -36,7 +36,7 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
 
         static BindingFlags GetFlags()
         {
-            return BindingFlags.Instance | BindingFlags.NonPublic;
+            return BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public;
         }
         
         static List<TAsset> LoadAssetsOfType<TAsset>(string folderPath, 

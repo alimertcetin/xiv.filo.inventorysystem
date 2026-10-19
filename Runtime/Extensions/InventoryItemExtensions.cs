@@ -1,25 +1,25 @@
 ﻿namespace XIV.Packages.InventorySystem.Extensions
 {
     /// <summary>
-    /// Contains extension methods for <see cref="InventoryItem"/> and <see cref="ReadOnlyInventoryItem"/>.
+    /// Contains extension methods for <see cref="InventorySlot"/> and <see cref="ReadOnlyInventorySlot"/>.
     /// </summary>
     public static class InventoryItemExtensions
     {
         /// <summary>
-        /// Creates a new <see cref="InventoryItem"/> using <see cref="ReadOnlyInventoryItem"/>
+        /// Creates a new <see cref="InventorySlot"/> using <see cref="ReadOnlyInventorySlot"/>
         /// </summary>
-        public static InventoryItem NewInventoryItem(this ReadOnlyInventoryItem readOnlyInventoryItem)
+        public static InventorySlot NewInventoryItem(this ReadOnlyInventorySlot readOnlyInventorySlot)
         {
-            return new InventoryItem(readOnlyInventoryItem.Index, 
-                readOnlyInventoryItem.Quantity, readOnlyInventoryItem.Item);
+            return new InventorySlot(readOnlyInventorySlot.Index, 
+                readOnlyInventorySlot.Quantity, readOnlyInventorySlot.Item);
         }
         
         /// <summary>
-        /// Creates a new <see cref="ReadOnlyInventoryItem"/> using <see cref="InventoryItem"/>
+        /// Creates a new <see cref="ReadOnlyInventorySlot"/> using <see cref="InventorySlot"/>
         /// </summary>
-        public static ReadOnlyInventoryItem ToReadOnly(this InventoryItem inventoryItem)
+        public static ReadOnlyInventorySlot ToReadOnly(this InventorySlot inventorySlot)
         {
-            return new ReadOnlyInventoryItem(inventoryItem);
+            return new ReadOnlyInventorySlot(inventorySlot);
         }
     }
 }

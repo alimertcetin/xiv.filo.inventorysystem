@@ -9,9 +9,9 @@ namespace XIV.Packages.InventorySystem
     public readonly struct InventoryChange : IDisposable
     {
         /// <summary>
-        /// Stores item changes.
+        /// Stores slot changes.
         /// </summary>
-        public readonly TempArray<InventoryItemChange> itemChanges;
+        public readonly TempArray<InventorySlotChange> slotChanges;
         /// <summary>
         /// <see cref="Inventory.slotCount"/> before the changes.
         /// </summary>
@@ -25,16 +25,16 @@ namespace XIV.Packages.InventorySystem
         /// </summary>
         public bool isSlotCountChanged => slotCountBefore != slotCountAfter;
         
-        public InventoryChange(IList<InventoryItemChange> itemChanges, int slotCountBefore, int slotCountAfter)
+        public InventoryChange(IList<InventorySlotChange> slotChanges, int slotCountBefore, int slotCountAfter)
         {
-            this.itemChanges = new TempArray<InventoryItemChange>(itemChanges);
+            this.slotChanges = new TempArray<InventorySlotChange>(slotChanges);
             this.slotCountBefore = slotCountBefore;
             this.slotCountAfter = slotCountAfter;
         }
 
         void IDisposable.Dispose()
         {
-            Dispose(itemChanges);
+            Dispose(slotChanges);
         }
 
         static void Dispose<T>(T item) where T : IDisposable
