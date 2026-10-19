@@ -1,3 +1,19 @@
+# [1.6.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.5.1...v1.6.0) (2026-10-19)
+
+
+### Bug Fixes
+
+* Exclude Editor folder in builds via .asmdef ([3efaffe](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/3efaffeed1cedbe46bee793d5b3e3cf4b616ce3a))
+* **ItemDatabaseSOEditor.cs:** Fixed null exception for "items" field ([751cb69](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/751cb693464c7d6c9ad7735579f87ce21f098293))
+
+
+### Features
+
+* Add samples ([af1a06e](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/af1a06e362105aa1909fa687691d2c76f93d70d1))
+* Change terminology from Item to Slot e.g. "InventorySlot" ([2acc9c5](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/2acc9c55b7f686cb57d746ebea5fa0c65af20833))
+* **ItemCreator:** Redesign item creator with flexible field types ([3dde13a](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/3dde13a43807c47ca63f56302c7f280d9d8bff5e))
+* **ItemSO.cs:** Automatically generate GUIDs for item assets ([c0e3f5b](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/c0e3f5b38d1fb8d6b3e04682179f6fb868f22634))
+
 ## [1.5.1](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.5.0...v1.5.1) (2025-09-19)
 
 
