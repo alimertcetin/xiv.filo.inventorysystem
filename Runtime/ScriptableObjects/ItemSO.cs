@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace XIV.Packages.InventorySystem.ScriptableObjects
 {
@@ -15,6 +16,43 @@ namespace XIV.Packages.InventorySystem.ScriptableObjects
         /// Returns the referenced item.
         /// </summary>
         public abstract ItemBase GetItem();
+
+#if UNITY_EDITOR
+        void Reset()
+        {
+            var item = GetItem();
+            if (item == null)
+            {
+                // little delay to wait serialization to finish when creating new ScriptableObject, otherwise GetItem returns null sometimes.
+                UnityEditor.EditorUtility.DisplayProgressBar("Reset", "Serializing the object", 0.5f);
+                var unityContext = System.Threading.SynchronizationContext.Current;
+                System.Threading.Tasks.Task.Delay(1000).ContinueWith(_ =>
+                {
+                    unityContext.Post(__ =>
+                    {
+                        try
+                        {
+                            GenerateGuid();
+                        }
+                        finally
+                        {
+                            UnityEditor.EditorUtility.ClearProgressBar();
+                        }
+                    }, null);
+                });
+            }
+            else if (string.IsNullOrWhiteSpace(GetItem().id)) GenerateGuid();
+        }
+
+        [ContextMenu("Generate Guid")]
+        public void GenerateGuid() => GetItem().id = System.Guid.NewGuid().ToString();
+#endif
+
+        public override string ToString()
+        {
+            var itemBase = GetItem();
+            return $"Id: {itemBase.id}, Name: {itemBase.name}, Description: {itemBase.description}";
+        }
     }
 
     /// <summary>
