@@ -89,7 +89,7 @@ Struct InventoryChange  <a class="header-action link-secondary" title="View sour
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="XIV.html">XIV</a>.<a class="xref" href="XIV.Packages.html">Packages</a>.<a class="xref" href="XIV.Packages.InventorySystem.html">InventorySystem</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><span class="xref">XIV</span>.<span class="xref">Packages</span>.<a class="xref" href="XIV.Packages.InventorySystem.html">InventorySystem</a></dd></dl>
   
   </div>
 
@@ -147,8 +147,8 @@ Struct InventoryChange  <a class="header-action link-secondary" title="View sour
 
   <a id="XIV_Packages_InventorySystem_InventoryChange__ctor_" data-uid="XIV.Packages.InventorySystem.InventoryChange.#ctor*"></a>
 
-  <h3 id="XIV_Packages_InventorySystem_InventoryChange__ctor_System_Collections_Generic_IList_XIV_Packages_InventorySystem_InventoryItemChange__System_Int32_System_Int32_" data-uid="XIV.Packages.InventorySystem.InventoryChange.#ctor(System.Collections.Generic.IList{XIV.Packages.InventorySystem.InventoryItemChange},System.Int32,System.Int32)">
-  InventoryChange(IList&lt;InventoryItemChange&gt;, int, int)
+  <h3 id="XIV_Packages_InventorySystem_InventoryChange__ctor_System_Collections_Generic_IList_XIV_Packages_InventorySystem_InventorySlotChange__System_Int32_System_Int32_" data-uid="XIV.Packages.InventorySystem.InventoryChange.#ctor(System.Collections.Generic.IList{XIV.Packages.InventorySystem.InventorySlotChange},System.Int32,System.Int32)">
+  InventoryChange(IList&lt;InventorySlotChange&gt;, int, int)
   <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/InventoryChange.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -156,12 +156,12 @@ Struct InventoryChange  <a class="header-action link-secondary" title="View sour
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InventoryChange(IList&lt;InventoryItemChange&gt; itemChanges, int slotCountBefore, int slotCountAfter)</code></pre>
+    <pre><code class="lang-csharp hljs">public InventoryChange(IList&lt;InventorySlotChange&gt; slotChanges, int slotCountBefore, int slotCountAfter)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>itemChanges</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="XIV.Packages.InventorySystem.InventoryItemChange.html">InventoryItemChange</a>&gt;</dt>
+    <dt><code>slotChanges</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="XIV.Packages.InventorySystem.InventorySlotChange.html">InventorySlotChange</a>&gt;</dt>
     <dd></dd>
     <dt><code>slotCountBefore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
@@ -185,17 +185,17 @@ Struct InventoryChange  <a class="header-action link-secondary" title="View sour
 
 
 
-  <h3 id="XIV_Packages_InventorySystem_InventoryChange_itemChanges" data-uid="XIV.Packages.InventorySystem.InventoryChange.itemChanges">
-  itemChanges
+  <h3 id="XIV_Packages_InventorySystem_InventoryChange_slotChanges" data-uid="XIV.Packages.InventorySystem.InventoryChange.slotChanges">
+  slotChanges
   <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/InventoryChange.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Stores item changes.</p>
+  <div class="markdown level1 summary"><p>Stores slot changes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly TempArray&lt;InventoryItemChange&gt; itemChanges</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly TempArray&lt;InventorySlotChange&gt; slotChanges</code></pre>
   </div>
 
 
@@ -203,7 +203,7 @@ Struct InventoryChange  <a class="header-action link-secondary" title="View sour
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="XIV.Packages.InventorySystem.TempArray-1.html">TempArray</a>&lt;<a class="xref" href="XIV.Packages.InventorySystem.InventoryItemChange.html">InventoryItemChange</a>&gt;</dt>
+    <dt><a class="xref" href="XIV.Packages.InventorySystem.TempArray-1.html">TempArray</a>&lt;<a class="xref" href="XIV.Packages.InventorySystem.InventorySlotChange.html">InventorySlotChange</a>&gt;</dt>
     <dd></dd>
   </dl>
 

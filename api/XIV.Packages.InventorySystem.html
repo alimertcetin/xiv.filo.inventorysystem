@@ -99,6 +99,10 @@ Namespaces
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.Samples.html">XIV.Packages.InventorySystem.Samples</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="XIV.Packages.InventorySystem.ScriptableObjects.html">XIV.Packages.InventorySystem.ScriptableObjects</a></dt>
       <dd></dd>
     </dl>
@@ -131,19 +135,30 @@ Structs
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="XIV.Packages.InventorySystem.InventoryItem.html">InventoryItem</a></dt>
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.InventorySlot.html">InventorySlot</a></dt>
       <dd><p>Used in <a class="xref" href="XIV.Packages.InventorySystem.Inventory.html">Inventory</a> to store <a class="xref" href="XIV.Packages.InventorySystem.ItemBase.html">ItemBase</a>.
 Contains inventory related data.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="XIV.Packages.InventorySystem.InventoryItemChange.html">InventoryItemChange</a></dt>
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.InventorySlotChange.html">InventorySlotChange</a></dt>
       <dd><p>Stores the changes about the <a class="xref" href="XIV.Packages.InventorySystem.ItemBase.html">ItemBase</a></p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="XIV.Packages.InventorySystem.ReadOnlyInventoryItem.html">ReadOnlyInventoryItem</a></dt>
-      <dd><p>Provides a safe way to read values of <a class="xref" href="XIV.Packages.InventorySystem.InventoryItem.html">InventoryItem</a>.</p>
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.InventorySnapshot.html">InventorySnapshot</a></dt>
+      <dd><p>Stores a snapshot of an <a class="xref" href="XIV.Packages.InventorySystem.Inventory.html">Inventory</a> state.
+Contains the total number of slots and the non-empty items stored in those slots.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.ItemMergeData.html">ItemMergeData</a></dt>
+      <dd><p>Stores information about a merge involving this item.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.ReadOnlyInventorySlot.html">ReadOnlyInventorySlot</a></dt>
+      <dd><p>Provides a safe way to read values of <a class="xref" href="XIV.Packages.InventorySystem.InventorySlot.html">InventorySlot</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -156,6 +171,14 @@ Interfaces
     <dl class="jumplist">
       <dt><a class="xref" href="XIV.Packages.InventorySystem.IInventoryListener.html">IInventoryListener</a></dt>
       <dd><p>Provides a mechanism for receiving <a class="xref" href="XIV.Packages.InventorySystem.InventoryChange.html">InventoryChange</a> information.</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="XIV.Packages.InventorySystem.ItemMergeState.html">ItemMergeState</a></dt>
+      <dd><p>Determines how this item participated in a merge.</p>
 </dd>
     </dl>
 

@@ -89,7 +89,7 @@ Class ItemBase  <a class="header-action link-secondary" title="View source" href
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="XIV.html">XIV</a>.<a class="xref" href="XIV.Packages.html">Packages</a>.<a class="xref" href="XIV.Packages.InventorySystem.html">InventorySystem</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><span class="xref">XIV</span>.<span class="xref">Packages</span>.<a class="xref" href="XIV.Packages.InventorySystem.html">InventorySystem</a></dd></dl>
   
   </div>
 
@@ -145,7 +145,7 @@ public abstract class ItemBase : IEquatable&lt;ItemBase&gt;</code></pre>
 
 
   <h2 id="XIV_Packages_InventorySystem_ItemBase_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>It is recommended to implement every derived class to implement <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>.</p>
+  <div class="markdown level0 remarks"><p>It is recommended for every derived class to implement <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>.</p>
 </div>
 
 
@@ -156,7 +156,7 @@ public abstract class ItemBase : IEquatable&lt;ItemBase&gt;</code></pre>
 
   <h3 id="XIV_Packages_InventorySystem_ItemBase_description" data-uid="XIV.Packages.InventorySystem.ItemBase.description">
   description
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/ItemBase.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/ItemBase.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The description of item.</p>
@@ -185,9 +185,40 @@ public abstract class ItemBase : IEquatable&lt;ItemBase&gt;</code></pre>
 
 
 
+  <h3 id="XIV_Packages_InventorySystem_ItemBase_id" data-uid="XIV.Packages.InventorySystem.ItemBase.id">
+  id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/ItemBase.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unique identifier for every ItemBase instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string id</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="XIV_Packages_InventorySystem_ItemBase_name" data-uid="XIV.Packages.InventorySystem.ItemBase.name">
   name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/ItemBase.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/ItemBase.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The name of the item.</p>
@@ -218,7 +249,7 @@ public abstract class ItemBase : IEquatable&lt;ItemBase&gt;</code></pre>
 
   <h3 id="XIV_Packages_InventorySystem_ItemBase_stackableQuantity" data-uid="XIV.Packages.InventorySystem.ItemBase.stackableQuantity">
   stackableQuantity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/ItemBase.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/ItemBase.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The stackable quantity of item.</p>
@@ -258,7 +289,7 @@ Otherwise, you won't be able to see any error.</p>
 
   <h3 id="XIV_Packages_InventorySystem_ItemBase_Equals_System_Object_" data-uid="XIV.Packages.InventorySystem.ItemBase.Equals(System.Object)">
   Equals(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/ItemBase.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/ItemBase.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
@@ -297,7 +328,7 @@ Otherwise, you won't be able to see any error.</p>
 
   <h3 id="XIV_Packages_InventorySystem_ItemBase_Equals_XIV_Packages_InventorySystem_ItemBase_" data-uid="XIV.Packages.InventorySystem.ItemBase.Equals(XIV.Packages.InventorySystem.ItemBase)">
   Equals(ItemBase)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/ItemBase.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/ItemBase.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
@@ -336,7 +367,7 @@ Otherwise, you won't be able to see any error.</p>
 
   <h3 id="XIV_Packages_InventorySystem_ItemBase_GetHashCode" data-uid="XIV.Packages.InventorySystem.ItemBase.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/ItemBase.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/alimertcetin/xiv.filo.inventorysystem/blob/main/Runtime/ItemBase.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
