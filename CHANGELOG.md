@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.6.0...v1.7.0) (2026-11-16)
+
+
+### Features
+
+* **InventoryExtensions.cs:** Add HasItem ([3d3d853](https://github.com/alimertcetin/xiv.filo.inventorysystem/commit/3d3d8537c673bc37696c75bfe6c1fd37f8b94abc))
+
 # [1.6.0](https://github.com/alimertcetin/xiv.filo.inventorysystem/compare/v1.5.1...v1.6.0) (2026-10-19)
 
 
