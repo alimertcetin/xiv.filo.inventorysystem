@@ -1164,6 +1164,28 @@ references:
   fullName.vb: XIV.Packages.InventorySystem.Extensions.InventoryExtensions.GetQuantityOf(Of T)(XIV.Packages.InventorySystem.Inventory)
   nameWithType: InventoryExtensions.GetQuantityOf<T>(Inventory)
   nameWithType.vb: InventoryExtensions.GetQuantityOf(Of T)(Inventory)
+- uid: XIV.Packages.InventorySystem.Extensions.InventoryExtensions.HasItem(XIV.Packages.InventorySystem.Inventory,XIV.Packages.InventorySystem.ItemBase)
+  name: HasItem(Inventory, ItemBase)
+  href: api/XIV.Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_HasItem_XIV_Packages_InventorySystem_Inventory_XIV_Packages_InventorySystem_ItemBase_
+  commentId: M:XIV.Packages.InventorySystem.Extensions.InventoryExtensions.HasItem(XIV.Packages.InventorySystem.Inventory,XIV.Packages.InventorySystem.ItemBase)
+  fullName: XIV.Packages.InventorySystem.Extensions.InventoryExtensions.HasItem(XIV.Packages.InventorySystem.Inventory, XIV.Packages.InventorySystem.ItemBase)
+  nameWithType: InventoryExtensions.HasItem(Inventory, ItemBase)
+- uid: XIV.Packages.InventorySystem.Extensions.InventoryExtensions.HasItem*
+  name: HasItem
+  href: api/XIV.Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_HasItem_
+  commentId: Overload:XIV.Packages.InventorySystem.Extensions.InventoryExtensions.HasItem
+  isSpec: "True"
+  fullName: XIV.Packages.InventorySystem.Extensions.InventoryExtensions.HasItem
+  nameWithType: InventoryExtensions.HasItem
+- uid: XIV.Packages.InventorySystem.Extensions.InventoryExtensions.HasItem``1(XIV.Packages.InventorySystem.Inventory)
+  name: HasItem<T>(Inventory)
+  href: api/XIV.Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_HasItem__1_XIV_Packages_InventorySystem_Inventory_
+  commentId: M:XIV.Packages.InventorySystem.Extensions.InventoryExtensions.HasItem``1(XIV.Packages.InventorySystem.Inventory)
+  name.vb: HasItem(Of T)(Inventory)
+  fullName: XIV.Packages.InventorySystem.Extensions.InventoryExtensions.HasItem<T>(XIV.Packages.InventorySystem.Inventory)
+  fullName.vb: XIV.Packages.InventorySystem.Extensions.InventoryExtensions.HasItem(Of T)(XIV.Packages.InventorySystem.Inventory)
+  nameWithType: InventoryExtensions.HasItem<T>(Inventory)
+  nameWithType.vb: InventoryExtensions.HasItem(Of T)(Inventory)
 - uid: XIV.Packages.InventorySystem.Extensions.InventoryExtensions.Move(XIV.Packages.InventorySystem.Inventory,System.Int32,System.Int32)
   name: Move(Inventory, int, int)
   href: api/XIV.Packages.InventorySystem.Extensions.InventoryExtensions.html#XIV_Packages_InventorySystem_Extensions_InventoryExtensions_Move_XIV_Packages_InventorySystem_Inventory_System_Int32_System_Int32_
