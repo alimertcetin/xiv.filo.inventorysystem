@@ -372,6 +372,22 @@ namespace XIV.Packages.InventorySystem.Extensions
         {
             return GetReadOnlyItemMinMax(inventory, item, true);
         }
+
+        /// <summary>
+        /// Returns true if <typeparamref name="T"/> exists, false otherwise
+        /// </summary>
+        public static bool HasItem<T>(this Inventory inventory) where T : ItemBase
+        {
+            return GetQuantityOf<T>(inventory) > 0;
+        }
+
+        /// <summary>
+        /// Returns true if <paramref name="item"/> exists, false otherwise
+        /// </summary>
+        public static bool HasItem(this Inventory inventory, ItemBase item)
+        {
+            return GetQuantityOf(inventory, item) > 0;
+        }
         
         /// <summary>
         /// Fills the <paramref name="indicesBuffer"/> with the corresponding indices of <typeparamref name="T"/>
